@@ -1,8 +1,8 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Another Notes
+email:       snowdj@gmail.com
+author:      Jon Snow
+description: "A simple, beautiful notes from Jon Snow."
 baseurl:     ""
 url:         "http://snowdj.github.io"
 date_format: "%b %-d, %Y"
@@ -28,7 +28,7 @@ enable_anchorjs: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: snowdj
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
@@ -37,10 +37,10 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username:snowdj
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username:snowdj1984
 skype_username:
 steam_nickname:
 google_plus_id:
