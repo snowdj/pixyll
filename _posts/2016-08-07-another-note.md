@@ -3,7 +3,7 @@ layout:     post
 title:      Another notes from my learning process
 date:       2016-08-07
 summary:    Finally I got a simple theme for jekyll: Pixyll.
-categories: jekyll pixyll note
+categories: jekyll pixyll
 ---
 
 # Another notes from my learning process
