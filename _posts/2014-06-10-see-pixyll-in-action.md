@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Pixyll in Action
-date:       2014-06-10 12:31:19
+title:      Pixyll in Action is great
+date:       2016-07-10 12:31:19
 summary:    See what the different elements looks like. Your markdown has never looked better. I promise.
 categories: jekyll pixyll
 ---
