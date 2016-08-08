@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About EverGreen
+title: About another note
 permalink: /about/
 tags: about
 ---
