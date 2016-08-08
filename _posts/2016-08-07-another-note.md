@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      Pixyll in Action is great
+title:      Another notes from my learning process
 date:       2016-08-05 12:31:19
 summary:    Finally I got a simple theme for jekyll which is Pixyll.
 categories: jekyll pixyll
 ---
 
-.
+
 
 title:      Another notes from my learning process
 
