@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      Three great ways to generate your blog
 date:       2016-08-06 12:31:19
