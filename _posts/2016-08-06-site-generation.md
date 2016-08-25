@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Three great ways to generate your blog
-date: {}
+date: 2016-08-18 11:30:00 +0800
 summary: 'Jekyll, Pelican, and rstuido.'
 categories: jekyll pixyll
 published: true
