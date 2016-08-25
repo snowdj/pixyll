@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: {}
 summary: Economics map.
@@ -21,6 +21,3 @@ categories: Economics map
 	-   [youtuble](https://www.youtube.com/watch?v=tJ-O3hk1vRw/)
     
     - [github](https://github.com/silicon-valley-data-science/pydata-sf-2016-arima-tutorial)
-
-
-
