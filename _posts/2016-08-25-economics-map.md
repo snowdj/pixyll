@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: {}
+date: 2016-08-05
 summary: Economics map.
 categories: Economics map
 ---
