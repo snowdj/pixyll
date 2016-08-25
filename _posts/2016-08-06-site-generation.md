@@ -1,9 +1,10 @@
 ---
-layout:     post
-title:      Three great ways to generate your blog
-date:       2016-08-06 12:31:19
-summary:    Jekyll, Pelican, and rstuido.
+layout: post
+title: Three great ways to generate your blog
+date: {}
+summary: 'Jekyll, Pelican, and rstuido.'
 categories: jekyll pixyll
+published: true
 ---
 
 
