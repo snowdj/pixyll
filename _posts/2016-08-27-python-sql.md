@@ -1,5 +1,9 @@
 ---
 published: false
+layout: post
+date: '2016-08-24 11:30:00 +0800'
+summary: python sql.
+categories: sql
 ---
 
 
