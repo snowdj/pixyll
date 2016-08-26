@@ -14,6 +14,5 @@ INSTRUCTOR: Miriah Meyer
 
 ## [Data Visualization in Sociology](http://socviz.github.io/soc880/)
 
-
-Kieran Healy
+[Kieran Healy](http://kieranhealy.org/files/papers/data-visualization.pdf)
 
