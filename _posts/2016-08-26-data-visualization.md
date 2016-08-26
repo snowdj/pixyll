@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+date: '2016-08-26 11:30:00 +0800'
+summary: data visualization
+categories: visualization
 ---
 ## Data Visualization
 
@@ -15,4 +19,3 @@ INSTRUCTOR: Miriah Meyer
 ## [Data Visualization in Sociology](http://socviz.github.io/soc880/)
 
 [Kieran Healy](http://kieranhealy.org/files/papers/data-visualization.pdf)
-
