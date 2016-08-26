@@ -1,5 +1,6 @@
 ---
 published: false
+layout: post
 ---
 ## Time series in Python
 
