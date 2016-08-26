@@ -1,8 +1,13 @@
+---
+published: false
+---
 
 
 
 ## Python and spl
 
+
+```python
 import sqlite3
 
 conn = sqlite3.connect('emaildb.sqlite')
@@ -86,3 +91,4 @@ for row in cur.execute(sqlstr) :
 #%%
 conn.commit()  
 cur.close()
+```
