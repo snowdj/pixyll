@@ -8,15 +8,17 @@ categories: Business analysis map
 ## Business analysis
 
 
-### ETC2420/ETC5242
-Statistical Methods for Insurance
-http://dicook.github.io/Statistical_Thinking/
+### Statistical Methods for Insurance
+ETC2420/ETC5242
+
+[website](http://dicook.github.io/Statistical_Thinking/)
 
 
-### Business analytics (ETC3250) 
+### Business analytics 
+(ETC3250) 
 
-- http://bsouhaib.github.io/BusinessAnalytics/
+- [websie](http://bsouhaib.github.io/BusinessAnalytics/)
 
-- https://github.com/bsouhaib/BusinessAnalytics/tree/master
+- [github](https://github.com/bsouhaib/BusinessAnalytics/tree/master)
 
 
