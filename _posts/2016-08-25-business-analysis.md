@@ -19,4 +19,4 @@ http://dicook.github.io/Statistical_Thinking/
 
 - https://github.com/bsouhaib/BusinessAnalytics/tree/master
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
