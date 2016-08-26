@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 ## Unix Command Line Notes
 
