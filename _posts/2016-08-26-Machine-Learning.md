@@ -10,4 +10,5 @@ layout: post
 [Machine Learning](https://www.coursera.org/learn/machine-learning/home/welcome)
 
 
-[CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/)
+[CS231n](http://cs231n.github.io/)
+ Convolutional Neural Networks for Visual Recognition
