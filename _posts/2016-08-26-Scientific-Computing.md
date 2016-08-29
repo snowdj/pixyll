@@ -4,4 +4,9 @@ layout: post
 ---
 ## Scientific Computing
 
+
+[SymPy Live](http://live.sympy.org/)
+
+SymPy Live is SymPy running on the Google App Engine. 
+
 [AMATH301](http://courses.washington.edu/am301/page1/page6/video.html).
