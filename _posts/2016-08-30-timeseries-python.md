@@ -14,3 +14,8 @@ layout: post
 
 A comprehensive course on conducting and presenting policy evaluations using interrupted time series analysis.
 
+
+## 
+[Open source tools for financial time series analysis and visualization](https://github.com/yhilpisch/pydlon15)
+
+Yves Hilpisch: Open source tools for financial time series analysis and visualization
