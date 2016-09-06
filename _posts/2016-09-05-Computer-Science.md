@@ -4,6 +4,20 @@ layout: post
 ---
 ## Computer Science
 
+
+
+
+
+
+1）Programming Language
+2）Operating Systems
+3）Database
+4）Data Structure
+
+
+
+
+
 [CS50](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/info). 
 HarvardX: CS50 Introduction to Computer Science
 
