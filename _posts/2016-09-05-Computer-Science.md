@@ -17,10 +17,12 @@ HarvardX: CS50 Introduction to Computer Science
 [Understanding Computers and the Internet](https://www.youtube.com/watch?v=PLigQUosV34). 
 
 
+### Operating system
+
+[Computer Science 70](https://www.youtube.com/watch?v=fyEfgHHR9t0&list=PL-XXv-cvA_iD8wQm8U0gG_Z1uHjImKXFy)
 
 
-
-by Peking University
+### by Peking University
 
 [计算导论与C语言基础](https://www.coursera.org/learn/jisuanji-biancheng/home)
 
