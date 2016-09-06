@@ -1,7 +1,0 @@
----
-published: false
-layout: post
----
-## Book list
-
-[网盘](http://www.pansoso.com/zh). 
