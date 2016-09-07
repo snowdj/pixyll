@@ -4,6 +4,11 @@ layout: post
 ---
 ## flowchart
 
+
+### Flowchart and diagram in R
+
+Incredible tool [A collection of DiagrammeR examples](https://github.com/rich-iannone/DiagrammeR-examples)
+
 ### UML diagrams
 
 You can also render sequence diagrams 
