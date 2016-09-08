@@ -21,8 +21,8 @@ way to define probabilities is under Bayesian perspective. Bayesian perspective 
 
 ###
 
-[](https://github.com/fonnesbeck/Bios8366/tree/master/notebooks)
+[Bios8366](https://github.com/fonnesbeck/Bios8366/tree/master/notebooks)
 
-[](https://github.com/petrkeil/Bayesian-biostatistics-2015)
-[](https://github.com/Sta523-Fa14/STA663-2015)
-[](https://github.com/jkarreth/Bayes)
+[Bayesian-biostatistics-2015](https://github.com/petrkeil/Bayesian-biostatistics-2015)
+[STA663-2015](https://github.com/Sta523-Fa14/STA663-2015)
+[Bayes](https://github.com/jkarreth/Bayes)
