@@ -16,3 +16,13 @@ by Duke University
 Herbie Lee, Professor of Statistics at the University of California Santa Cruz. 
 
 way to define probabilities is under Bayesian perspective. Bayesian perspective is one of personal perspective.
+
+
+
+###
+
+[](https://github.com/fonnesbeck/Bios8366/tree/master/notebooks)
+
+[](https://github.com/petrkeil/Bayesian-biostatistics-2015)
+[](https://github.com/Sta523-Fa14/STA663-2015)
+[](https://github.com/jkarreth/Bayes)
