@@ -14,3 +14,7 @@ SymPy Live is SymPy running on the Google App Engine.
 
 ## 
 [calculuswithjuli](http://calculuswithjulia.github.io/)
+
+
+##
+[Foundations of Applied Mathematics](https://github.com/Foundations-of-Applied-Mathematics)
