@@ -15,3 +15,7 @@ simple and works for R
 [stat101](https://www2.stat.duke.edu/courses/Spring16/sta101.001/)
 
 
+### Beautiful jekyll
+[NCMTH107](https://github.com/droglenc/NCMTH107)
+
+
