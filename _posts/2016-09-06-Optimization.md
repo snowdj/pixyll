@@ -13,6 +13,7 @@ layout: post
 
 [Optimization Methods for Business Analytics](https://www.edx.org/course/optimization-methods-business-analytics-mitx-15-053x?utm_medium=email&utm_source=sailthru&utm_content=course-announcements-mailing-list&utm_campaign=studentnewsletter-20160830-control&utm_term=Newsletter%20Users%20v2)
 
+[github EDxMIT15053](https://github.com/goedman/EDxMIT15053.jl)
 
 [15-053-optimization-methods-in-management-science](http://ocw.mit.edu/courses/sloan-school-of-management/15-053-optimization-methods-in-management-science-spring-2013/lecture-notes/)
 Learn how to use optimization methodologies and modeling approaches to effectively analyze data.
