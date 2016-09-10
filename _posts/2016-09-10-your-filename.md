@@ -6,3 +6,4 @@ layout: post
 
 Logical Indexing
 
+works for Matlab too.
