@@ -1,0 +1,7 @@
+---
+published: false
+layout: post
+---
+## Kaggle
+
+[House Prices: Advanced Regression Techniques](https://www.kaggle.com/snowdj/house-prices-advanced-regression-techniques/detailed-data-exploration-in-python/editnb). 
