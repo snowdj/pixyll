@@ -31,3 +31,11 @@ Can install by the same way we add solver in Excel.
 The Simplex Method for a maximization problem moves from extreme point to extreme point while increasing the objective value.
 
 The simplex algorithm terminates if this occurs and simplex is guaranteed to terminate at an optimum solution if the problem is feasible.
+
+
+There are two extreme points: (0, 0) and (0, 1).
+
+There are two extreme rays. The first is the set of points {(λ,0):λ≥0}. The second is the set of points {(λ,1+λ):λ≥0}.
+
+
+ Because each term of the objective function is guaranteed to be nonnegative, there can be no better solution. Note that (1,2) is not an extreme point of the feasible region. When optimizing a nonlinear function, the optimum is not guaranteed to occur at an extreme point.
