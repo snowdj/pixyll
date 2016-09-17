@@ -39,3 +39,5 @@ There are two extreme rays. The first is the set of points {(λ,0):λ≥0}. The 
 
 
  Because each term of the objective function is guaranteed to be nonnegative, there can be no better solution. Note that (1,2) is not an extreme point of the feasible region. When optimizing a nonlinear function, the optimum is not guaranteed to occur at an extreme point.
+ 
+ A good way to determine which one to store is to solve the problem five additional times. The first problem includes one extra storage unit for chicken. The second problem includes one extra storage unit for beef. And so on. If you do this, you will find that storing 1 extra kg of tofu increases the profit the most. There are other approaches for solving this problem. Next week, we will learn integer programming models. It is possible to write a single model for finding the solution. In the fifth week of this course, you will learn about sensitivity analysis. You can determine the answer from the sensitivity report.
