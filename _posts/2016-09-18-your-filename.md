@@ -1,0 +1,14 @@
+---
+published: false
+layout: post
+---
+## GAMS
+
+#### GAMS with Excel
+
+[GAMS and Excel - Using GDX to Transfer Data ](https://www.youtube.com/watch?v=5PEjOUOL3sU)
+
+#### Sets
+
+[Sets](https://www.youtube.com/watch?v=vUrL4o6kK1s)
+
