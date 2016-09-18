@@ -31,3 +31,6 @@ Google Sheets
 #### Excel Solver
 
 [How to Use the Solver Tool in Excel](https://www.youtube.com/watch?v=K4QkLA3sT1o)
+
+
+[Linear Progarmming](http://faculty.chicagobooth.edu/kipp.martin/root/htmls/coursework/36106/lectureNotes/linearProg.pdf)
