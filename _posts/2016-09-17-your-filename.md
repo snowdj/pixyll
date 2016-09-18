@@ -1,7 +1,0 @@
----
-published: false
-layout: post
----
-## EViews
-
-EViews documents (also known as “workfiles”) are files that hold different objects (which contain data). Unlike Microsoft Word or Excel, EViews does not open up a blank document upon launch. Instead, the user must always specify the structure (or frequency) of the file, a range for the data, and a sample. A workfile is made up of one or more page files.
