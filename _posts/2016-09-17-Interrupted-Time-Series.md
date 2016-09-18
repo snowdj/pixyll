@@ -15,3 +15,5 @@ has data for two groups at one time period before the intervention and one time 
 
 
 The counterfactual assumption in this study design is that the outcome would have changed in the invention group in the same manner as the control group absent the intervention.
+
+School break is clearly an event that occurs between the periods, so is a history threat to validity. However, in this case as it only affects one group and not the other, it is an interaction with selection in this instance.
