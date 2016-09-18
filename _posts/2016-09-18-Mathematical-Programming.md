@@ -13,6 +13,9 @@ layout: post
 
 [GAMS and Excel - Using GDX to Transfer Data ](https://www.youtube.com/watch?v=5PEjOUOL3sU)
 
+#### Sets
+
+[Sets](https://www.youtube.com/watch?v=vUrL4o6kK1s)
 
 
 
@@ -24,3 +27,7 @@ layout: post
  MITx: 15.053x Optimization Methods in Business Analytics 
  OpenSolver validation
 Google Sheets
+
+#### Excel Solver
+
+[How to Use the Solver Tool in Excel](https://www.youtube.com/watch?v=K4QkLA3sT1o)
