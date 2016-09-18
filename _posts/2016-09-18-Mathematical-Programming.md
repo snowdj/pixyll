@@ -30,6 +30,10 @@ Google Sheets
 
 #### Excel Solver
 
+ 
+
+[How to Install Excel Solver](http://faculty.chicagobooth.edu/kipp.martin/root/htmls/coursework/36106/handouts/InstallSolver.pdf)(Courtesy of Professor Che-Lin Su) 
+
 [How to Use the Solver Tool in Excel](https://www.youtube.com/watch?v=K4QkLA3sT1o)
 
 
