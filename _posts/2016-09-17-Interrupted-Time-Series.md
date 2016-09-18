@@ -12,3 +12,6 @@ In a post-only with control study, the assumption is that the counterfactual out
 
 
 has data for two groups at one time period before the intervention and one time period after. This reflects a pre-post with control design.
+
+
+The counterfactual assumption in this study design is that the outcome would have changed in the invention group in the same manner as the control group absent the intervention.
