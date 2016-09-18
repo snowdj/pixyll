@@ -28,6 +28,9 @@ layout: post
  OpenSolver validation
 Google Sheets
 
+
+### Business 36106: Managerial Decision Modeling 
+
 #### Excel Solver
 
  
