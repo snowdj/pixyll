@@ -29,8 +29,12 @@ layout: post
 Google Sheets
 
 
-### Business 36106: Managerial Decision Modeling 
+### Business 36106: 
 
+[Managerial Decision Modeling](http://faculty.chicagobooth.edu/kipp.martin/root/htmls/coursework/36106/36106.html) 
+
+
+[Business 36900: Linear Programming](http://faculty.chicagobooth.edu/kipp.martin/root/htmls/coursework/36900/36900.html)
 #### Excel Solver
 
  
