@@ -24,3 +24,8 @@ A[]
 
 
 works for Matlab too.
+
+
+### Googlevis
+
+[Analyzing World Bank data with WDI, googleVis Motion Charts](https://www.r-bloggers.com/analyzing-world-bank-data-with-wdi-googlevis-motion-charts/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+RBloggers+%28R+bloggers%29)
