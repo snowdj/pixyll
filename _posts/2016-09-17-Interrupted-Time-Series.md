@@ -72,6 +72,10 @@ You can focus in on groups where you expect an impact
     * choose measure -> reflect intended or unintended outcome
     * attrition
     * rates and proportions often work well.
+    
+    In general, rates and proportions make good outcomes for an interrupted time series study. Issues can arise with using totals when there are changes in the population size over time due to attrition or some other factor. Totals can also be problmeatic when using a control group, as the population sizes will likely differ.
+    
+    
 
 
 
