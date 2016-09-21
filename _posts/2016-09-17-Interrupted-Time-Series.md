@@ -117,7 +117,7 @@ In a segmented regression setup, all the above variables are needed with the exc
 
 
 
-* Visually inspect the data: plot the data and look for potential problems
+5. Visually inspect the data: plot the data and look for potential problems
 
 
 For each series, here are the considerations you might make:
@@ -134,7 +134,7 @@ Series 4: While this series has a distinct break at the intervention, both the p
 Typically ITS figures have the intervention plot drawn between the last pre-intervention period and the first post-intervention period. As the intervention starts at point 23 in this case, 22.5 would be between that and the previous data point
 
 
-* Perform preliminary analysis: perform a standard regression model with a time series specification
+6. Perform preliminary analysis: perform a standard regression model with a time series specification
 
 
 $$outcom = \beta_0 + \beta_1 * time + \beta_2 * level  +  \beta_3 * trend + \epslon_{jt}$$
@@ -155,13 +155,13 @@ A standard segmented regression model for interrupted time series requires 3 var
 The results of the model suggest a statistically significant decrease in both the level and trend of market share following the start of the prior authorization policy.
 
 
-* Check for and address autocorrelation: use the standard regression results to assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
+7. Check for and address autocorrelation: use the standard regression results to assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
 
 
 
 
 
-* Run the final model: run and interpret a final analytic model that accounts for autocorrelation
+8. Run the final model: run and interpret a final analytic model that accounts for autocorrelation
 
 
 
