@@ -149,7 +149,10 @@ A standard segmented regression model for interrupted time series requires 3 var
 	* The estimated level change following the prior authorization policy?
 
 	* The estimated change in the trend per quarter following the policy change?
-
+    
+    
+    
+The results of the model suggest a statistically significant decrease in both the level and trend of market share following the start of the prior authorization policy.
 
 
 * Check for and address autocorrelation: use the standard regression results to assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
