@@ -87,12 +87,25 @@ Remember that outcomes for an ITS analysis should be comparable between groups. 
 * Setup data
 * Visually inspect the data
 * Perform preliminary analysis
-Check for and address autocorrelation
-Run the final model
-Plot the results
-Predict relative and absolute effects
+* Check for and address autocorrelation
+* Run the final model
+* Plot the results
+* Predict relative and absolute effects
 
+work through the following steps and conduct an interrupted time series analysis:
 
+* Setup data: prepare your data for analysis by adding necessary variables
+
+* Visually inspect the data: plot the data and look for potential problems
+
+* Perform preliminary analysis: perform a standard regression model with a time series specification
+
+* Check for and address autocorrelation: use the standard regression results to assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
+
+* Run the final model: run and interpret a final analytic model that accounts for autocorrelation
+
+* Plot the results: plot the results of the model for presentation
+Predict relative and absolute effects: use the model results to predict the impact of the intervention
 
 
 
