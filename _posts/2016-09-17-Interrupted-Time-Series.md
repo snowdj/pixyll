@@ -43,8 +43,17 @@ It is important to remember that all of your estimates for the impact of the pol
 * Determine time periods
 	* interruption 
     * length of period enough to measure a trend 8/12 
+    
+    A commonly cited minimum number of data points is 8-12 before and 8-12 after the intervention. Be cautious with this rule, however. Many data series will be too variable for 8 data points to provide a stable trend estimate.
+    
+    
     * phase-in period
     * co-interventions
+    
+    Any fixed time period is suitable for an ITS analysis. There will be a trade-off with any selection: longer time periods will likely be more stable, but are also more likely to run into trouble with co-interventions that impact the same outcomes.
+    
+    
+    
 * Select analytic cohorts
 * Determine outcomes of interest
 * Setup data
