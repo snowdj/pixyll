@@ -40,10 +40,13 @@ It is important to remember that all of your estimates for the impact of the pol
 
  the actual steps you will take to conduct an analysis yourself. We will divide things up into 10 steps, which are:
 
-Determine time periods
-Select analytic cohorts
-Determine outcomes of interest
-Setup data
+* Determine time periods
+	* interruption 
+    * long enough to measure a trend 8/12 
+    * phase-in period
+* Select analytic cohorts
+* Determine outcomes of interest
+* Setup data
 Visually inspect the data
 Perform preliminary analysis
 Check for and address autocorrelation
