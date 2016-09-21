@@ -27,3 +27,7 @@ the second example is a potential threat to validity. While the first looks like
 identified many potential threats to validity
 
 collect longitudinal data and conduct a single interrupted time series analysis on her data
+
+Both A and C are potential threats, because they are changes that would potentially impact the outcome (fuel sales), are not the intervention of interest, and happen close to the intervention under study. In contrast, while B may impact the outcome, it happended at the start of the study period, so would not be of concern. Any change that it did cause in the outcome would be captured in the existing level and trend in the pre-intervention period.
+
+
