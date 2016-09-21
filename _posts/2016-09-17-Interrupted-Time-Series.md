@@ -111,5 +111,26 @@ Once you have a policy change in mind, what are its potential effects? Were ther
 Moving forward, you will need to think about what you can measure with available data, but to start with, it is worth thinking through any potential outcomes.
 
 
+### FINDING DATA TO ANSWER YOUR QUESTION
 
+Once you have a question in mind, you need to determine if you can actually answer it using ITS. This means finding data that cover the period before and after the policy, and that measure outcomes you think the policy may have changed. In some cases the data may simply not exist – for this course that means you likely want to pick a different question.
+
+#### Where do data come from?
+
+In some cases, organizations routinely collect information for ongoing monitoring or research. For example,  governments may conduct health, demographic or labour force surveys, or make regular measurements for environmental monitoring.
+
+However, in many other situations organizations collect information for completely different purposes, but that may be useful in research or policy evaluation. Examples are endless, with many conceivable purposes (such as registration, transactions, or other aspects of service delivery) and topic areas (health, education, housing, immigration, and many other areas of business and industry). Often these datasets are very large. Unlike survey data, they likely cover all individuals using a particular service, and cover long time periods, making it possible to retrospectively evaluate policies. The main drawback is that researchers have no control over what is measured. It is also important to be aware of changes to administrative procedures or definitions over time.
+
+#### Identifying data sources for your project
+
+Many of you work with data on a regular basis, and already have access to everything you would need to answer a research question. If not, there may be publicly available sources worth exploring.
+
+Regardless of the source, there are two key points to consider to determine if it’s suitable for analysis:
+
+* Does it measure a relevant outcome?
+* Are multiple data points available over the necessary time period, before and after the change? 
+
+#### Publicly available resources
+
+If you do not already have access to relevant data, there are many publicly available data sources which could be useful. In some cases, these report on regular surveys. In others, they aggregate administrative data from other sources. 
 
