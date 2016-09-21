@@ -55,6 +55,8 @@ It is important to remember that all of your estimates for the impact of the pol
     
     
 * Select analytic cohorts
+	* expect impact
+    * continuously enrolled// attrition -> problem
 * Determine outcomes of interest
 * Setup data
 Visually inspect the data
