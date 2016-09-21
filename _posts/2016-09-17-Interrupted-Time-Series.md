@@ -140,9 +140,21 @@ Typically ITS figures have the intervention plot drawn between the last pre-inte
 $$outcom = \beta_0 + \beta_1 * time + \beta_2 * level  +  \beta_3 * trend + \epslon_{jt}$$
 
 
+A standard segmented regression model for interrupted time series requires 3 variables aside from the intercept term: (1) an existing trend, (2) a level change, and (3) a trend change.
+
+
 * Check for and address autocorrelation: use the standard regression results to assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
 
+
+
+
+
 * Run the final model: run and interpret a final analytic model that accounts for autocorrelation
+
+
+
+
+
 
 * Plot the results: plot the results of the model for presentation
 Predict relative and absolute effects: use the model results to predict the impact of the intervention
