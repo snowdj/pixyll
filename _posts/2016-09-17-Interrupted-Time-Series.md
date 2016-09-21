@@ -71,7 +71,7 @@ You can focus in on groups where you expect an impact
 	* measure of characteristic/outcome 
     * choose measure -> reflect intended or unintended outcome
     * attrition
-    * rates and proportions work well.
+    * rates and proportions often work well.
 
 
 
