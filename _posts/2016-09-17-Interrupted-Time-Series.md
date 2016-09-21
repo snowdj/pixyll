@@ -80,6 +80,9 @@ The pattern of the data shown is almost certainly the result of anticipatory eff
 
 If Sophie limits her time period to the month before the tax is repealed, this will leave her with a clean data series without this potential co-intervention. Proceeding with modeling (response C) is likely to result in a model that does not fit well due to the likely increase in sales after this second change.
 
+One might expect the carbon tax to impact all of the above groups more significantly than the remainder of the population.
+
+Remember that outcomes for an ITS analysis should be comparable between groups. As we have no information on the relative sizes of the two states under study, using any sort of total would be inappropriate
 
 * Setup data
 * Visually inspect the data
@@ -88,5 +91,25 @@ Check for and address autocorrelation
 Run the final model
 Plot the results
 Predict relative and absolute effects
+
+
+
+
+
+### CHOOSING A RESEARCH QUESTION
+
+
+
+#### Pinpointing a change in policy
+
+Interrupted Time Series uses the fact that a policy change can be pinpointed in time to help understand its effects. First and foremost, a good research question for this course has to examine something that changed. This could be the introduction of a huge nation-wide program, or just a small tweak in how a service is provided. In your day-to-day work, surely things are changing all the time – any of these might be candidates for research questions.
+
+#### Considering outcomes of this change
+
+Once you have a policy change in mind, what are its potential effects? Were there specific goals stated as a rationale for the change? Might there be unintended effects of the policy worth examining?
+
+Moving forward, you will need to think about what you can measure with available data, but to start with, it is worth thinking through any potential outcomes.
+
+
 
 
