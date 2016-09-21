@@ -57,10 +57,26 @@ It is important to remember that all of your estimates for the impact of the pol
 * Select analytic cohorts
 	* expect impact
     * continuously enrolled// attrition -> problem
+    * control groups: unexposed similar group/ subgroup, another region. non-equivalent but still comparible
+    
+    What's one advantage of having individual level data?
+        
+You can focus in on groups where you expect an impact     
+    Individual-level data gives you the flexibility to run your time series models on whatever subgroups you like within your study population. This can allow you to narrow in on groups where the policy likely had an impact, and also use those where you wouldn't expect an impact as potential controls.
+    
+    In order to fit the model with a control group, you must have access to data on the same outcomes over the same time periods. While A and B would definitely help make your analysis more convincing, they are not technically required. With respect to response D, control groups can come from within the same region.
+    
+    
 * Determine outcomes of interest
+	* characteristic/outcome 
+
+
+
+
+
 * Setup data
-Visually inspect the data
-Perform preliminary analysis
+* Visually inspect the data
+* Perform preliminary analysis
 Check for and address autocorrelation
 Run the final model
 Plot the results
