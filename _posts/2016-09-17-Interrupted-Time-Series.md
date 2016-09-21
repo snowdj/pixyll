@@ -100,6 +100,20 @@ work through the following steps and conduct an interrupted time series analysis
 
 * Setup data: prepare your data for analysis by adding necessary variables
 
+
+While you are reading, pay particular attention to the data used in the analysis, the cohort they selected for the analysis, and the outcomes that the authors chose to study. Further, pay careful attention to how the authors present their results, in particular their method for discussing both level and trend changes.
+
+The following variables are needed in an interrupted time series analysis dataset:
+The outcome in each time period 
+ - not really Control variables for the regression model
+An incrementing indicator for time 
+An indicator variable for the post-intervention period 
+An incrementing time variable for post-intervention time 
+
+
+In a segmented regression setup, all the above variables are needed with the exception of control variables. As we discussed last week, interrupted time series is generally immune to threats to validity from other variables that remain constant over time. If other changes occur at the same time as the intervention, however, this could form an important threat to validity (see our discussion of history bias last week).
+
+
 * Visually inspect the data: plot the data and look for potential problems
 
 * Perform preliminary analysis: perform a standard regression model with a time series specification
@@ -110,11 +124,6 @@ work through the following steps and conduct an interrupted time series analysis
 
 * Plot the results: plot the results of the model for presentation
 Predict relative and absolute effects: use the model results to predict the impact of the intervention
-
-
-
-While you are reading, pay particular attention to the data used in the analysis, the cohort they selected for the analysis, and the outcomes that the authors chose to study. Further, pay careful attention to how the authors present their results, in particular their method for discussing both level and trend changes.
-
 
 
 
