@@ -142,6 +142,15 @@ $$outcom = \beta_0 + \beta_1 * time + \beta_2 * level  +  \beta_3 * trend + \eps
 
 A standard segmented regression model for interrupted time series requires 3 variables aside from the intercept term: (1) an existing trend, (2) a level change, and (3) a trend change.
 
+The existing level?
+
+The pre-existing trend per quarter?
+
+The estimated level change following the prior authorization policy?
+
+The estimated change in the trend per quarter following the policy change?
+
+
 
 * Check for and address autocorrelation: use the standard regression results to assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
 
