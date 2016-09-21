@@ -19,3 +19,11 @@ The counterfactual assumption in this study design is that the outcome would hav
 School break is clearly an event that occurs between the periods, so is a history threat to validity. However, in this case as it only affects one group and not the other, it is an interaction with selection in this instance.
 
 the second example is a potential threat to validity. While the first looks like a history threat, the timing would have to be close to the intervention in order to be of concern. The second is an example of an instrumentation threat and is of concern as it happened close to the intervention. Finally, migration out is an issue of maturation, but because it was constant over the entire period would not constitute a threat to validity. Any changes in the outcome this caused would likely be addressed by the estimate of the pre-intervention time trend.
+
+
+
+##
+
+identified many potential threats to validity
+
+collect longitudinal data and conduct a single interrupted time series analysis on her data
