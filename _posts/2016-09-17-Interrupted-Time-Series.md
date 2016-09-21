@@ -38,6 +38,17 @@ The key to this answer is the change in Bogusland, which we know was not subject
 It is important to remember that all of your estimates for the impact of the policy will be relative to the changes observed in the control group. As the level in the control group appears to increase slightly after the intervention, this would serve to increase the relative change in the intervention group. Conversely, the downward trend in the control group would cause the change in trend to be smaller relative to the estimate from the single series model.
 
 
+ the actual steps you will take to conduct an analysis yourself. We will divide things up into 10 steps, which are:
 
+Determine time periods
+Select analytic cohorts
+Determine outcomes of interest
+Setup data
+Visually inspect the data
+Perform preliminary analysis
+Check for and address autocorrelation
+Run the final model
+Plot the results
+Predict relative and absolute effects
 
 
