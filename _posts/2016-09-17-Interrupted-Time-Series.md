@@ -136,6 +136,10 @@ Typically ITS figures have the intervention plot drawn between the last pre-inte
 
 * Perform preliminary analysis: perform a standard regression model with a time series specification
 
+
+
+
+
 * Check for and address autocorrelation: use the standard regression results to assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
 
 * Run the final model: run and interpret a final analytic model that accounts for autocorrelation
