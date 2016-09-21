@@ -76,9 +76,9 @@ You can focus in on groups where you expect an impact
     In general, rates and proportions make good outcomes for an interrupted time series study. Issues can arise with using totals when there are changes in the population size over time due to attrition or some other factor. Totals can also be problmeatic when using a control group, as the population sizes will likely differ.
     
     
+The pattern of the data shown is almost certainly the result of anticipatory effects. It suggests that the carbon tax was announced in advance and people rushed to the gas station to fill up before it took effect, hence the spike in use in the month before and the decline in the month afterward.
 
-
-
+If Sophie limits her time period to the month before the tax is repealed, this will leave her with a clean data series without this potential co-intervention. Proceeding with modeling (response C) is likely to result in a model that does not fit well due to the likely increase in sales after this second change.
 
 
 * Setup data
