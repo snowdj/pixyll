@@ -35,4 +35,9 @@ The answer to the above question represents a history threat to validity, as it 
 The key to this answer is the change in Bogusland, which we know was not subject to the carbon tax. The decrease in slope observed around the time of the intervention line is consistent with a change in the price of fuel that acted to decrease the secular trend in consumption.
 
 
+It is important to remember that all of your estimates for the impact of the policy will be relative to the changes observed in the control group. As the level in the control group appears to increase slightly after the intervention, this would serve to increase the relative change in the intervention group. Conversely, the downward trend in the control group would cause the change in trend to be smaller relative to the estimate from the single series model.
+
+
+
+
 
