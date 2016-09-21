@@ -114,7 +114,25 @@ An incrementing time variable for post-intervention time
 In a segmented regression setup, all the above variables are needed with the exception of control variables. As we discussed last week, interrupted time series is generally immune to threats to validity from other variables that remain constant over time. If other changes occur at the same time as the intervention, however, this could form an important threat to validity (see our discussion of history bias last week).
 
 
+
+
+
 * Visually inspect the data: plot the data and look for potential problems
+
+
+For each series, here are the considerations you might make:
+
+Series 1: This data has a logarithmic shape, so would not be suitable for linear regression in it's current form.
+
+Series 2: This data is very noisy, so is unlikely to result in a good model fit. There may be data quality issues at play.
+
+Series 3: The linear trend in this data is clear and continuous through the entire range.
+
+Series 4: While this series has a distinct break at the intervention, both the pre- and post- periods are linear, making this data series likely suitable for ITS.
+
+
+Typically ITS figures have the intervention plot drawn between the last pre-intervention period and the first post-intervention period. As the intervention starts at point 23 in this case, 22.5 would be between that and the previous data point
+
 
 * Perform preliminary analysis: perform a standard regression model with a time series specification
 
