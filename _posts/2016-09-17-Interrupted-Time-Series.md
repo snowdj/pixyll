@@ -68,7 +68,8 @@ You can focus in on groups where you expect an impact
     
     
 * Determine outcomes of interest
-	* characteristic/outcome 
+	* measure of characteristic/outcome 
+    * choose measure -> reflect intended or unintended outcome
 
 
 
