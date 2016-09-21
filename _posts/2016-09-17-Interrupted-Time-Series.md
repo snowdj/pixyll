@@ -31,3 +31,8 @@ collect longitudinal data and conduct a single interrupted time series analysis 
 Both A and C are potential threats, because they are changes that would potentially impact the outcome (fuel sales), are not the intervention of interest, and happen close to the intervention under study. In contrast, while B may impact the outcome, it happended at the start of the study period, so would not be of concern. Any change that it did cause in the outcome would be captured in the existing level and trend in the pre-intervention period.
 
 The answer to the above question represents a history threat to validity, as it is an event that is not the intervention of interest that would be expected to impact the outcome. It would not be selection-history, as there is only one group under study in this data series.
+
+The key to this answer is the change in Bogusland, which we know was not subject to the carbon tax. The decrease in slope observed around the time of the intervention line is consistent with a change in the price of fuel that acted to decrease the secular trend in consumption.
+
+
+
