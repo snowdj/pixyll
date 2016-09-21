@@ -105,7 +105,7 @@ While you are reading, pay particular attention to the data used in the analysis
 
 The following variables are needed in an interrupted time series analysis dataset:
 The outcome in each time period 
- - not really Control variables for the regression model
+ - not really: Control variables for the regression model
 An incrementing indicator for time 
 An indicator variable for the post-intervention period 
 An incrementing time variable for post-intervention time 
