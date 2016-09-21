@@ -42,7 +42,7 @@ It is important to remember that all of your estimates for the impact of the pol
 
 * Determine time periods
 	* interruption 
-    * long enough to measure a trend 8/12 
+    * length of period enough to measure a trend 8/12 
     * phase-in period
     * co-interventions
 * Select analytic cohorts
