@@ -98,7 +98,7 @@ Remember that outcomes for an ITS analysis should be comparable between groups. 
 
 work through the following steps and conduct an interrupted time series analysis:
 
-* Setup data: prepare your data for analysis by adding necessary variables
+4. Setup data: prepare your data for analysis by adding necessary variables
 
 
 While you are reading, pay particular attention to the data used in the analysis, the cohort they selected for the analysis, and the outcomes that the authors chose to study. Further, pay careful attention to how the authors present their results, in particular their method for discussing both level and trend changes.
