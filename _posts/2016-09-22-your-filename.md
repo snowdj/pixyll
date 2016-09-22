@@ -280,4 +280,7 @@ Often in the course, if we are making statements about all possible outcomes of 
 U and V have the same PMF but they are associated with different probability spaces.
 
 
+In general, for a real-valued function g (i.e., it maps real numbers to real numbers), is g(f(W)) a random variable?
+
+Yes: g just relabels the outcome labels of the probability table for f(W).
 
