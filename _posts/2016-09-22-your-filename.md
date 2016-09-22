@@ -274,3 +274,10 @@ As an example of how to use all this notation, recall that a probability table c
 Often in the course, if we are making statements about all possible outcomes of X, we will omit writing out the**alphabet X explicitly**. For example, instead of the above, we might write the following equivalent statement:
 
 0≤pX(x)≤1for all x,∑xpX(x)=1.
+
+
+
+U and V have the same PMF but they are associated with different probability spaces.
+
+
+
