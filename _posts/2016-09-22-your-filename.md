@@ -418,6 +418,6 @@ pX(x)=∑y pX,Y (x,y).
 For two random variables U and V that take on values in the same alphabet, we say that U and V have the same distribution if pU(a)=pV(a) for all a. 
 
 
-
+For a pair of random variables (S,T), and another pair (U,V), we say that the pair (S,T) and the pair (U,V) have the same joint distribution if pS,T(a,b)=pU,V(a,b) for all a,b.
 
 
