@@ -411,4 +411,13 @@ In general:
 
 **Marginalization:** Consider two random variables X and Y (that take on values in the sets X and Y respectively) with joint probability table pX,Y. For any x∈X, the marginal probability that X=x is given by
 
-pX(x)=∑ypX,Y(x,y).
+pX(x)=∑y pX,Y (x,y).
+
+
+
+For two random variables U and V that take on values in the same alphabet, we say that U and V have the same distribution if pU(a)=pV(a) for all a. 
+
+
+
+
+
