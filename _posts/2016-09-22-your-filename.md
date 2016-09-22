@@ -292,6 +292,9 @@ At the most basic level, inference refers to using an observation to reason abou
 Let's build on our earlier weather example, where now another outcome of interest appears, the temperature, which we quantize into to possible values “hot" and “cold". Let's suppose that we have the following probability space:
 
 
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/fc8b9dcd3da199d28417f753515a153a/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-joint-rv-prob-space.png)
+
 You can check that the nonnegative entries do add to 1. If we let random variable W be the weather (sunny, rainy, snowy) and random variable T be the temperature (hot, cold), then notice that we could rearrange the table in the following fashion:
 
 
