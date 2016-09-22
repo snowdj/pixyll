@@ -33,6 +33,22 @@ When the integrality constrains are relaxed, the feasible region gets larger. Th
 
 
 
+SOLUTION
+
+y≤x1.  If x1=0 , then y≤0.
+y≤x2.  If x2=0, then y≤0.
+y≥x1+x2−1.  If x1=x2=1, then y≥1.
+This enforces
+y=x1x2, x1,x2∈{0,1}
+
+
+Binary Logic
+
+a valid transformation when the objective is to minimize z subject to z=max{2x−4,|x−y|}
+
+Min {z:z≥2x−4,z≥x−y,z≥y−x}.
+
+
 
 
 ### Business 36106: 
