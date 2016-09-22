@@ -129,3 +129,6 @@ When we model some uncertain situation, how we specify a sample space is not uni
 Generally speaking it's best to choose a sample space that is **as simple as possible for modeling** what we care about solving. For example, if we were rolling a six-sided die, and we actually only care about whether the face shows up at least 4 or not, then it's sufficient to just keep track of two outcomes, "at least 4" and "less than 4".
 
 #### Event
+
+Subset of sample space
+
