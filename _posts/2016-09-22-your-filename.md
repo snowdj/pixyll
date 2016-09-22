@@ -284,3 +284,38 @@ In general, for a real-valued function g (i.e., it maps real numbers to real num
 
 Yes: g just relabels the outcome labels of the probability table for f(W).
 
+
+### RELATING TWO RANDOM VARIABLES (COURSE NOTES)
+
+At the most basic level, inference refers to using an observation to reason about some unknown quantity. In this course, the observation and the unknown quantity are represented by random variables. The main modeling question is: How do these random variables relate?
+
+Let's build on our earlier weather example, where now another outcome of interest appears, the temperature, which we quantize into to possible values “hot" and “cold". Let's suppose that we have the following probability space:
+
+
+You can check that the nonnegative entries do add to 1. If we let random variable W be the weather (sunny, rainy, snowy) and random variable T be the temperature (hot, cold), then notice that we could rearrange the table in the following fashion:
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/84055de694b43918005bc1e7555be4aa/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-joint-rv-rearrange-table.png)
+
+When we talk about two separate random variables, we could view them either as a single “super" random variable that happens to consist of a pair of values (the first table; notice the label for each outcome corresponds to a pair of values), or we can view the two separate variables along their own different axes (the second table).
+
+The first table tells us what the underlying probability space is, which includes what the sample space is (just read off the outcome names) and what the probability is for each of the possible outcomes for the underlying experiment at hand.
+
+The second table is called a joint probability table pW,T for random variables W and T, and we say that random variables W and T are jointly distributed with the above distribution. Since this table is a rearrangement of the earlier table, it also consists of nonnegative entries that add to 1.
+
+The joint probability table gives probabilities in which W and T co-occur with specific values. For example, in the above, the event that “W=sunny" and the event that “T=hot" co-occur with probability 3/10. Notationally, we write
+
+pW,T(sunny,hot)=P(W=sunny,T=hot)=310.
+ 
+Conceptual note: Given the joint probability table, we can easily go backwards and write out the first table above, which is the underlying probability space.
+
+Preview of inference: Inference is all about answering questions like “if we observe that the weather is rainy, what is the probability that the temperature is cold?" Let's take a look at how one might answer this question.
+
+First, if we observe that it is rainy, then we know that “sunny" and “snowy" didn't happen so those rows aren't relevant anymore. So the space of possible realizations of the world has shrunk to two options now: (W=rainy,T=hot) or (W=rainy,T=cold). But what about the probabilities of these two realizations? It's not just 1/30 and 2/15 since these don't sum to 1 — by observing things, adjustments can be made to the probabilities of different realizations but they should still form a valid probability space.
+
+Why not just scale both 1/30 and 2/15 by the same constant so that they sum to 1? This can be done by dividing 1/30 and 2/15 by their sum:
+
+hot:130130+215=15,cold:215130+215=45.
+ 
+Now they sum to 1. It turns out that, given that we'ved observed the weather to be rainy, these are the correct probabilities for the two options “hot" and “cold". Let's formalize the steps. We work backwards, first explaining what the the denominator “130+215=16" above comes from.
+
