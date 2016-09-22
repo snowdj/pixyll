@@ -79,3 +79,41 @@ Suppose we use the sample space {1,2,3,4,5,6}. Write the Python dictionary that 
 
 Assign each outcome probability 1/6: {1: 1/6, 2: 1/6, 3: 1/6, 4: 1/6, 5: 1/6, 6: 1/6}
 
+### **PROBABILITY SPACES (COURSE NOTES)**
+
+At this point, we've actually already seen the most basic data structure used throughout this course for modeling uncertainty, called a finite probability space (in this course, we'll often also just call this either a probability space or a probability model):
+
+A finite probability space consists of **two ingredients**:
+
+- a sample space Ω consisting of a finite (i.e., not infinite) number of collectively exhaustive and mutually exclusive possible outcomes
+
+- an assignment of probabilities: for each possible outcome ω∈Ω, we assign a probability P(outcome ω) at least 0 and at most 1, where we require that the probabilities across all the possible outcomes in the sample space add up to 1:
+
+∑ω∈ΩP(outcome ω)=1.
+ 
+Notation: As shorthand we occasionally use the tuple “(Ω,P)" to refer to a finite probability space to remind ourselves of the two ingredients needed, sample space Ω and an assignment of probabilities P. As we already saw, in code these two pieces can be represented together in a single Python dictionary. However, when we want to reason about probability spaces in terms of the mathematics, it's helpful to have names for the two pieces.
+
+Why finite? Of the **two pieces making up a finite probability space (Ω,P)**, the sample space Ω being finite is a fairly natural constraint, corresponding to how we typically work with Python dictionaries where there is only a **finite number of keys**. As we'll see, finite probability spaces are already extremely useful in practice. Pedagogically, **finite probability spaces** also provide a great intro to probability theory as they already carry a wealth of intuition, much of which carries over to a more complete story of general probability spaces!
+
+### **TABLE REPRESENTATION (COURSE NOTES)**
+
+A probability space is a data structure in that we can always visualize as a table of nonnegative entries that sum to 1. Let's see a concrete example of this, first writing the table out on paper and then coding it up.
+
+Example: Suppose we have a model of tomorrow's weather given as follows: sunny with probability 1/2, rainy with probability 1/6, and snowy with probability 1/3. Here's the probability space, shown as a table:
+
+ 	 	Probability
+ 	sunny	1/2
+Outcome	rainy	1/6
+ 	snowy	1/3
+Note: This a table of 3 nonnegative entries that sum to 1. The rows correspond to the sample space Ω={sunny,rainy,snowy}.
+
+We will often use this table representation of a probability space to tell you how we're modeling uncertainty for a particular problem. It provides the simplest of visualizations of a probability space.
+
+Of course, in Python code, the above probability space is given by:
+
+prob_space = {'sunny': 1/2, 'rainy': 1/6, 'snowy': 1/3}
+A different way to code up the same probability space is to separately specify the outcomes (i.e., the sample space) and the probabilities:
+
+outcomes = ['sunny', 'rainy', 'snowy']
+probabilities = np.array([1/2, 1/6, 1/3])
+The i-th entry of outcomes has probability given by the i-th entry of probabilities. Note that probabilities is a vector of numbers that we represent as a Numpy array. Numpy has various built-in methods that enable us to easily work with vectors (and more generally arrays) of numbers.
