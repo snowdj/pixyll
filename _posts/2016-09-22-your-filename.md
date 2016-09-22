@@ -31,3 +31,43 @@ If we flip the coin 10 times, it is possible that none of them are heads.
 As we increase the number of times we flip the coin, the fraction of coin flips that are heads becomes closer to 0.7.
 
 If we flip the coin 10 times, it is indeed possible that none of them are heads. In fact, even if we flip the coin 1,000,000 times, it is still possible that none of them are heads albeit such an outcome is extremely unlikely (by the end of this first section of the course, you'll be able to calculuate just how unlikely). In particular, it does not have to be the case that with 1,000 flips, there will be exactly 700 heads, or that even with 1,000,000 flips, there will be exactly 700,000 heads. However, as we increase the number of flips, the fraction of coin flips that are heads will indeed become closer to 0.7.
+
+
+**TWO INGREDIENTS TO MODELING UNCERTAINTY (COURSE NOTES)**
+
+When we think of an uncertain world, we will always think of there being some underlying experiment of interest. To model this uncertain world, it suffices to keep track of two things:
+
+The set of all possible outcomes for the experiment: this set is called the **sample space** and is usually denoted by the Greek letter Omega Ω.
+(For the fair coin flip, there are exactly two possible outcomes: heads, tails. Thus, _Ω={heads,tails}_.)
+
+**The probability of each outcome**: for each possible outcome, assign a probability that is at least 0 and at most 1.
+(For the fair coin flip, P(heads)=12 and P(tails)=12.)
+
+Notation: Throughout this course, for any statement S, “P(S)" denotes the probability of S happening.
+
+In Python:
+
+> model = {'heads': 1/2, 'tails': 1/2}
+In particular, we see that we can model uncertainty in code using a Python dictionary. The sample space is precisely the keys in the dictionary:
+
+> sample_space = set(model.keys())
+{'tails', 'heads'}
+Of course, the dictionary gives us the assignment of probabilities, meaning that for each outcome in the sample space (i.e., for each key in the dictionary), we have an assigned probability:
+
+> model['heads']
+0.5
+> model['tails']
+0.5
+A few important remarks:
+
+- The sample space is always specified to be **collectively exhaustive**, meaning that every possible outcome is in it, and **mutually exclusive**, meaning that once the experiment is run (e.g., flipping the fair coin), **exactly** one possible outcome in the sample space happens. It's impossible for multiple outcomes in the sample space to simultaneously happen! It's also impossible for none of the outcomes to happen!
+
+- Probabilities can be thought of as fractions of times outcomes occur; thus, probabilities are nonnegative and at least 0 and at most 1.
+
+- If we add up the probabilities of all the possible outcomes in the sample space, we get 1.
+(For the fair coin flip, P(heads)+P(tails)=12+12=1.)
+
+Some intuition for this: Consider the coin flipping experiment. What does the fraction of times heads occur and the fraction of times tails occur add up to? Since these are the only two possible outcomes (and again, recall that these outcomes are exclusive in that they can't simultaneously occur, and exhaustive since they are the only possible outcomes), these two fractions will always sum to 1. For a massive number of repeats of the experiment, these two fractions correspond to P(heads) and P(tails); the fractions sum to 1 and so these probabilities also sum to 1.
+
+
+Recall that for each key in a Python dictionary, there is an associated value. A Python dictionary stores a valid probability distribution when the values are each at least 0 and at most 1; moreover, when we add up the values for all the keys, the sum is equal to 1.
