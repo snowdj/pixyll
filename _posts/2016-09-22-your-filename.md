@@ -179,3 +179,98 @@ There are 2^m possibilities. To count the number of events, note that to form ea
 ... 
 finally multiplied by 2 (whether we include the m-th outcome or not) 
 = 2m.
+
+
+
+### A FIRST LOOK AT “RANDOM VARIABLES"
+
+Follow along in an IPython prompt.
+
+We continue with our weather example.
+
+> prob_space = {'sunny': 1/2, 'rainy': 1/6, 'snowy': 1/3}
+
+
+We can simulate tomorrow's weather using the above model of the world. Let's simulate two different values, one (which we'll call W for "weather") for whether tomorrow will be sunny, rainy, or snowy, and another (which we'll call I for “indicator") that is 1 if it is sunny and 0 otherwise:
+
+> random_outcome = comp_prob_inference.sample_from_finite_probability_space(prob_space)
+ W = random_outcome
+ if random_outcome == 'sunny':
+     I = 1
+ else:
+     I = 0
+     
+     
+     
+Print out the variables W or I to see that they take on specific values. Then re-run the above block of code a few times.
+
+You should see that W and I change and are random (following the probabilities given by the probability space).
+
+This code shows something that's of key importance that we'll see throughout the course. Variables W and I store the values of what are called random variables.
+
+
+
+
+### RANDOM VARIABLES (COURSE NOTES)
+
+To mathematically reason about a random variable, we need to somehow keep track of the full range of possibilities for what the random variable's value could be, and how probable different instantiations of the random variable are. The resulting formalism may at first seem a bit odd but as we progress through the course, it will become more apparent how this formalism helps us study real-world problems and address these problems with powerful solutions.
+
+To build up to the formalism, first note, computationally, what happened in the code in the previous part.
+
+First, there is an underlying **probability space** (Ω,P), where Ω={sunny,rainy,snowy}, and
+
+P(sunny)=1/2,P(rainy)=1/6,P(snowy)=1/3.
+A **random outcome** ω∈Ω is **sampled using the probabilities given by the probability space** (Ω,P). This step corresponds to an **underlying experiment happening**.
+
+Two random variables are generated:
+
+W is set to be equal to ω. As an equation:
+
+W(ω)=ωfor ω∈{sunny,rainy,snowy}.
+This step perhaps seems entirely unnecessary, as you might wonder “Why not just call the random outcome W instead of ω?" Indeed, this step isn't actually necessary for this particular example, but the formalism for random variables has this step to deal with what happens when we encounter a random variable like I.
+
+I is set to 1 if ω=sunny, and 0 otherwise. As an equation:
+
+I(ω)={1if ω=sunny,0if ω∈{rainy,snowy}.
+Importantly, multiple possible outcomes (rainy or snowy) get mapped to the same value 0 that I can take on.
+
+We see that random variable W maps the sample space Ω={sunny,rainy,snowy} to the same set {sunny,rainy,snowy}. Meanwhile, random variable I maps the sample space Ω={sunny,rainy,snowy} to the set {0,1}.
+
+**In general:**
+
+Definition of a **“finite random variable"** (in this course, we will just call this a “random variable"): Given a finite probability space (Ω,P), a finite random variable X is a mapping from the sample space Ω to a set of values X that random variable X can take on. (We will often **call X the “alphabet" of random variable X**.)
+
+For example, random variable W takes on values in the alphabet {sunny,rainy,snowy}, and random variable I takes on values in the alphabet {0,1}.
+
+Quick summary: There's an underlying experiment corresponding to probability space (Ω,P). Once the experiment is run, let ω∈Ω denote the outcome of the experiment. Then the random variable takes on the specific value of X(ω)∈X.
+
+Explanation using a picture: Continuing with the weather example, we can pictorially see what's going on by looking at the probability tables for: the original probability space, the random variable W, and the random variable I:
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/cdb0d997cac4daf2d612e86780ce72bf/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-random-variables-main.png)
+
+These tables make it clear that a “random variable" really is just **reassigning/relabeling what the values are for the possible outcomes in the underlying probability space** (given by the top left table):
+
+- In the top right table, random variable W does not do any sort of relabeling so its probability table looks the same as that of the underlying probability space.
+
+- In the bottom left table, the random variable I**relabels/reassign**s “sunny" to 1, and both “rainy" and “snowy" to 0. Intuitively, since two of the rows now have the same label 0, it makes sense to just combine these two rows, adding their probabilities (16+13=12). This results in the bottom right table.
+
+**Technical note:** Even though the formal definition of a finite random variable doesn't actually make use of the probability assignment P, the probability assignment will become essential as soon as we talk about how probability works with random variables.
+
+
+
+### RANDOM VARIABLES NOTATION AND TERMINOLOGY (COURSE NOTES)
+
+In this course, we denote **random variables with capital/uppercase letters, such as X, W, I**, etc. We use the phrases “probability table", “probability mass function" (abbreviated as PMF), and “probability distribution" (often simply called a distribution) to mean the same thing, and in particular we denote the probability table for X to be pX or pX(⋅).
+
+We write pX(x) to denote th**e entry of the probability tabl**e that has label x∈X **where X is the set of values that random variable X takes on**. Note that we use lowercase letters like x to denote variables storing nonrandom values. We can also look up values in a probability table using specific outcomes, e.g., from earlier, we have pW(rainy)=1/6 and pI(1)=1/2.
+
+Note that we use the same notation as in math where a function f might also be written as **f(⋅)** to explicitly indicate that it is the function of one variable. Both f and f(⋅) refer to a function whereas f(x) refers to the value of the function f evaluated at the point x.
+
+As an example of how to use all this notation, recall that a probability table consists of **nonnegative entries that add up to 1**. In fact, each of the entries is at most 1 (otherwise the numbers would add to more than 1). For a random variable X taking on values in X, we can write out these constraints as:
+
+0≤pX(x)≤1for all x∈X,∑x∈XpX(x)=1.
+ 
+Often in the course, if we are making statements about all possible outcomes of X, we will omit writing out the**alphabet X explicitly**. For example, instead of the above, we might write the following equivalent statement:
+
+0≤pX(x)≤1for all x,∑xpX(x)=1.
