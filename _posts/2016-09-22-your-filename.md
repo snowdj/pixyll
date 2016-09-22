@@ -91,7 +91,7 @@ A finite probability space consists of **two ingredients**:
 
 ∑ω∈ΩP(outcome ω)=1.
  
-Notation: As shorthand we occasionally use the tuple “(Ω,P)" to refer to a finite probability space to remind ourselves of the two ingredients needed, sample space Ω and an assignment of probabilities P. As we already saw, in code these two pieces can be represented together in a single Python dictionary. However, when we want to reason about probability spaces in terms of the mathematics, it's helpful to have names for the two pieces.
+Notation: As shorthand we occasionally use the tuple “(Ω,P)" to refer to a finite probability space to remind ourselves of the two ingredients needed, sample space Ω and an assignment of probabilities P. As we already saw, in code these two pieces can be represented together in a single Python dictionary. However, when we want to reason about probability spaces in terms of the mathematics, it's helpful to have names for the **two pieces**.
 
 Why finite? Of the **two pieces making up a finite probability space (Ω,P)**, the sample space Ω being finite is a fairly natural constraint, corresponding to how we typically work with Python dictionaries where there is only a **finite number of keys**. As we'll see, finite probability spaces are already extremely useful in practice. Pedagogically, **finite probability spaces** also provide a great intro to probability theory as they already carry a wealth of intuition, much of which carries over to a more complete story of general probability spaces!
 
@@ -101,10 +101,10 @@ A probability space is a data structure in that we can always visualize as a tab
 
 Example: Suppose we have a model of tomorrow's weather given as follows: sunny with probability 1/2, rainy with probability 1/6, and snowy with probability 1/3. Here's the probability space, shown as a table:
 
- 	 	Probability
- 	sunny	1/2
-Outcome	rainy	1/6
- 	snowy	1/3
+ 	 				Probability
+ 	sunny			1/2
+	Outcome	rainy	1/6
+ 	snowy			1/3
 Note: This a table of 3 nonnegative entries that sum to 1. The rows correspond to the sample space Ω={sunny,rainy,snowy}.
 
 We will often use this table representation of a probability space to tell you how we're modeling uncertainty for a particular problem. It provides the simplest of visualizations of a probability space.
