@@ -132,3 +132,50 @@ Generally speaking it's best to choose a sample space that is **as simple as pos
 
 Subset of sample space
 
+### ADDENDUM: CODE FOR DEALING WITH SETS IN PYTHON
+
+In the video, the set operations can actually be implemented in Python as follows:
+
+sample_space = {'HH', 'HT', 'TH', 'TT'}
+A = {'HT', 'TT'}
+B = {'HH', 'HT', 'TH'}
+C = {'HH'}
+A_intersect_B = A.intersection(B)  # equivalent to "B.intersection(A)" or "A & B"
+A_union_C = A.union(C)  # equivalent to "C.union(A)" and also "A | C"
+B_complement = sample_space.difference(B)  # equivalent also to "sample_space - B"
+
+### ADDENDUM: PROBABILITIES WITH EVENTS AND CODE
+
+From the videos, we see that an event is a subset of the sample space Ω. If you remember our table representation for a probability space, then an event could be thought of as a subset of the rows, and the probability of the event is just the sum of the probability values in those rows!
+
+The **probability of an event A⊆Ω** is the sum of the probabilities of the possible outcomes in A:
+
+P(A)≜∑ω∈A P(outcome ω),
+ 
+where “≜" means “defined as".
+
+We can translate the above equation into Python code. In particular, we can compute the probability of an event encoded as a Python set event, where the probability space is encoded as a Python dictionary prob_space:
+
+def prob_of_event(event, prob_space):
+    total = 0
+    for outcome in event:
+        total += prob_space[outcome]
+    return total
+Here's an example of how to use the above function:
+
+prob_space = {'sunny': 1/2, 'rainy': 1/6, 'snowy': 1/3}
+rainy_or_snowy_event = {'rainy', 'snowy'}
+print(prob_of_event(rainy_or_snowy_event, prob_space))
+
+
+
+
+In general, suppose that a probability space has m (not infinite) different possible outcomes, i.e., the sample space Ω has size |Ω|=m. How many events are there, in terms of m?
+
+There are 2^m possibilities. To count the number of events, note that to form each event, we go through each of the m possible outcomes and we either include the outcome or not. Thus, the total number of possible events is:
+
+2 (whether we include the first outcome or not) multiplied by
+2 (whether we include the second outcome or not) multiplied by 
+... 
+finally multiplied by 2 (whether we include the m-th outcome or not) 
+= 2m.
