@@ -322,3 +322,93 @@ hot:130130+215=15,cold:215130+215=45.
  
 Now they sum to 1. It turns out that, given that we'ved observed the weather to be rainy, these are the correct probabilities for the two options “hot" and “cold". Let's formalize the steps. We work backwards, first explaining what the the denominator “130+215=16" above comes from.
 
+prob_table = {('sunny', 'hot'): 3/10,
+     ('sunny', 'cold'): 1/5,
+     ('rainy', 'hot'): 1/30,
+     ('rainy', 'cold'): 2/15,
+     ('snowy', 'hot'): 0,
+     ('snowy', 'cold'): 1/3}
+
+
+prob_W_T_dict = {}
+ for w in {'sunny', 'rainy', 'snowy'}:
+     prob_W_T_dict[w] = {}
+
+ prob_W_T_dict['sunny']['hot'] = 3/10
+ prob_W_T_dict['sunny']['cold'] = 1/5
+ prob_W_T_dict['rainy']['hot'] = 1/30
+ prob_W_T_dict['rainy']['cold'] = 2/15
+ prob_W_T_dict['snowy']['hot'] = 0
+ prob_W_T_dict['snowy']['cold'] = 1/3
+
+ comp_prob_inference.print_joint_prob_table_dict(prob_W_T_dict)
+ 
+ 
+import numpy as np
+ prob_W_T_rows = ['sunny', 'rainy', 'snowy']
+ prob_W_T_cols = ['hot', 'cold']
+ prob_W_T_array = np.array([[3/10, 1/5], [1/30, 2/15], [0, 1/3]])
+ comp_prob_inference.print_joint_prob_table_array(prob_W_T_array, prob_W_T_rows, prob_W_T_cols)
+ 
+ 
+ 
+ 
+prob_W_T_rows = ['sunny', 'rainy', 'snowy']
+ prob_W_T_cols = ['hot', 'cold']
+ prob_W_T_row_mapping = {label: index for index, label in enumerate(prob_W_T_rows)}
+ prob_W_T_col_mapping = {label: index for index, label in enumerate(prob_W_T_cols)}
+ prob_W_T_array = np.array([[3/10, 1/5], [1/30, 2/15], [0, 1/3]])
+ 
+ 
+ Some remarks: The 2D array representation, as we'll see soon, is very easy to work with when it comes to basic operations like summing rows, and retrieving a specific row or column. The main disadvantage of this representation is that you need to store the whole array, and if the alphabet sizes of the random variables are very large, then storing the array will take a lot of space!
+
+The dictionaries within a dictionary representation allows for easily retrieving rows but not columns (try it: write a Python function that picks out a specific row and another function that picks out a specific column; you should see that retrieving a row is easier because it corresponds to looking at the value stored for a single key of the outer dictionary). This also means that summing a column's probabilities is more cumbersome than summing a row's probabilities. However, a huge advantage of this way of representing a joint probability table is that in many problems, we have a massive joint probability table that is mostly filled with 0's. Thus, the 2D array representation would require storing a very, very large table with many 0's, whereas the dictionaries within a dictionary representation is able to only store the nonzero table entries. We'll see more about this issue when we look at robot localization in the second section of the course on inference in graphical models.
+
+
+
+
+
+### MARGINALIZATION: SUMMARIZING RANDOMNESS (COURSE NOTES)
+
+Given a joint probability table, often we'll want to know what the probability table is for just one of the random variables. We can do this by just summing or “marginalizing" out the other random variables. For example, to get the probability table for random variable W, we do the following:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/e53a4844dc2d68449d3fccc92cde813e/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-joint-rv-marg-rows.png)
+
+
+We take the joint probability table (left-hand side) and compute out the row sums (which we've written in the margin).
+
+The right-hand side table is the probability table pW for random variable W; we call this resulting probability distribution the marginal distribution of W (put another way, it is the distribution obtained by marginalizing out the random variables that aren't W).
+
+In terms of notation, the above marginalization procedure whereby we used the joint distribution of W and T to produce the marginal distribution of W is written:
+
+pW(w)=∑t∈TpW,T(w,t),
+ 
+where T is the set of values that random variable T can take on. In fact, throughout this course, we will often omit explicitly writing out the alphabet of values that a random variable takes on, e.g., writing instead
+
+pW(w)=∑tpW,T(w,t).
+ 
+It's clear from context that we're summing over all possible values for t, which is going to be the values that random variable T can possibly take on.
+
+As a specific example,
+
+pW(rainy)=∑tpW,T(rainy,t)=pW,T(rainy,hot)⏟1/30+pW,T(rainy,cold)⏟2/15=16.
+ 
+We could similarly marginalize out random variable W to get the marginal distribution pT for random variable T:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/1d0a8c49d5f68c4e702538b4005d6485/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-joint-rv-marg-cols.png)
+
+(Note that whether we write a probability table for a single variable horizontally or vertically doesn't actually matter.)
+
+As a formula, we would write:
+
+pT(t)=∑wpW,T(w,t).
+ 
+For example,
+
+pT(hot)=∑wpW,T(w,hot)=pW,T(sunny,hot)⏟3/10+pW,T(rainy,hot)⏟1/30+pW,T(snowy,hot)⏟0=13.
+ 
+In general:
+
+**Marginalization:** Consider two random variables X and Y (that take on values in the sets X and Y respectively) with joint probability table pX,Y. For any x∈X, the marginal probability that X=x is given by
+
+pX(x)=∑ypX,Y(x,y).
