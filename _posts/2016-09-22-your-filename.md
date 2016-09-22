@@ -421,3 +421,6 @@ For two random variables U and V that take on values in the same alphabet, we sa
 For a pair of random variables (S,T), and another pair (U,V), we say that the pair (S,T) and the pair (U,V) have the same joint distribution if pS,T(a,b)=pU,V(a,b) for all a,b.
 
 
+
+
+
