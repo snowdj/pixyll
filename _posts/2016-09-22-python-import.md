@@ -108,3 +108,6 @@ Even with more than three random variables, the idea is the same. For example, w
 
 pX,Y(x,y)=∑w(∑zpW,X,Y,Z(w,x,y,z)).
 
+
+
+ If we marginalize out Z first and then Y, or if we marginalize out Y first and then Z, we get the same answer for the probability table 
