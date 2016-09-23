@@ -111,3 +111,40 @@ pX,Y(x,y)=∑w(∑zpW,X,Y,Z(w,x,y,z)).
 
 
  If we marginalize out Z first and then Y, or if we marginalize out Y first and then Z, we get the same answer for the probability table 
+
+
+
+
+### CONDITIONING: RANDOMNESS OF A VARIABLE GIVEN THAT ANOTHER VARIABLE TAKES ON A SPECIFIC VALUE (COURSE NOTES)
+
+When we observe that a random variable takes on a specific value (such as W=rainy from earlier for which we say that we condition on random variable W taking on the value “rainy"), this observation can affect what we think are likely or unlikely values for another random variable.
+
+When we condition on W=rainy, we do a two-step procedure; first, we only keep the row for W corresponding to the observed value:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/6086048ee4557a617bbe6d50c1e9a165/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-joint-rv-cond-restrict.png)
+
+
+Second, we “normalize" the table so that its entries add up to 1, which corresponds to dividing it by the sum of the entries, which is equal to pW(rainy) in this case:
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/efbdc6b4ffecb4b24d7deef05eec774c/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-joint-rv-cond-renormalize.png)
+
+
+**Notation**: The resulting probability table pT∣W(⋅∣rainy) is associated with the random variable denoted (T∣W=rainy); we use “∣" to denote that we're conditioning on things to the right of “∣" happening (these are things that we have observed or that we are given as having happened). We read “T∣W=rainy" as either “T given W is rainy" or “T conditioned on W being rainy". To refer to specific entries of the table, we write, for instance,
+
+pT∣W(cold∣rainy)=P(T=cold∣W=rainy)=45.
+ 
+In general:
+
+**Conditioning**: Consider two random variables X and Y (that take on values in the sets X and Y respectively) with joint probability table pX,Y (from which by marginalization we can readily compute the marginal probability table pY). For any x∈X and y∈Y such that pY(y)>0, the conditional probability of event X=x given event Y=y has happened is
+
+
+$$p_{X\mid Y}(x\mid y)\triangleq \frac{p_{X,Y}(x,y)}{p_{Y}(y)}.$$
+
+pX∣Y(x∣y)≜pX,Y(x,y)pY(y).
+ 
+For example,
+
+pT∣W(cold∣rainy)=pW,T(rainy,cold)pW(rainy)=21516=45.
+ 
+**Computational interpretation**: To compute pX∣Y(x∣y), take the entry pX,Y(x,y) in the joint probability table corresponding to X=x and Y=y, and then divide the entry by pY(y), which is an entry in the marginal probability table pY for random variable Y.
