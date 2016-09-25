@@ -31,6 +31,19 @@ layout: post
   Since the shaded area inside the boundary is darker, this implies that consumption levels are lower and the stunting rate is higher in the regions with mita presence. From Question 3 we argue that the grey boundary allowed us to identify a causal effect, since the regions across the boundary were very similar in other geographic characteristics. Thus, the maps imply a negative effect of the mita in the long run.
   
   
+  ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/97dbc2fd64d61b4d117f5b117cfd03e3/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET01_02_2.png)
+  
   In the lecture, Professor Duflo presented Michael Greenstone and coauthors’ research, where the relationship between pollution and the distance to the Huai river had two different visualizations: (1) a map similar to the ones in Figure 2, (2) a two-dimensional plane of the data. The latter showed the degree to the north in the x-axis and the level of pollution in the y-axis. Suppose that we were trying to do a similar visualization here. To simplify the plot, we only take the boundary in the south. Assume that the x-axis corresponds to the degree in the north, and that we normalize the boundary to zero. It might be helpful to make some drawings for a better visualization of the plot.
   
+  
+  
+  
   Camacho & Conover (2011) document manipulation of a targeting system for social welfare programs in Colombia. Take a look at the following figure, which shows two histograms: the black arrows present the histogram for a poverty score (lower numbers mean being poorer) that was calculated using the same data the Government collected to target social welfare programs – where only individuals with a poverty score below 48 were eligible to receive most of these programs. The blue bars correspond to the histogram reconstructing this poverty score using other data sources that were not used by the Government for this purpose.
+  
+  
+  ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/e4675a77bfc8e7141c4eb18ad920ac72/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET01_03.png)
+  
+  The first statement is true since the histogram with the black arrows is to the left of the one with the blue bars. In addition, the plot shows bunching exactly in 48 (the social welfare eligibility score used by the government) which is not there looking in the blue histogram. Since the data set that was used by the Government to determine social program eligibility is shown with the black arrows, and this pattern is not found in alternative data sources, this suggests some sort of manipulation of social welfare targeting.
+  
+  
+  
