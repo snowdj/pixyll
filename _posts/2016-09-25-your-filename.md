@@ -46,4 +46,18 @@ layout: post
   The first statement is true since the histogram with the black arrows is to the left of the one with the blue bars. In addition, the plot shows bunching exactly in 48 (the social welfare eligibility score used by the government) which is not there looking in the blue histogram. Since the data set that was used by the Government to determine social program eligibility is shown with the black arrows, and this pattern is not found in alternative data sources, this suggests some sort of manipulation of social welfare targeting.
   
   
+  Continuing with Colombia, www.laramaciudadana.com is a blog that publishes quantitative information about different topics of national interest. Their objective is to inform public policy debate by collecting data on these controversial topics and displaying it to a general audience. Their most recent project uses satellite photos to map deforestation and evaluate industrial reforestation efforts in the country. 
+  
+  
+  
+  The map is presented in Figure : the red dots show the locations where satellites detected deforestation activities, and the yellow dots give an overview of the industrial reforestation efforts made by the Government in recent years. Take a close look at the map.
+  
+  ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/496701b130fd46a8dde72d39f650dc27/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET_01_04.png)
+  
+  
+  
+  During the introductory lecture, Professor Duflo discussed that human capital externalities are one potential explanation for the fact that the relationship between schooling and output at the country level is larger than the relationship between an additional year of schooling and income at the individual level. She also argued that some of these externalities could stem from teaching or exchanging ideas within a city. A researcher decides to test this idea formally and she correlates the average schooling level in the city with the individual wage of a sample of individuals. She finds a strong positive correlation! From this statistical evidence, could she conclude that there are human capital externalities?
+  
+  No, from this evidence the she can’t conclude that. There are multiple arguments for this, as the ones discussed in the lecture. For example, there is a selection problem: individuals that are similar are likely to live in the same city. Thus, individuals will not only be similar in their education levels, but also in other variables that change your income. Thus, the correlation attributed to schooling might come from some of these variables.
+  
   
