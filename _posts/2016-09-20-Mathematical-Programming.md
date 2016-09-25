@@ -33,7 +33,7 @@ When the integrality constrains are relaxed, the feasible region gets larger. Th
 
 
 
-SOLUTION
+#### SOLUTION
 
 y≤x1.  If x1=0 , then y≤0.
 y≤x2.  If x2=0, then y≤0.
@@ -42,7 +42,18 @@ This enforces
 y=x1x2, x1,x2∈{0,1}
 
 
-Binary Logic
+#### On choosing the parameter M
+
+Any redundant constraint will be OK.
+
+But, it is often best to choose M minimal:
+
+l choose M so that constraint is redundant
+
+l with any lower value of M, it is not redundant.
+
+
+#### Binary Logic
 
 a valid transformation when the objective is to minimize z subject to z=max{2x−4,|x−y|}
 
