@@ -1,7 +1,0 @@
----
-published: false
-layout: post
----
-## C programming
-
- [C programming](https://www.coursera.org/learn/c-bian-cheng/lecture/Ju1yP/4-5-use-function-to-simplify-program). 
