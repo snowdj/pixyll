@@ -98,4 +98,10 @@ Which of the statements or constraints below is (by itself) equivalent to the st
  
  
  
+#### Integer Programming Formulation, eHarmony
 
+eHarmony is an online dating site focused on long term relationships. It takes a scientific approach to love and marriage. About nearly 4% of US marriages in 2012 are a result of eHarmony. The company has generated over $1 billion in cumulative revenue from 2000, the year it was founded. Unlike other online dating websites, eHarmony does not have users browse others' profiles. Instead, eHarmony computes a compatibility score between two people and uses optimization algorithms to determine their users' best matches. In this problem, we are going to see how eHamony uses integer programming to find good matches. The compatibility scores in the table below indicates how compatible a match is. A higher number indicates that the compatibility is greater.
+
+
+
+A combinatorial auction is an auction in which participants can place bids on sets of items, instead of placing bids on individual items. A combinatorial auction is useful in many situations. For example, consider the problem of an airline company buying takeoff and landing slots at an airport: clearly, the value of a single slot may be small if the slot is taken by itself, but the value may be much larger if several slots can be bought at the same time, allowing the company to setup flight routes according to the desired timetable. Thus, the airport wants to sell its available slots to airline companies maximizing its own profit (i.e. the total value at which the slots are sold), allowing airlines to bid on sets of items and choosing the most profitable combination of bids among the received ones. Many other examples exist. In this problem, we study a simple formulation for a combinatorial auction.
