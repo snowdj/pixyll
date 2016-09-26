@@ -89,3 +89,13 @@ The above IP isn't a correct formulation for our problem. The constraints do ens
 For instance, consider the solution that picks players 5,6,7,8,9. Players 5, 6 and 7 can only play forward. That means that the two guards and the center must be chosen from the remaining two players, which is impossible.
 
 Historical note: The above false formulation for the basketball problem was (incorrectly) given as the answer by the staff of 15.053 for a quiz in 15.053. If you didn't see why this model was incorrect, you are definitely not alone.
+
+
+Which of the statements or constraints below is (by itself) equivalent to the statement "If x1=1, then x2=0"?
+ 
+ 
+ x1 + x2 <=1
+ 
+ 
+ 
+
