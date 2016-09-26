@@ -49,3 +49,4 @@ There are two extreme rays. The first is the set of points {(λ,0):λ≥0}. The 
  
  Select the correct way of modeling this “OR” constraint using linear and integer constraints. 
  
+It is often difficult to work with strict inequalities when modeling MIPs (Mixed Integer/Linear Programs). In this case, x1 is known to be integer valued. We transformed "x1<30" into "x1≤29."
