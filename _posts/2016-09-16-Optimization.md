@@ -59,6 +59,33 @@ It is often difficult to work with strict inequalities when modeling MIPs (Mixed
 In order to make the constraint x1≤29+M(1−w) redundant when w=0, one needs M to be at least 31. In order to make the constraint x2≥20–Mw be redundant when w=1, we need M to be at least 20.
 
 
+A basketball coach is trying to come up with a team for the following match. He has a total of 9 players from which he must select 5 . Assume these 5 players will play the whole game. Consider there are three positions players can play: guard, forward, and center. So the team of 5 players will consist of 2 guards, 2 forwards, and 1 center. Players 1,2,3,4,8,9 can play guard, 3,4,5,6,7,8,9 can play forward, and 8,9 can play center.
+
+Consider the decision variables as xi for i∈{1,…,9} so that xi=1 if the coach selects player i , and xi=0 otherwise and examine the IP below. Note that since there is no objective, we state the linear objective as 0.
+
+The IP formulated below requires that we select five players, and that at least two of these five can play guard; at least two can play forward; at least one can play center. If we solve this integer program, and obtain a feasible integer solution, is the solution guaranteed to produce a feasible five person team?
 
 
 
+
+
+
+$$\left.\begin{array}{rrcl} \min & 0 \\
+                    \text {s.t.:} & & & \\
+                    & x_{1} + x_{2} + x_{3} + x_{4}+x_8+x_9 \geq 2 \text{ (2 Guards)}\\
+                    & x_{3} + x_{4} + x_{5} + x_{6}+x_{7}+x_{8}+x_9 \ge 2 \text{ (2 Forwards)} \\
+                  & x_{8} + x_{9} \ge 1 \text{ (1 Center)} \\
+                    & \sum_{i=1}^{9}x_{i} = 5 \text{ (5 players)} \\
+                    & x_{i} \in \{0,1\}  \quad \forall i\in\{1,\dots,9\} \text{ (Binary)} \\
+                    
+                    \end{array}\right\}$$
+
+
+
+False
+
+The above IP isn't a correct formulation for our problem. The constraints do ensure that we have 5 players, 2 of which can play guard, 2 forward and 1 center. However, it doesn't guarantee that we can take these five players (from the optimal solution) and assign two of them as forwards, two of them as guards and the remaining player as center.
+
+For instance, consider the solution that picks players 5,6,7,8,9. Players 5, 6 and 7 can only play forward. That means that the two guards and the center must be chosen from the remaining two players, which is impossible.
+
+Historical note: The above false formulation for the basketball problem was (incorrectly) given as the answer by the staff of 15.053 for a quiz in 15.053. If you didn't see why this model was incorrect, you are definitely not alone.
