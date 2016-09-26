@@ -45,3 +45,7 @@ There are two extreme rays. The first is the set of points {(λ,0):λ≥0}. The 
  
  The point of Problem 1 is that there are multiple ways of representing integer programs. Some are better in practice because they help the algorithm to find the optimum faster. 
  
+ 
+ 
+ Select the correct way of modeling this “OR” constraint using linear and integer constraints. 
+ 
