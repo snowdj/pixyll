@@ -49,4 +49,16 @@ There are two extreme rays. The first is the set of points {(λ,0):λ≥0}. The 
  
  Select the correct way of modeling this “OR” constraint using linear and integer constraints. 
  
+ 
+ Consider two non-negative integral variables x1 and x2. Suppose that x1≤60 and x2≤50. Model the following constraint using an additional binary variable w:
+
+x1<30 or x2≥20.
+ 
 It is often difficult to work with strict inequalities when modeling MIPs (Mixed Integer/Linear Programs). In this case, x1 is known to be integer valued. We transformed "x1<30" into "x1≤29."
+
+In order to make the constraint x1≤29+M(1−w) redundant when w=0, one needs M to be at least 31. In order to make the constraint x2≥20–Mw be redundant when w=1, we need M to be at least 20.
+
+
+
+
+
