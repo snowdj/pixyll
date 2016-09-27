@@ -110,4 +110,26 @@ A combinatorial auction is an auction in which participants can place bids on se
 The local post office requires full-time employees to meet demands that vary from day to day. The number of full-time employees required on each day is given in Table 1. Each full-time employee must work five consecutive days and then receive two days off. For example, an employee who works Monday to Friday must be off on Saturday and Sunday. This schedule for employees repeats every week. We want to formulate an integer program that the post office can use to minimize the number of full-time employees who must be hired.
 
 
+#### the game of Fiver
+This problem will be based on the game of Fiver. It is also sometimes called called Lights Out and you can try your hand at the game here and for more details check out the Wikipedia page here.
+
+Assume we have a 5x5 grid that initially consists of all white blocks. When we click on a block, it flips its color (from white to black or from black to white) and that of adjacent (vertical and horizontal) blocks. Can you make all of the blocks black? The game is illustrated in this figure. For a documented illustration, click here.
+
+We wish to write an optimization problem whose solution solves the problem in the fewest moves.
+
+We will model it is an integer program. Let x(i,j)≥0 denote the number of times we click on the block in row i and column j.
+
+Consider the element in row 3, column 2 again. Using the results from PARTS A, B, and C, write a constraint that guarantees it turns black. For the answers, assume that there is a constraint
+x(i,j)+x(i,j−1)+x(i,j+1)+x(i−1,j)+x(i+1,j)=w(i,j)
+Assume also that x(i′,j′) is binary for all i′,j′ and y(i,j)∈{0,1,2} .
+
+Perhaps one could express it more succinctly in a manner similar to the way that the constraint in PART D is given. Ideally, one would only need to write a constraint for Block(i,j) and let i vary from 1 to 5 and let j vary from 1 to 5. One runs into a difficulty though. The constraint for Blocks (1, 1) includes just three of the x decision variables. It would be
+
+
+x(1,1)+x(1,2)+x(2,1)−2y(1,1)=1,
+
+
+where all four of these variables are binary. (Do you see why y(1,1) can be restricted to be binary?) Similarly for Blocks (1, 5), (5, 1) and (5, 5). Other Blocks in which i or j = 1 or 5 include 4 decision variables. It would seem difficult to be able to express all 25 constraints very succinctly. 
+
+However, there is a way to do so. It involves creating "dummy decision variables." How many additional dummy variables do you think are needed? HINT: it is more than 23 and less than 25. (Yes, the previous question was intended as a joke. But now that you know the answer, see if you can figure out a clever way of writing the constraints succinctly if you are allowed the 24 extra dummy variables. This number arises because 72−52=24. The explanation for this exercise will be given when the solutions for the problem set are released.)
 
