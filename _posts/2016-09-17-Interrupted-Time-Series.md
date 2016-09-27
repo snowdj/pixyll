@@ -253,3 +253,9 @@ Control Series 2 would make the best control. While it has a slight trend decrea
 
 As the control group has just been vertically shifted between the two plots, the estimates for the level change and trend change would remain the same. Thus, the estimate of the counterfactual for the intervention group would not change, resulting in the same effect estimates.
 
+
+
+we've compared the original model that we had to one with q equals 1
+added into it, the p value here does not reject the null hypothesis.
+So we can conclude that these models are statistically the same.
+
