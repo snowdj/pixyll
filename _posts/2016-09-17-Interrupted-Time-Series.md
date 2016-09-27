@@ -182,7 +182,7 @@ Predict relative and absolute effects: use the model results to predict the impa
 
 #### Pinpointing a change in policy
 
-Interrupted Time Series uses the fact that a policy change can be pinpointed in time to help understand its effects. First and foremost, a good research question for this course has to examine something that changed. This could be the introduction of a huge nation-wide program, or just a small tweak in how a service is provided. In your day-to-day work, surely things are changing all the time – any of these might be candidates for research questions.
+Interrupted Time Series uses the fact that a policy change can be pinpointed in time to help understand its effects. First and foremost, a good research question for this course has to examine something that changed. This could be the introduction of a huge nation-wide program, or just a small tweak in how a service is provided. In your day-to-day work, surely things are changing all the time â€“ any of these might be candidates for research questions.
 
 #### Considering outcomes of this change
 
@@ -193,7 +193,7 @@ Moving forward, you will need to think about what you can measure with available
 
 ### FINDING DATA TO ANSWER YOUR QUESTION
 
-Once you have a question in mind, you need to determine if you can actually answer it using ITS. This means finding data that cover the period before and after the policy, and that measure outcomes you think the policy may have changed. In some cases the data may simply not exist – for this course that means you likely want to pick a different question.
+Once you have a question in mind, you need to determine if you can actually answer it using ITS. This means finding data that cover the period before and after the policy, and that measure outcomes you think the policy may have changed. In some cases the data may simply not exist â€“ for this course that means you likely want to pick a different question.
 
 #### Where do data come from?
 
@@ -205,12 +205,51 @@ However, in many other situations organizations collect information for complete
 
 Many of you work with data on a regular basis, and already have access to everything you would need to answer a research question. If not, there may be publicly available sources worth exploring.
 
-Regardless of the source, there are two key points to consider to determine if it’s suitable for analysis:
+Regardless of the source, there are two key points to consider to determine if itâ€™s suitable for analysis:
 
 * Does it measure a relevant outcome?
 * Are multiple data points available over the necessary time period, before and after the change? 
 
 #### Publicly available resources
 
-If you do not already have access to relevant data, there are many publicly available data sources which could be useful. In some cases, these report on regular surveys. In others, they aggregate administrative data from other sources. 
+If you do not already have access to relevant data, there are many publicly available data sources which could be useful. In some cases, these report on regular surveys. In others, they aggregate administrative data from other sources.
+
+
+
+
+## Week03
+
+Identify potential controls: Evaluate opportunities to add a comparison group to analysis
+
+Set up data: prepare your data for analysis by adding additional variables to reflect differences between the intervention and control groups
+
+Visually inspect the data: plot the data and look for potential problems, remembering it may be acceptable to use a non-equivalent control group
+
+Perform analysis: extend the standard time series model with parameters to capture differences between the intervention and control group
+
+Check for and address autocorrelation: assess whether autocorrelation is present and, if so, determine what parameters to use in modelling
+
+Run the final model: run and interpret a final analytic model that accounts for autocorrelation, with additional parameters for the control group
+
+Plot the results: plot the results of the model, depicting both the intervention and control groups for presentation
+
+Predict relative and absolute effects: use the model results to predict the impact of the intervention incorporating information from the control group
+
+
+### EXAMPLE ARTICLE
+
+This week's example article is a paper by Santa-Ana-Tellez and co-authors.  This paper uses interrupted time series analysis with a control group to investigate the impact of policies in both Mexico and Brazil restricting antibiotic sales to people holding a prescription.
+
+
+Control Series 2 would make the best control. While it has a slight trend decrease in the post period, it is very comparable in the pre period to the intervention in terms of level and trend. In terms of issues for the other options:
+
+1. Control Series 1 is curved in shape and declining in the pre period in comparison to the intervention.
+
+2. Control Series 3 is flat, but is over double the level in outcome compared to the intervention.
+
+3. Control Series 4 appears to have a co-intervention in the pre-period that changes the level.
+
+
+
+As the control group has just been vertically shifted between the two plots, the estimates for the level change and trend change would remain the same. Thus, the estimate of the counterfactual for the intervention group would not change, resulting in the same effect estimates.
 
