@@ -419,3 +419,66 @@ For two random variables U and V that take on values in the same alphabet, we sa
 
 
 For a pair of random variables (S,T), and another pair (U,V), we say that the pair (S,T) and the pair (U,V) have the same joint distribution if pS,T(a,b)=pU,V(a,b) for all a,b.
+
+
+### BAYES' THEOREM FOR EVENTS (COURSE NOTES)
+
+Given two events A and B (both of which have positive probability), Bayes' theorem, also called Bayes' rule or Bayes' law, gives a way to compute P(A|B) in terms of P(B|A). This result turns out to be extremely useful for inference because often times we want to compute one of these, and the other is known or otherwise straightforward to compute.
+
+Bayes' theorem is given by
+
+P(A|B)=P(B|A)P(A)/P(B).
+ 
+The proof of why this is the case is a one liner:
+
+P(A|B)=(a)P(A∩B)/P(B)=(b)P(B|A)P(A)/P(B),
+
+$$\mathbb {P}(\mathcal{A} | \mathcal{B}) \overset {(a)}{=} \frac{\mathbb {P}(\mathcal{A} \cap \mathcal{B})}{\mathbb {P}(\mathcal{B})} \overset {(b)}{=} \frac{\mathbb {P}(\mathcal{B} | \mathcal{A}) \mathbb {P}(\mathcal{A})}{\mathbb {P}(\mathcal{B})},$$
+ 
+where step (a) is by the definition of conditional probability for events, and step (b) is due to the product rule for events (which follows from rearranging the definition of conditional probability for P(B|A)).
+
+
+
+#### PRACTICE PROBLEM: BAYES' THEOREM AND TOTAL PROBABILITY (SOLUTION)
+
+Your problem set is due in 15 minutes! It's in one of your drawers, but they are messy, and you're not sure which one it's in.
+
+The probability that the problem set is in drawer k is dk. If drawer k has the problem set and you search there, you have probability pk of finding it. There are a total of m drawers.
+
+Suppose you search drawer i and do not find the problem set.
+
+(a) Find the probability that the paper is in drawer j, where j≠i.
+
+(b) Find the probability that the paper is in drawer i.
+
+Solution: Let Ak be the event that the problem set is in drawer k, and Bk be the event that you find the problem set in drawer k.
+
+(a) We'll express the desired probability as P(Aj|Bic). Since this quantity is difficult to reason about directly, we'll use Bayes' rule:
+
+P(Aj|Bic)=P(Bic|Aj)P(Aj)/P(Bic)
+ 
+The first probability, P(Bic|Aj), expresses the probability of not finding the problem set in drawer i given that it's in a different drawer j. Since it's impossible to find the paper in a drawer it isn't in, this is just 1.
+
+The second quantity, P(Aj), is given to us in the problem statement as dj.
+
+The third probability, P(Bic)=1−P(Bi), is difficult to reason about directly. But, if we knew whether or not the paper was in the drawer, it would become easier. So, we'll use total probability:
+
+P(Bi)=P(Bi|Ai)P(Ai)+P(Bi|Aic)P(Aic)=pidi+0(1−di)
+Putting these terms together, we find that
+
+P(Aj|Bic)=dj1−pidi
+ 
+Alternate method to compute the denominator P(Bic): We could use the law of total probability to decompose P(Bic) depending on which drawer the homework is actually in. We have
+
+P(Bic)=∑k=1mP(Ak)⏟dkP(Bic|Ak)⏟1 if k≠i,(1−pi) if k=i=∑k=1,k≠imdk+(1−pi)di=∑k=1mdk−pidi=1−pidi.
+(b) Similarly, we'll use Bayes' rule:
+
+P(Ai|Bic)=P(Bic|Ai)P(Ai)P(Bic)=(1−pi)di1−pidi
+ 
+Take-Away Lessons:
+
+Defining the sample-space is not always going to help solve the problem. (It's difficult to precisely define the sample space for this particular problem)
+
+When in doubt of being able to precisely define the sample space, try to define events intelligently, i.e., in a way that you use what you're given in the problem.
+
+The probability law of a probability model is a function on events, or subsets of the sample space, i.e., one can work with the probability law without knowing precisely what the sample-space (as a set) is.
