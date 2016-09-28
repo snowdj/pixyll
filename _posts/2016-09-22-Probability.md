@@ -439,6 +439,53 @@ where step (a) is by the definition of conditional probability for events, and s
 
 
 
+
+0.001 infection
+
+$$\mathbb {P}(\mathcal{S} | \mathcal{T})$$
+
+Let's see if Bayes' rule can help us:
+
+$$\mathbb {P}(\mathcal{S} | \mathcal{T}) = \frac{\mathbb {P}(\mathcal{T} | \mathcal{S}) \mathbb {P}(\mathcal{S})}{\mathbb {P}(\mathcal{T})}.$$
+
+
+ 
+There's a slight problem. We don't know P(T), i.e., the probability that the patient has a positive test result. But let's break this into two cases. The patient either has the infection or not. So
+
+
+$$\begin{eqnarray}
+\mathbb{P}(\mathcal{T})
+&=&
+\mathbb{P}(\text{patient has positive test result}) \\
+&=&
+\mathbb{P}(\text{patient has positive test result and patient has infection}) \\
+&&+
+\mathbb{P}(\text{patient has positive test result and patient does not have infection}) \\
+&=&
+\mathbb{P}(\mathcal{T} \cap \mathcal{S})
++ \mathbb{P}(\mathcal{T} \cap \mathcal{S}^c).
+\end{eqnarray}$$
+
+
+
+
+We can go one step further:
+
+$$\begin{eqnarray}
+\mathbb{P}(\mathcal{T})
+&=&
+\mathbb{P}(\mathcal{T} \cap \mathcal{S})
+  + \mathbb{P}(\mathcal{T} \cap \mathcal{S}^c) \\
+&=&
+\mathbb{P}(\mathcal{T} | \mathcal{S})\mathbb{P}(\mathcal{S})
+  + \mathbb{P}(\mathcal{T} | \mathcal{S}^c)\mathbb{P}(\mathcal{S}^c).
+\end{eqnarray}$$
+
+So what we have is:
+
+
+$$\mathbb {P}(\mathcal{S} | \mathcal{T}) = \frac{\mathbb {P}(\mathcal{T} | \mathcal{S}) \mathbb {P}(\mathcal{S})}{\mathbb {P}(\mathcal{T})} = \frac{\mathbb {P}(\mathcal{T} | \mathcal{S}) \mathbb {P}(\mathcal{S})}{\mathbb {P}(\mathcal{T} | \mathcal{S})\mathbb {P}(\mathcal{S}) + \mathbb {P}(\mathcal{T} | \mathcal{S}^ c)\mathbb {P}(\mathcal{S}^ c)}.$$
+
 #### PRACTICE PROBLEM: BAYES' THEOREM AND TOTAL PROBABILITY (SOLUTION)
 
 Your problem set is due in 15 minutes! It's in one of your drawers, but they are messy, and you're not sure which one it's in.
