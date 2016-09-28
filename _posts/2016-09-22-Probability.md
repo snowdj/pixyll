@@ -488,6 +488,9 @@ $$\mathbb {P}(\mathcal{S} | \mathcal{T}) = \frac{\mathbb {P}(\mathcal{T} | \math
 
 #### PRACTICE PROBLEM: BAYES' THEOREM AND TOTAL PROBABILITY (SOLUTION)
 
+
+PRACTICE PROBLEM: BAYES' THEOREM AND TOTAL PROBABILITY (SOLUTION)
+
 Your problem set is due in 15 minutes! It's in one of your drawers, but they are messy, and you're not sure which one it's in.
 
 The probability that the problem set is in drawer k is dk. If drawer k has the problem set and you search there, you have probability pk of finding it. There are a total of m drawers.
@@ -502,7 +505,10 @@ Solution: Let Ak be the event that the problem set is in drawer k, and Bk be the
 
 (a) We'll express the desired probability as P(Aj|Bic). Since this quantity is difficult to reason about directly, we'll use Bayes' rule:
 
-P(Aj|Bic)=P(Bic|Aj)P(Aj)/P(Bic)
+P(Aj|Bic)=P(Bic|Aj)P(Aj)P(Bic)
+
+
+$$\mathbb {P}(A_ j|B_ i^ c) = \frac{\mathbb {P}(B_ i^ c | A_ j) \mathbb {P}(A_ j)}{\mathbb {P}(B_ i^ c)}$$
  
 The first probability, P(Bic|Aj), expresses the probability of not finding the problem set in drawer i given that it's in a different drawer j. Since it's impossible to find the paper in a drawer it isn't in, this is just 1.
 
@@ -511,16 +517,47 @@ The second quantity, P(Aj), is given to us in the problem statement as dj.
 The third probability, P(Bic)=1−P(Bi), is difficult to reason about directly. But, if we knew whether or not the paper was in the drawer, it would become easier. So, we'll use total probability:
 
 P(Bi)=P(Bi|Ai)P(Ai)+P(Bi|Aic)P(Aic)=pidi+0(1−di)
+
+
+$$\begin{eqnarray}
+            \mathbb{P}(B_i) &=& \mathbb{P}(B_i|A_i)\mathbb{P}(A_i) + \mathbb{P}(B_i|A_i^c)\mathbb{P}(A_i^c) \\
+            &=& p_i d_i + 0 (1-d_i)
+\end{eqnarray}$$
+
+
 Putting these terms together, we find that
 
 P(Aj|Bic)=dj1−pidi
+
+$$\mathbb {P}(A_ j|B_ i^ c) = \frac{d_ j}{1-p_ i d_ i}$$
+
  
 Alternate method to compute the denominator P(Bic): We could use the law of total probability to decompose P(Bic) depending on which drawer the homework is actually in. We have
 
 P(Bic)=∑k=1mP(Ak)⏟dkP(Bic|Ak)⏟1 if k≠i,(1−pi) if k=i=∑k=1,k≠imdk+(1−pi)di=∑k=1mdk−pidi=1−pidi.
+
+
+$$\begin{eqnarray}
+        \mathbb{P}(B_i^c) &=& \sum_{k=1}^m
+                       \underbrace{\mathbb{P}(A_k)}_{d_k}
+                       \underbrace{\mathbb{P}(B_i^c|A_k)}_{\substack{1\text{ if }k\ne i,\\
+                                                             (1-p_i)\text{ if }k=i}} \\
+                  &=& \sum_{\substack{k=1,\\
+                                     k\ne i}}^m d_k
+                     + (1-p_i)d_i \\
+                  &=& \sum_{k=1}^m d_k - p_i d_i \\
+                  &=& 1 - p_i d_i.
+\end{eqnarray}$$
+
+
+
 (b) Similarly, we'll use Bayes' rule:
 
 P(Ai|Bic)=P(Bic|Ai)P(Ai)P(Bic)=(1−pi)di1−pidi
+
+
+$$\mathbb {P}(A_ i | B_ i^ c) = \frac{\mathbb {P}(B_ i^ c | A_ i) \mathbb {P}(A_ i)}{\mathbb {P}(B_ i^ c)} = \frac{(1-p_ i) d_ i}{1 - p_ i d_ i}$$
+
  
 Take-Away Lessons:
 
@@ -530,7 +567,17 @@ When in doubt of being able to precisely define the sample space, try to define 
 
 The probability law of a probability model is a function on events, or subsets of the sample space, i.e., one can work with the probability law without knowing precisely what the sample-space (as a set) is.
 
+
+
+
+
+
 ### RELATING CONDITIONING ON EVENTS BACK TO RANDOM VARIABLES PREFACE
 
 
 the conditional probability distributions for random variables that we saw previously are just a special case of conditioning on events. The next video gets into the conditional probability distribution of a random variable given that an event has occurred, which is a way that combines our use of random variables and of events.
+
+
+
+
+
