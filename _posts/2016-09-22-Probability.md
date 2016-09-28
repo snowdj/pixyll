@@ -482,3 +482,8 @@ Defining the sample-space is not always going to help solve the problem. (It's d
 When in doubt of being able to precisely define the sample space, try to define events intelligently, i.e., in a way that you use what you're given in the problem.
 
 The probability law of a probability model is a function on events, or subsets of the sample space, i.e., one can work with the probability law without knowing precisely what the sample-space (as a set) is.
+
+### RELATING CONDITIONING ON EVENTS BACK TO RANDOM VARIABLES PREFACE
+
+
+the conditional probability distributions for random variables that we saw previously are just a special case of conditioning on events. The next video gets into the conditional probability distribution of a random variable given that an event has occurred, which is a way that combines our use of random variables and of events.
