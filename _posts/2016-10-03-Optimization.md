@@ -187,3 +187,32 @@ y2≤7.
 ### Fixed Charge Problems
 
 
+Fixed Charge Problems Exercise
+
+
+Consider the DTC problem in which S shields and K slingshot kits are produced, and suppose the fixed costs for making these are 10 and 5, respectively. Recall that the original objective was 3S+5K, with demands of 30 and 40 for shields and slingshot kits, respectively. Let w1,w2 be binary variables equal such that
+
+w1=1 if there is a setup for shields
+
+w1=0 otherwise no setup for shields
+
+w2=1 if there is a setup for slingshot kits
+
+w2=0 otherwise no setup for slingshot kits
+
+Determine the new objective and constraints necessary for modeling the fixed charge
+
+
+SOLUTION
+
+MAX y1+y2
+
+y1=−10w1+3S
+
+0≤S≤30w1
+
+y2=−5w2+5K
+
+0≤K≤40w2
+
+
