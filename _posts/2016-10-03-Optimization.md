@@ -249,5 +249,18 @@ w1,w2∈{0,1}. Binary variables
 
 #### Set Covering 1
 
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/c547bc9c6b1adbc22c7809799a3adb71/asset-v1:MITx+15.053x+3T2016+type@asset+block/map.png)
+
+There are two different solutions to the 053 Chocolate problem with three stores. Find one of these solutions.
+
+What is the sum of the district numbers of the three stores?” (Your answer will be correct regardless of which of the two solutions you found.)
+
+Solution
+
+The correct answer is either 25 or 26
+
+26, from 2, 11, and 13
+25, from 4, 6, and 15
 
 
+#### Set Covering 2
