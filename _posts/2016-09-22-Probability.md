@@ -578,6 +578,50 @@ The probability law of a probability model is a function on events, or subsets o
 the conditional probability distributions for random variables that we saw previously are just a special case of conditioning on events. The next video gets into the conditional probability distribution of a random variable given that an event has occurred, which is a way that combines our use of random variables and of events.
 
 
+#### Exercise: Bernoulli and Binomial Random Variables 
 
 
+a Bernoulli random variable is like a biased coin flip where probability of heads is . In particular, a Bernoulli random variables is 1 with probability , and 0 with probability . If a random variable has this particular distribution, then we write , where “" can be read as “is distributed as" or “has distribution". Some people like to abbreviate by writing , , or even just
 
+.
+
+A Binomial random variable can be thought of as
+independent coin flips, each with probability of heads. For a random variable that has this Binomial distribution with parameters and , we denote it as , read as “ is distributed as Binomial with parameters and ". Some people might also abbreviate and instead of writing , they write or . 
+
+
+(a) True or false: If Y∼Binomial(1,p), then Y is a Bernoulli random variable.
+
+Solution: The answer is true. When there's only a single flip, counting the number if heads yields precisely the Bernoulli distribution. In particular, we have Y∼Bernoulli(p).
+
+(b) Let's say we have a coin that turns up heads with probability 0.6. We flip this coin 10 times. What is the probability of seeing the sequence HTHTTTTTHH, where H denotes heads and T denotes tails (so we have heads in the first toss, tails in the second, heads in the third, etc)? (Please be precise with at least 3 decimal places, unless of course the answer doesn't need that many decimal places. You could also put a fraction.)
+
+By independence, the sequence HTHTTTTTHH has probability
+
+0.6×0.4×0.6×0.4×0.4×0.4×0.4×0.4×0.6×0.6=0.64×0.46.
+Note that in general, if there were instead n coin flips where heads appears with probability p, then we would have pnumber of heads(1−p)n−number of heads.
+
+(c) In the previous part, there were 4 heads and 6 tails. Did the ordering of them matter? In other words, would your answer to the previous part be the same if, for example, instead we saw the sequence HHHHTTTTTT (or any other permutation of 4 heads and 6 tails)?
+
+Solution: As our solution to part (b) shows, the ordering of heads/tails does not matter.
+
+(d) From the previous two parts, what we were analyzing was the same as the random variable S∼Binomial(10,0.6). Note that S=4 refers to the event that we see exactly 4 heads. Note that HTHTTTTTHH and HHHHTTTTTT are different outcomes of the underlying experiment of coin flipping. How many ways are there to see 4 heads in 10 tosses?
+
+Solution: The number of ways to see 4 heads in 10 tosses is precisely the number of ways to choose 4 items out of 10, given by the choose operator: (104)=10!4!6!=210.
+
+In general, the number of ways to see s heads in n tosses is (ns).
+
+(e) Using your answers to parts (b) through (d), what is the probability that S=4?
+
+Solution: There are (104)=210 ways to get 4 heads out of 10, and each way is equally likely with probability given by 0.64×0.46, so summing up the probabilities across all these ways, we have 210×0.64×0.46.
+
+In general, for random variable S∼Binomial(n,p), the probability that S=s for s∈{0,1,…,n} is given by
+
+pS(s)=(ns)ps(1−p)n−s.
+ 
+It might not be a priori obvious why this probability table's entries should sum to 1.
+
+To show this result, we can use the Binomial Theorem, which says that for any two numbers x and y, and any nonnegative integer n,
+
+(x+y)n=∑k=0n(nk)xkyn−k.
+ 
+Plugging in x=p and y=1−p, we see that the right-hand side directly corresponds to summing across all the entries of probability table pS, and the left-hand side is (p+(1−p))n=1n=1.
