@@ -216,3 +216,33 @@ y2=−5w2+5K
 0≤K≤40w2
 
 
+### Piecewise Linear Costs Exercise
+
+
+
+Suppose we have the following piecewise linear function of x
+
+y=2x3 if 0≤x≤3
+
+y=2 if 3≤x≤7
+
+Select the necessary constraints for the formulation
+
+SOLUTION
+
+w1+w2=1. For the two cases
+
+0≤x1≤3w1. Here x1 can be non-zero only if w1 is non-zero
+y1=2x13. The first function
+
+y2=2w2. The second function is non-zero only if w2 is non-zero
+
+y=y1+y2. Exactly one of the two functions must be non-zero
+
+3w2≤x2≤7w2. Here x2 can be non-zero only if w2 is non-zero
+
+x=x1+x2. One of the two endpoints for the domain must hold.
+
+w1,w2∈{0,1}. Binary variables
+
+
