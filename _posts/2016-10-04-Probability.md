@@ -578,6 +578,107 @@ The probability law of a probability model is a function on events, or subsets o
 the conditional probability distributions for random variables that we saw previously are just a special case of conditioning on events. The next video gets into the conditional probability distribution of a random variable given that an event has occurred, which is a way that combines our use of random variables and of events.
 
 
+### THE PRODUCT RULE FOR RANDOM VARIABLES (COURSE NOTES)
+
+
+In many real world problems, we aren't given what the joint distribution of two random variables is although we might be given other information from which we can compute the joint distribution. Often times, we can compute out the joint distribution using what's called the product rule (often also called the chain rule). This is precisely the random variable version of the product rule for events.
+
+As we saw from before, we were able to derive Bayes' theorem for events using the product rule for events: P(A∩B)=P(A)P(B∣A). The random variable version of the product rule is derived just like the event version of the product rule, by rearranging the equation for the definition of conditional probability. For two random variables X and Y (that take on values in sets X and Y respectively), the product rule for random variables says that
+
+pX,Y(x,y)=pY(y)pX∣Y(x∣y)for all x∈X,y∈Y such that pY(y)>0.
+ 
+Interpretation: If we have the probability table for Y, and separately the probability table for X conditioned on Y, then we can come up with the joint probability table (i.e., the joint distribution) of X and Y.
+
+What happens when pY(y)=0? Even though pX∣Y(x∣y) isn't defined in this case, one can readily show that pX,Y(x,y)=0 when pY(y)=0.
+
+To see this, think about what is happening computationally: Remember how pY(y) is computed from joint probability table pX,Y? In particular, we have pY(y)=∑xpX,Y(x,y), so pY(y) is the sum of either a row or a column in the joint probability table (whether it's a row or column just depends on how you write out the table and which random variable is along which axis–along rows or columns). So if pY(y)=0, it must mean that the individual elements being summed are 0 (since the numbers we're summing up are nonnegative).
+
+We can formalize this intuition with a proof:
+
+Claim: Suppose that random variables X and Y have joint probability table pX,Y and take on values in sets X and Y respectively. Suppose that for a specific choice of y∈Y, we have pY(y)=0. Then
+
+pX,Y(x,y)=0for all x∈X.
+ 
+Proof: Let y∈Y satisfy pY(y)=0. Recall that we relate marginal distribution pY to joint distribution pX,Y via marginalization:
+
+0=pY(y)=∑x∈XpX,Y(x,y).
+ 
+Next, we use a crucial mathematical observation: If a sum of nonnegative numbers (such as probabilities) equals 0, then each of the numbers being summed up must also be 0 (otherwise, the sum would be positive!). Hence, it must be that each number being added up in the right-hand side sum is 0, i.e.,
+
+pX,Y(x,y)=0for all x∈X.
+ 
+This completes the proof. ◻
+
+Thus, in general:
+
+pX,Y(x,y)={pY(y)pX∣Y(x∣y)if pY(y)>0,0if pY(y)=0.
+Important convention for this course: For notational convenience, throughout this course, we will often just write pX,Y(x,y)=pY(y)pX∣Y(x∣y) with the understanding that if pY(y)=0, even though pX∣Y(x∣y) is not actually defined, pX,Y(x,y) just evaluates to 0 anyways.
+
+The product rule is symmetric: We can use the definition of conditional probability with X and Y swapped, and rearranging factors, we get:
+
+pX,Y(x,y)=pX(x)pY∣X(y∣x)for all x∈X,y∈Y such that pX(x)>0,
+ 
+and so similarly we could show that
+
+pX,Y(x,y)={pX(x)pY∣X(y∣x)if pX(x)>0,0if pX(x)=0.
+Again for notational convenience, we'll typically just write pX,Y(x,y)=pX(x)pY∣X(y∣x) with the understanding that the expression is 0 when pX(x)=0.
+
+Interpretation: If we're given the probability table for X and, separately, the probability table for Y conditioned on X, then we can come up with the joint probability table for X and Y.
+
+Importantly, for any two jointly distributed random variables X and Y, the product rule is always true, without making any further assumptions! Also, as a recurring theme that we'll see later on as well, we are decomposing the joint distribution into the product of factors (in this case, the product of two factors).
+
+Many random variables: If we have many random variables, say, X1, X2, up to XN where N is not a random variable but is a fixed constant, then we have
+
+$$\begin{eqnarray}
+&&p_{X_1, X_2, \dots ,X_N}(x_1, x_2, \dots, x_N) \\
+&&=
+  p_{X_1}(x_1)
+  p_{X_2 \mid X_1}(x_2 \mid x_1)
+  p_{X_3 \mid X_1, X_2}(x_3 \mid x_1, x_2) \\
+  % p_{X_4 \mid X_1, X_2, X_3}(x_4 \mid x_1, x_2, x_3)
+&&\quad
+  \cdots
+  p_{X_N \mid X_1, X_2, \dots, X_{N-1}}(x_N \mid x_1, x_2, \dots, x_{N-1}).
+\end{eqnarray}$$
+
+
+
+Again, we write this to mean that this holds for every possible choice of x1,x2,…,xN for which we never condition on a zero probability event. Note that the above factorization always holds without additional assumptions on the distribution of X1,X2,…,XN.
+
+Note that the product rule could be applied in arbitrary orderings. In the above factorization, you could think of it as introducing random variable X1 first, and then X2, and then X3, etc. Each time we introduce another random variable, we have to condition on all the random variables that have already been introduced.
+
+Since there are N random variables, there are N! different orderings in which we can write out the product rule. For example, we can think of introducing the last random variable XN first and then going backwards until we introduce X1 at the end. This yields the, also correct, factorization
+
+$$\begin{eqnarray}
+&& p_{X_1, X_2, \dots ,X_N}(x_1, x_2, \dots, x_N) \\
+&&=
+  p_{X_N}(x_N)
+  p_{X_{N-1} \mid X_N}(x_{N-1} \mid x_N)
+  p_{X_{N-2} \mid X_{N-1}, X_N}(x_{N-2} \mid x_{N-1}, x_N) \\
+  % p_{X_4 \mid X_1, X_2, X_3}(x_4 \mid x_1, x_2, x_3)
+&&\quad
+  \cdots
+  p_{X_1 \mid X_2, X_3, \dots, X_N}(x_1 \mid x_2, \dots, x_N).
+\end{eqnarray}$$
+
+##### Exercise: The Product Rule for Random Variables - Medical Diagnosis Revisited
+
+
+Let's revisit the medical diagnosis problem we saw earlier. We now use random variables to construct a joint probability table.
+
+Let random variable X represent the patient's condition — whether “healthy" or “infected", with the following distribution for X:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/92518d17b1d64272d6ad34fb4a40f1d9/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-product-rule-rv-prior.png)
+
+
+
+
+
+
+
+
+
+
 #### Exercise: Bernoulli and Binomial Random Variables 
 
 
