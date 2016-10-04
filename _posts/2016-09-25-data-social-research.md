@@ -97,7 +97,7 @@ in set theory, the notation for the **intersection of** A and B, A ∩ B, is **e
 ### Defining Probability
 
 
- a probability as a collection of numbers P(A) where the following three are true: 
+ a **probability** as a collection of numbers P(A) where the following three are true: 
  
  (1) P(A) is greater than or equal to zero for all A in the sample space S. 
  
@@ -108,7 +108,7 @@ in set theory, the notation for the **intersection of** A and B, A ∩ B, is **e
 
 
 
-
+The **probability of P(Ac) (A complemen**t) is equivalent to the probability of all events that are not included in event A. This can be a useful fact to keep in mind for cases where you know the probability of all outcomes not included in A, P(Ac), and can use this information to calculate the probability of A. For example, suppose that you know that the probability of rain on a given day is 0.6 or 60%. You can use this information to calculate the probability that it does not rain as 1-0.6, which is equal to 0.4 or 40%. (In the way this example is set up, P(does rain)=0.6 is the complement and P(does not rain)=0.4 is the event of interest.) 
 
 
 
