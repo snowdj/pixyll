@@ -719,22 +719,32 @@ where step (a) uses the definition of conditional probability (this step require
 
 Computationally, Bayes' theorem can be thought of as a two-step procedure. Once we have observed Y=y:
 
-For each value x that random variable X can take on, initially we believed that X=x with a score of pX(x), which could be thought of as how plausible we thought ahead of time that X=x. However now that we have observed Y=y, we weight the score pX(x) by a factor pY∣X(y∣x), so
+1. For each value x that random variable X can take on, initially we believed that X=x with a score of pX(x), which could be thought of as how plausible we thought ahead of time that X=x. However now that we have observed Y=y, we weight the score pX(x) by a factor pY∣X(y∣x), so
 
 new belief for how plausible X=x is:α(x∣y)≜pX(x)pY∣X(y∣x),
 (2.4)
-where we have defined a new table α(⋅∣y) which is not a probability table, since when we put in the weights, the new beliefs are no longer guaranteed to sum to 1 (i.e., ∑xα(x∣y) might not equal 1)! α(⋅∣y) is an unnormalized posterior distribution!
+$$\text {new belief for how plausible }X=x\text { is:}\quad \alpha (x\mid y)\triangleq p_{X}(x)p_{Y\mid X}(y\mid x),$$
+
+where we have defined a new table α(⋅∣y) which is not a probability table, since when we put in the weights, the new beliefs are no longer guaranteed to sum to 1 (i.e., ∑xα(x∣y) might not equal 1)! α(⋅∣y) is an **unnormalized** posterior distribution!
 
 Also, if pX(x) is already 0, then as we already mentioned a few times, pY∣X(y∣x) is undefined, but this case isn't a problem: no weighting is needed since an impossible outcome stays impossible.
 
 To make things concrete, here is an example from the medical diagnosis problem where we observe Y=positive:
 
 
-We fix the fact that the unnormalized posterior table α(⋅∣y) isn't guaranteed to sum to 1 by renormalizing:
+$$https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/75478c1b19dbb83d2f285aed189a6f3e/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-bayes-computational-view.png$$
+
+
+
+
+
+2. We fix the fact that the unnormalized posterior table α(⋅∣y) isn't guaranteed to sum to 1 by renormalizing:
 
 pX∣Y(x∣y)=α(x∣y)∑x′α(x′∣y)=pX(x)pY∣X(y∣x)∑x′pX(x′)pY∣X(y∣x′).
+
+$$p_{X\mid Y}(x\mid y)=\frac{\alpha (x\mid y)}{\sum _{ x'}\alpha ( x'\mid y)}=\frac{p_{X}(x)p_{Y\mid X}(y\mid x)}{\sum _{ x'}p_{X}( x')p_{Y\mid X}(y\mid x')}.$$
  
-An important note: Some times we won't actually care about doing this second renormalization step because we will only be interested in what value that X takes on is more plausible relative to others; while we could always do the renormalization, if we just want to see which value of x yields the highest entry in the unnormalized table α(⋅∣y), we could find this value of x without renormalizing!
+**An important note**: Some times we won't actually care about doing this second renormalization step because we will only be interested in what value that X takes on is more plausible relative to others; while we could always do the renormalization, if we just want to see which value of x yields the highest entry in the unnormalized table α(⋅∣y), we could find this value of x without renormalizing!
 
 
 
@@ -742,7 +752,19 @@ An important note: Some times we won't actually care about doing this second ren
 
 
 
+#### MAXIMUM A POSTERIORI (MAP) ESTIMATION
 
+For a hidden random variable X that we are inferring, and given observation Y=y, we have been talking about computing the posterior distribution pX∣Y(⋅|y) using Bayes' rule. The posterior is a distribution for what we are inferring. Often times, we want to report which particular value of X actually achieves the highest posterior probability, i.e., the most probable value x that X can take on given that we have observed Y=y.
+
+The value that X can take on that maximizes the posterior distribution is called the maximum a posteriori (MAP) estimate of X given Y=y. We denote the MAP estimate by x^MAP(y), where we make it clear that it depends on what the observed y is. Mathematically, we write
+
+x^MAP(y)=arg⁡maxxpX∣Y(x|y).
+
+$$\widehat{x}_{\text {MAP}}(y) = \arg \max _ x p_{X \mid Y}(x | y).$$
+ 
+Note that if we didn't include the “arg" before the “max", then we would just be finding the highest posterior probability rather than which value–or “argument"–x actually achieves the highest posterior probability.
+
+In general, there could be ties, i.e., multiple values that X can take on are able to achieve the best possible posterior probability.
 
 
 
