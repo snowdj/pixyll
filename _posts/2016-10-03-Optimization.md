@@ -275,3 +275,21 @@ The correct answer is either 25 or 26
 
 ### Set Packing
 
+Set Packing Exercise
+
+（1/1 分）
+Consider the graph in the diagram below. What is the maximum size of an independent set (packing)?
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/564a5df2967976f3338bf45a6a31b583/asset-v1:MITx+15.053x+3T2016+type@asset+block/packing.png)
+
+Solution
+
+The correct answer is: 3.
+There are various examples of packings of size 3, including (1, 3, 10), (2, 4, 5), and (2, 4, 6).
+
+
+### Facility Location 1
+
+
+
+
