@@ -598,6 +598,14 @@ Solution: The answer is true. When there's only a single flip, counting the numb
 By independence, the sequence HTHTTTTTHH has probability
 
 0.6×0.4×0.6×0.4×0.4×0.4×0.4×0.4×0.6×0.6=0.64×0.46.
+
+
+$$\begin{eqnarray}
+&&0.6 \times 0.4 \times 0.6 \times 0.4 \times 0.4 \times 0.4 \times 0.4
+  \times 0.4 \times 0.6 \times 0.6 \\
+&&= \boxed{0.6^4 \times 0.4^6}.
+\end{eqnarray}$$
+
 Note that in general, if there were instead n coin flips where heads appears with probability p, then we would have pnumber of heads(1−p)n−number of heads.
 
 (c) In the previous part, there were 4 heads and 6 tails. Did the ordering of them matter? In other words, would your answer to the previous part be the same if, for example, instead we saw the sequence HHHHTTTTTT (or any other permutation of 4 heads and 6 tails)?
@@ -606,7 +614,7 @@ Solution: As our solution to part (b) shows, the ordering of heads/tails does no
 
 (d) From the previous two parts, what we were analyzing was the same as the random variable S∼Binomial(10,0.6). Note that S=4 refers to the event that we see exactly 4 heads. Note that HTHTTTTTHH and HHHHTTTTTT are different outcomes of the underlying experiment of coin flipping. How many ways are there to see 4 heads in 10 tosses?
 
-Solution: The number of ways to see 4 heads in 10 tosses is precisely the number of ways to choose 4 items out of 10, given by the choose operator: (104)=10!4!6!=210.
+Solution: The number of ways to see 4 heads in 10 tosses is precisely the number of ways to choose 4 items out of 10, given by the choose operator: ${10 \choose 4} = \frac{10!}{4! 6!} = \boxed {210}$.
 
 In general, the number of ways to see s heads in n tosses is (ns).
 
@@ -616,12 +624,15 @@ Solution: There are (104)=210 ways to get 4 heads out of 10, and each way is equ
 
 In general, for random variable S∼Binomial(n,p), the probability that S=s for s∈{0,1,…,n} is given by
 
-pS(s)=(ns)ps(1−p)n−s.
+$$p_ S(s) = {n \choose s} p^ s (1-p)^{n-s}.$$
  
 It might not be a priori obvious why this probability table's entries should sum to 1.
 
 To show this result, we can use the Binomial Theorem, which says that for any two numbers x and y, and any nonnegative integer n,
 
-(x+y)n=∑k=0n(nk)xkyn−k.
+$$(x + y)^ n = \sum _{k=0}^ n {n \choose k} x^ k y^{n-k}.$$
  
 Plugging in x=p and y=1−p, we see that the right-hand side directly corresponds to summing across all the entries of probability table pS, and the left-hand side is (p+(1−p))n=1n=1.
+
+
+
