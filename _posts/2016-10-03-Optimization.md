@@ -245,4 +245,9 @@ x=x1+x2. One of the two endpoints for the domain must hold.
 
 w1,w2∈{0,1}. Binary variables
 
+### Overview of Combinatorial Problems
+
+#### Set Covering 1
+
+
 
