@@ -94,6 +94,17 @@ in set theory, the notation for the **intersection of** A and B, A ∩ B, is **e
 
 **Mutually exclusive** refers to two events that cannot both occur or be true at the same time. for example, the two events “It is Tuesday” or “It is Sunday” are mutually exclusive events.
 
+### Defining Probability
+
+
+ a probability as a collection of numbers P(A) where the following three are true: 
+ 
+ (1) P(A) is greater than or equal to zero for all A in the sample space S. 
+ 
+ (2) The sum of each of the P(A) in the sample space S (equivalent to P(S)) is equal to 1. 
+ 
+ (3) For any sequence of disjoint sets A1, A2, A3, … the probability of the union of these events occurring is equal to the union of the probabilities of the events occurring.
+
 
 
 
