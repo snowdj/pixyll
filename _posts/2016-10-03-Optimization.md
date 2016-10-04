@@ -277,7 +277,7 @@ The correct answer is either 25 or 26
 
 Set Packing Exercise
 
-（1/1 分）
+
 Consider the graph in the diagram below. What is the maximum size of an independent set (packing)?
 
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/564a5df2967976f3338bf45a6a31b583/asset-v1:MITx+15.053x+3T2016+type@asset+block/packing.png)
@@ -291,5 +291,22 @@ There are various examples of packings of size 3, including (1, 3, 10), (2, 4, 5
 ### Facility Location 
 
 
+Facility Location 1 Exercise
+
+
+Suppose that students are not required to dine, and let vs be the number of such students. If a student at location s chooses not to dine, then the disutility for that student is gs. How would the model change if this possibility were permitted? Select one objective and two constraints.
+
+Solution
+
+The correct answer is:
+
+New objective: ∑d inDfdyd+∑s∈S∑d∈Dcsdxsd+∑s∈Sgsvs. We are minimizing, and so we should add the disutility.
+
+New constraint: ∑d∈Dxsd+vs=ns for s∈S. For each location s∈S, vs is equal to the number of students at location s who do not dine at one of the facilities.
+
+New constraint: vs≥0 for s∈S.
+
+
+### Graph Coloring
 
 
