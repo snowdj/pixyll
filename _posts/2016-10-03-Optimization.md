@@ -264,3 +264,14 @@ The correct answer is either 25 or 26
 
 
 #### Set Covering 2
+
+#### Solution
+
+The correct answer is either 25 or 26
+
+26, from 2, 11, and 13
+25, from 4, 6, and 15
+
+
+### Set Packing
+
