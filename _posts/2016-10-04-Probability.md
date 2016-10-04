@@ -671,6 +671,15 @@ Let random variable X represent the patient's condition — whether “healthy" 
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/92518d17b1d64272d6ad34fb4a40f1d9/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-product-rule-rv-prior.png)
 
 
+Meanwhile, the test outcome Y for whether the patient is infected is either “positive" (for the disease) or “negative". As before, the test is 99% accurate, which means that the conditional probability table for Y given X is as follows (note that we also show how to write things out as a single table):
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/34f3b0ebee548aeba27f468402ce2006/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-product-rule-rv-likelihood.png)
+
+
+
+
+
 
 
 
