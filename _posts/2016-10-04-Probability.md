@@ -682,6 +682,69 @@ Meanwhile, the test outcome Y for whether the patient is infected is either “p
 
 
 
+#### Bayes' Rule for Random Variables (Also Called Bayes' Theorem for Random Variables
+
+BAYES' THEOREM FOR RANDOM VARIABLES (COURSE NOTES)
+
+In inference, what we want to reason about is some unknown random variable X, where we get to observe some other random variable Y, and we have some model for how X and Y relate. Specifically, suppose that we have some “prior" distribution pX for X; this prior distribution encodes what we believe to be likely or unlikely values that X takes on, before we actually have any observations. We also suppose we have a “likelihood" distribution pY∣X.
+
+After observing that Y takes on a specific value y, our “belief" of what X given Y=y is now given by what's called the “posterior" distribution pX∣Y(⋅∣y). Put another way, we keep track of a probability distribution that tells us how plausible we think different values X can take on are. When we observe data Y that can help us reason about X, we proceed to either upweight or downweight how plausible we think different values X can take on are, making sure that we end up with a probability distribution giving us our updated belief of what X can be.
+
+Thus, once we have observed Y=y, our belief of what X is changes from the prior pX to the posterior pX∣Y(⋅∣y).
+
+Bayes' theorem (also called Bayes' rule or Bayes' law) for random variables explicitly tells us how to compute the posterior distribution pX∣Y(⋅∣y), i.e., how to weight each possible value that random variable X can take on, once we've observed Y=y. Bayes' theorem is the main workhorse of numerous inference algorithms and will show up many times throughout the course.
+
+**Bayes' theorem**: Suppose that y is a value that random variable Y can take on, and pY(y)>0. Then
+
+pX∣Y(x∣y)=pX(x)pY∣X(y∣x)∑x′pX(x′)pY∣X(y∣x′)
+
+$$p_{X\mid Y}(x\mid y)=\frac{p_{X}(x)p_{Y\mid X}(y\mid x)}{\sum _{ x'}p_{X}( x')p_{Y\mid X}(y\mid x')}$$
+ 
+for all values x that random variable X can take on.
+
+**Important**: Remember that pY∣X(⋅∣x) could be undefined but this isn't an issue since this happens precisely when pX(x)=0, and we know that pX,Y(x,y)=0 (for every y) whenever pX(x)=0.
+
+Proof: We have
+
+$$p_{X\mid Y}(x\mid y)\overset {(a)}{=}\frac{p_{X,Y}(x,y)}{p_{Y}(y)}\overset {(b)}{=}\frac{p_{X}(x)p_{Y\mid X}(y\mid x)}{p_{Y}(y)}\overset {(c)}{=}\frac{p_{X}(x)p_{Y\mid X}(y\mid x)}{\sum _{ x'}p_{X,Y}( x',y)}\overset {(d)}{=}\frac{p_{X}(x)p_{Y\mid X}(y\mid x)}{\sum _{ x'}p_{X}( x')p_{Y\mid X}(y\mid x')},$$
+
+
+pX∣Y(x∣y)=(a)pX,Y(x,y)pY(y)=(b)pX(x)pY∣X(y∣x)pY(y)=(c)pX(x)pY∣X(y∣x)∑x′pX,Y(x′,y)=(d)pX(x)pY∣X(y∣x)∑x′pX(x′)pY∣X(y∣x′),
+ 
+where step (a) uses the definition of conditional probability (this step requires pY(y)>0), step (b) uses the product rule (recall that for notational convenience we're not separately writing out the case when pX(x)=0), step (c) uses the formula for marginalization, and step (d) uses the product rule (again, for notational convenience, we're not separately writing out the case when pX(x′)=0). ◻
+
+
+
+#### BAYES' THEOREM FOR RANDOM VARIABLES: A COMPUTATIONAL VIEW
+
+Computationally, Bayes' theorem can be thought of as a two-step procedure. Once we have observed Y=y:
+
+For each value x that random variable X can take on, initially we believed that X=x with a score of pX(x), which could be thought of as how plausible we thought ahead of time that X=x. However now that we have observed Y=y, we weight the score pX(x) by a factor pY∣X(y∣x), so
+
+new belief for how plausible X=x is:α(x∣y)≜pX(x)pY∣X(y∣x),
+(2.4)
+where we have defined a new table α(⋅∣y) which is not a probability table, since when we put in the weights, the new beliefs are no longer guaranteed to sum to 1 (i.e., ∑xα(x∣y) might not equal 1)! α(⋅∣y) is an unnormalized posterior distribution!
+
+Also, if pX(x) is already 0, then as we already mentioned a few times, pY∣X(y∣x) is undefined, but this case isn't a problem: no weighting is needed since an impossible outcome stays impossible.
+
+To make things concrete, here is an example from the medical diagnosis problem where we observe Y=positive:
+
+
+We fix the fact that the unnormalized posterior table α(⋅∣y) isn't guaranteed to sum to 1 by renormalizing:
+
+pX∣Y(x∣y)=α(x∣y)∑x′α(x′∣y)=pX(x)pY∣X(y∣x)∑x′pX(x′)pY∣X(y∣x′).
+ 
+An important note: Some times we won't actually care about doing this second renormalization step because we will only be interested in what value that X takes on is more plausible relative to others; while we could always do the renormalization, if we just want to see which value of x yields the highest entry in the unnormalized table α(⋅∣y), we could find this value of x without renormalizing!
+
+
+
+
+
+
+
+
+
+
 
 
 
