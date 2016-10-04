@@ -111,6 +111,32 @@ in set theory, the notation for the **intersection of** A and B, A ∩ B, is **e
 The **probability of P(Ac) (A complemen**t) is equivalent to the probability of all events that are not included in event A. This can be a useful fact to keep in mind for cases where you know the probability of all outcomes not included in A, P(Ac), and can use this information to calculate the probability of A. For example, suppose that you know that the probability of rain on a given day is 0.6 or 60%. You can use this information to calculate the probability that it does not rain as 1-0.6, which is equal to 0.4 or 40%. (In the way this example is set up, P(does rain)=0.6 is the complement and P(does not rain)=0.4 is the event of interest.) 
 
 
+a **“simple sample space**” is defined as a sample space where each of the possible outcomes are equally likely.
+
+Let’s go through an example of a simple sample space. Suppose that you have two spinners which you can spin to point towards red, orange, yellow, green, or blue with equal probability. If you spin each spinner once, what is the probability that both of the spinners will point to blue? 
+
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/ff92ff7df44e1c39cc03e3081c0c9cbb/asset-v1:MITx+14.310x+3T2016+type@asset+block/L02_S03_01.JPG)
+
+
+The probability that both of spinners points to blue is 1/25. If you spin both spinners, there are 5 x 5 = 25 possible combinations. In only one of these combinations do both spinners turn up as blue, so the probability that both spinners point to blue is 1/25. 
+
+
+Using the same spinner example as before, what is the probability that at least one of the spinners points to blue?
+
+The probability that both of the spinners points to blue is 1/25. This is an example where each of the pairings of two colors is equally likely. Out of 25 possible outcomes, we only have to count the number of outcomes that involve at least one of the spinners pointing to blue. There are 9 such possible combinations, so we know that the probability that at least one of the spinners points to blue is 9/25
+
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/499ab9ffc036f239b0e1f90aed5ab93e/asset-v1:MITx+14.310x+3T2016+type@asset+block/L02_S03_04.JPG)
+
+
+
+
+
+
+
 
 
 
