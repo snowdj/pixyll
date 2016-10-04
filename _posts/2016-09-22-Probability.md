@@ -636,3 +636,110 @@ Plugging in x=p and y=1−p, we see that the right-hand side directly correspond
 
 
 
+
+Exercise: The Soda Machine
+
+
+A soda machine advertises 7 different flavors of soda. However, there is only one button for buying soda, which dispenses a flavor of the machine's choosing. Adam buys 14 sodas today, and notices that they are all either grape or root beer flavored.
+
+(a) Assuming that the soda machine actually dispenses each of its 7 flavors randomly, with equal probability, and independently each time, what is the probability that all 14 of Adam's sodas are either grape or root beer flavored?
+
+Solution: Let's first consider a single soda, which could be one of 7 flavors, 2 of which are desired. Thus the probability of the soda being either grape or root beer is 27. Since each soda is dispensed independently, the probability of all 14 sodas being grape or root beer is (27)14≈2.416×10−8.
+
+(b) How would your answer to the (a) change if the machine were out of diet cola, ginger ale, so it randomly chooses one of only 5 flavors?
+
+Solution: If there are only 5 flavors of soda available, the probability of getting either grape or root beer is 25. Thus, once again assuming each soda is chosen independently, the probability that all 14 sodas are grape or root beer is (25)14≈2.684×10−6.
+
+(c) What if the machine only had 3 flavors: grape, root beer, and cherry?
+
+Solution: Similarly, with only 3 flavors to choose from, the probability becomes (23)14≈0.003425.
+
+#### Independent Random Variables
+
+
+
+
+
+Exercise: Independent Random Variables
+
+
+In this exercise, we look at how to check if two random variables are independent in Python. Please make sure that you can follow the math for what's going on and be able to do this by hand as well.
+
+Consider random variables W, I, X, and Y, where we have shown the joint probability tables pW,I and pX,Y.
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/36302a7f0fe203810adf9cc932998a95/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-joint-rv-ex-marg.png)
+
+
+
+
+In Python:
+
+	prob_W_I = np.array([[1/2, 0], [0, 1/6], [0, 1/3]])
+
+Note that here, we are not explicitly storing the labels, but we'll keep track of them in our heads. The labels for the rows (in order of row index): sunny, rainy, snowy. The labels for the columns (in order of column index): 1, 0.
+
+We can get the marginal distributions pW and pI:
+
+  prob_W = prob_W_I.sum(axis=1)
+  prob_I = prob_W_I.sum(axis=0)
+  
+  
+Then if W and I were actually independent, then just from their marginal distributions pW and pI, we would be able to compute the joint distribution with the formula:
+
+If W and I are independent:pW,I(w,i)=pW(w)pI(i)for all w,i.
+ 
+Note that variables prob_W and prob_I at this point store the probability tables pW and pI as 1D NumPy arrays, for which NumPy does not store whether each of these should be represented as a row or as a column.
+
+We could however ask NumPy to treat them as column vectors, and in particular, taking the outer product of prob_W and prob_I yields what the joint distribution would be if W and I were independent:
+
+$$\begin{eqnarray}
+\begin{bmatrix}
+p_W(\text{sunny}) \\
+p_W(\text{rainy}) \\
+p_W(\text{snowy})
+\end{bmatrix}
+\begin{bmatrix}
+p_I(1) & p_I(0)
+\end{bmatrix}
+=
+\begin{bmatrix}
+p_W(\text{sunny})p_I(1) & p_W(\text{sunny})p_I(0) \\
+p_W(\text{rainy})p_I(1) & p_W(\text{rainy})p_I(0) \\
+p_W(\text{snowy})p_I(1) & p_W(\text{snowy})p_I(0)
+\end{bmatrix}.
+\end{eqnarray}$$
+
+
+The left-hand side is an outer product, and the right-hand side is precisely the joint probability table that would result if W and I were independent.
+
+To compute and print the right-hand side, we do:
+
+print(np.outer(prob_W, prob_I))
+Are W and I independent (compare the joint probability table we would get if they were independent with their actual joint probability table)?
+
+Are W and I independent (compare the joint probability table we would get if they were independent with their actual joint probability table)?
+
+Solution: The answer is No. When you run the code above, you should see that the joint probability distribution for W and I is different from the joint probability of W and I if they were independent. In fact, if they were independent, you'd end up with the joint probability table for X and Y.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
