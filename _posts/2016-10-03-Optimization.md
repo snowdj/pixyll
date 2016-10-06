@@ -310,3 +310,60 @@ New constraint: vs≥0 for s∈S.
 ### Graph Coloring
 
 
+
+```
+
+#Define model 
+m = Model()
+
+# Assign binary values to items
+#I got the right answer by stating the constraint in the variable definition. I also used @variables and @constraints to avoid repetitive code.
+#, Int
+@variables(m, begin
+    x[1:5] >= 0
+    y[1:5], Bin
+end)
+
+require = [ 250 300 150 200 350 180]
+
+
+# Constraint on total weight
+@constraint(m, x[1]+ x[2] >= require[1])
+
+@constraint(m, x[1]+ x[3] >= require[2])
+
+@constraint(m, x[3]+ x[2] >= require[3])
+
+@constraint(m, x[4]+ x[2] >= require[4])
+
+@constraint(m, x[3]+ x[5] >= require[5])
+
+@constraint(m, x[4]+ x[5] >= require[6])
+
+@constraint(m, x[4]+ x[5] >= require[6])
+
+#It seems that this construct also works:
+
+@constraint(m, x .<= 300*y)
+#@constraint(m, x[1:5] .<= 300*y[1:5])
+
+#Note the decimal point preceding the < symbol
+
+
+@objective(m, Min, 450*sum{y[i], i=1:5}+2*sum{x[i], i=1:5});
+
+# Solve model
+solve(m)
+
+# Determine which items to carry 
+println("Variable x Values: ", getvalue(x))
+println("Variable y Values: ", getvalue(y))
+# Determine value from items carried
+println("Objetive value: ", getobjectivevalue(m))
+
+```
+
+
+
+
+
