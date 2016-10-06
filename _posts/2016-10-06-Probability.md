@@ -959,3 +959,70 @@ On the basis of the average winnings calculation we have done though, lotteries 
 We now discuss how to quantitatively and rigorously reason about scenarios like the ones we've just sketched. The main tool we now introduce is what's called the expected value of a random variable. In making decisions that account for randomness, it often makes sense to account for an “average" scenario that we should expect. Expectation is about taking an average, accounting for how likely different outcomes are.
 
 In 6.008.1x, after we cover our story here on expected values, we won't be seeing them again until the third part of the course on learning probabilistic models. The idea there is that what probabilistic model makes sense for your data can be thought of as decision making! We are deciding which model to use instead of, in our example here, deciding which lottery to play!
+
+
+### THE EXPECTED VALUE OF A RANDOM VARIABLE PREFACE
+
+
+Consider, for example, the mean of three values: 3, 5, and 10. It can be computed as follows:
+
+3+5+103=3⋅13+5⋅13+10⋅13=6.
+ 
+Notice, on the right-hand side, that we are adding 3, 5, and 10 each weighted by 13. Concretely, consider a random variable X given by the probability table below:
+
+
+Then the “expected value" of X is given by
+
+3⋅pX(3)+5⋅pX(5)+10⋅pX(10)=3⋅13+5⋅13+10⋅13=183=6.…
+ 
+But what if, for instance, we think that 3 is actually much more plausible than 5 or 10? Then what we could do is have the weight on 3 be higher than 13 while decreasing the weights for 5 and 10. Consider if instead we had:
+
+
+Then the expected value of X is given by
+
+3⋅pX(3)+5⋅pX(5)+10⋅pX(10)=3⋅23+5⋅16+10⋅16=92.
+ 
+Using probability, we now formalize the concept of expected value of a random variable. As you can see, all we are doing is taking the sum of the labels in the probability table, where we weight each label by the probability of the label. Importantly, the labels are numbers so that it's clear what adding them means!
+
+Now, for the formal definition:
+
+Definition of expected value: Consider a real-valued random variable X that takes on values in a set X. Then the expected value of X, denoted as E[X], is
+
+E[X]≜∑x∈Xx⋅pX(x).
+ 
+Having the random variable be real-valued makes it so that we can add up the labels with weights!
+
+Also, note that whereas X can be represented as a probability table, its expectation E[X] is just a single number. The expected value is the sum of the values in the set X, weighted by the probabilities of each of the values. The mean is simply the expected value when all of the values in the set X when there is a uniform probability of each of the values.
+
+Notice that how we came up with the expectation of a random variable X just relied on the probability table for X.
+
+In fact, if we took a different probability table, if the labels are numbers, then we can still compute the expectation! Two important examples are below.
+
+Conditional Expectation
+
+As a first example, suppose we have two random variables X and Y where we know (or we have already computed) pX∣Y(⋅∣y) for some fixed value y, and X is real-valued. Then we can readily compute the expectation for this probability table by multiplying each value x in the alphabet of random variable X by pX∣Y(x∣y) and summing these up to get a weighted average. This yields what is called the conditional expectation of X given Y=y, denoted as
+
+E[X∣Y=y]=∑x∈Xx⋅pX∣Y(x∣y).
+ 
+Expectation of the Function of a Random Variable
+
+As another example, suppose we have a (possibly not real-valued) random variable X with probability table pX, and we have a function f such that f(x) is real-valued for all x in the alphabet X of X. Then f(X) has a probability table where the labels are all numbers, and so we can compute E[f(X)].
+
+Let's work out the math here. First, let's determine the probability table for f(X). To make the notation here easier to parse, let random variable Z=f(X). Note that Z has alphabet Z={f(x):x∈X}. Then the probability table for f(X) can be written as pZ. In terms of the probability table, to compute pZ(z), we first look at every label in table pX that gets mapped to z, i.e., the set {x∈X:f(x)=z}. Then we sum up the probabilities of these labels to get the probability that Z=z, i.e., pZ(z)=∑x∈X such that f(x)=zpX(x).
+
+We introduce a new piece of notation here called an indicator function 1{⋅} that takes as input a statement S and outputs:
+
+1{S}={1if S happens,0otherwise.
+Then the probability that Z=z can be written
+
+ 	pZ(z)	=	∑x∈X such that f(x)=zpX(x)	 	 
+ 	 	=	∑x∈X1{f(x)=z}pX(x).	 	 
+Next, we compute the expectation of Z=f(X):
+
+ 	E[Z]	=	∑z∈ZzpZ(z)	 	 
+ 	 	=	∑z∈Zz[∑x∈X1{f(x)=z}pX(x)]	 	 
+ 	 	=	∑x∈X∑z∈Zz1{f(x)=z}pX(x)⏟there is only 1 nonzero term here: when z=f(x)	 	 
+ 	 	=	∑x∈Xf(x)pX(x).	 	 
+Hence, since Z=f(X), we can write
+
+E[f(X)]=∑x∈Xf(x)pX(x).
