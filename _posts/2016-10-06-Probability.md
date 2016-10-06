@@ -1092,3 +1092,9 @@ $$\mathbb {E}[L_ i] - \lambda \cdot \text {std}(L_ i) \qquad \text {for }i = 1,2
 E[Li]−λ⋅std(Li)for i=1,2,3,
  
 where λ≥0 is some parameter that you choose for how much you want to penalize uncertainty in the lottery outcome. Then you could choose the lottery with the highest score.
+
+
+
+Can variance be negative? 
+
+Solution: The answer is no. Variance cannot be negative since it is taking the (weighted) average of a bunch of squared quantities. A real number squared is always nonnegative. The weighted average of nonnegative numbers is also nonnegative.
