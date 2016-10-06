@@ -1074,3 +1074,11 @@ Note that as we saw previously, E[X] is just a single number. To keep the varian
 
 
 
+Some times, people prefer keeping the units the same as the original units (i.e., without squaring), which you can get by computing what's called the standard deviation of a real-valued random variable X:
+
+
+$$\text {std}(X) \triangleq \sqrt {\text {var}(X)}.$$
+
+std(X)≜var(X).
+
+
