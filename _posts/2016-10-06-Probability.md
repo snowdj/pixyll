@@ -970,15 +970,22 @@ Consider, for example, the mean of three values: 3, 5, and 10. It can be compute
  
 Notice, on the right-hand side, that we are adding 3, 5, and 10 each weighted by 13. Concretely, consider a random variable X given by the probability table below:
 
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9bd578aa270026bfd919fd1446fc6989/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-expectation-example1.png)
+
+
 
 Then the “expected value" of X is given by
 
-3⋅pX(3)+5⋅pX(5)+10⋅pX(10)=3⋅13+5⋅13+10⋅13=183=6.…
+$$3\cdot p_{X}(3)+5\cdot p_{X}(5)+10\cdot p_{X}(10)=3\cdot \frac{1}{3}+5\cdot \frac{1}{3}+10\cdot \frac{1}{3}=\frac{18}{3}=6.\dots$$
  
 But what if, for instance, we think that 3 is actually much more plausible than 5 or 10? Then what we could do is have the weight on 3 be higher than 13 while decreasing the weights for 5 and 10. Consider if instead we had:
 
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9b991a0eb809ce815edd08877e4f3d1a/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-expectation-example2.png)
 
 Then the expected value of X is given by
+
+
+$$3\cdot p_{X}(3)+5\cdot p_{X}(5)+10\cdot p_{X}(10)=3\cdot \frac{2}{3}+5\cdot \frac{1}{6}+10\cdot \frac{1}{6}=\frac{9}{2}.$$
 
 3⋅pX(3)+5⋅pX(5)+10⋅pX(10)=3⋅23+5⋅16+10⋅16=92.
  
@@ -988,6 +995,7 @@ Now, for the formal definition:
 
 Definition of expected value: Consider a real-valued random variable X that takes on values in a set X. Then the expected value of X, denoted as E[X], is
 
+$$\mathbb {E}[X]\triangleq \sum _{x\in \mathcal{X}}x\cdot p_{X}(x).$$
 E[X]≜∑x∈Xx⋅pX(x).
  
 Having the random variable be real-valued makes it so that we can add up the labels with weights!
@@ -998,22 +1006,39 @@ Notice that how we came up with the expectation of a random variable X just reli
 
 In fact, if we took a different probability table, if the labels are numbers, then we can still compute the expectation! Two important examples are below.
 
-Conditional Expectation
+**Conditional Expectation**
 
 As a first example, suppose we have two random variables X and Y where we know (or we have already computed) pX∣Y(⋅∣y) for some fixed value y, and X is real-valued. Then we can readily compute the expectation for this probability table by multiplying each value x in the alphabet of random variable X by pX∣Y(x∣y) and summing these up to get a weighted average. This yields what is called the conditional expectation of X given Y=y, denoted as
 
+
+$$\mathbb {E}[X\mid Y=y]=\sum _{x\in \mathcal{X}}x\cdot p_{X\mid Y}(x\mid y).$$
+
 E[X∣Y=y]=∑x∈Xx⋅pX∣Y(x∣y).
  
-Expectation of the Function of a Random Variable
+**Expectation of the Function of a Random Variable**
 
 As another example, suppose we have a (possibly not real-valued) random variable X with probability table pX, and we have a function f such that f(x) is real-valued for all x in the alphabet X of X. Then f(X) has a probability table where the labels are all numbers, and so we can compute E[f(X)].
 
 Let's work out the math here. First, let's determine the probability table for f(X). To make the notation here easier to parse, let random variable Z=f(X). Note that Z has alphabet Z={f(x):x∈X}. Then the probability table for f(X) can be written as pZ. In terms of the probability table, to compute pZ(z), we first look at every label in table pX that gets mapped to z, i.e., the set {x∈X:f(x)=z}. Then we sum up the probabilities of these labels to get the probability that Z=z, i.e., pZ(z)=∑x∈X such that f(x)=zpX(x).
 
-We introduce a new piece of notation here called an indicator function 1{⋅} that takes as input a statement S and outputs:
+We introduce a new piece of notation here called an indicator function 1{⋅} $\mathbf{1}\{ \cdot \}$ that takes as input a statement S and outputs:
 
 1{S}={1if S happens,0otherwise.
+
+$$\begin{eqnarray}
+\mathbf{1}\{\mathcal{S}\}=\begin{cases}
+1 & \text{if }\mathcal{S}\text{ happens},\\
+0 & \text{otherwise}.
+\end{cases}
+\end{eqnarray}$$
+
+
 Then the probability that Z=z can be written
+
+
+$$\displaystyle  \sum _{x\in \mathcal{X}\text { such that }f(x)=z}p_{X}(x)$$
+
+$$\displaystyle  \sum _{x\in \mathcal{X}}\mathbf{1}\{ f(x)=z\} p_{X}(x).$$
 
  	pZ(z)	=	∑x∈X such that f(x)=zpX(x)	 	 
  	 	=	∑x∈X1{f(x)=z}pX(x).	 	 
@@ -1026,3 +1051,26 @@ Next, we compute the expectation of Z=f(X):
 Hence, since Z=f(X), we can write
 
 E[f(X)]=∑x∈Xf(x)pX(x).
+
+
+$$\mathbb {E}[f(X)]=\sum _{x\in \mathcal{X}}f(x)p_{X}(x).$$
+
+
+
+##### Variance and Standard Deviation
+
+
+
+
+the important concept of variance, which measures how much a random variable deviates from its expectation. This can be thought of as a measure of uncertainty. Higher variance means more uncertainty.
+
+The variance of a real-valued random variable X is defined as
+
+$$\text {var}(X) \triangleq \mathbb {E}[ (X - \mathbb {E}[X])^2 ].$$
+
+var(X)≜E[(X−E[X])2].
+ 
+Note that as we saw previously, E[X] is just a single number. To keep the variance of X, what you could do is first compute the expectation of X.
+
+
+
