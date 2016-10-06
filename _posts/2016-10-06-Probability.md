@@ -1081,4 +1081,14 @@ $$\text {std}(X) \triangleq \sqrt {\text {var}(X)}.$$
 
 std(X)≜var(X).
 
+Note that when we first introduced the three lotteries and computed average winnings, we didn't account for the uncertainty in the average winnings. Here, it's clear that the third lottery has far smaller standard deviation and variance than the second lottery.
 
+As a remark, often in financial applications (e.g., choosing a portfolio of stocks to invest in), accounting for uncertainty is extremely important. For example, you may want to maximize profit while ensuring that the amount of uncertainty is not too high as to not be reckless in investing.
+
+In the case of the three lotteries, to decide between them, you could for example use a score that is of the form
+
+$$\mathbb {E}[L_ i] - \lambda \cdot \text {std}(L_ i) \qquad \text {for }i = 1,2,3,$$
+
+E[Li]−λ⋅std(Li)for i=1,2,3,
+ 
+where λ≥0 is some parameter that you choose for how much you want to penalize uncertainty in the lottery outcome. Then you could choose the lottery with the highest score.
