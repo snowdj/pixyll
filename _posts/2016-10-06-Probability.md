@@ -1098,3 +1098,11 @@ where λ≥0 is some parameter that you choose for how much you want to penalize
 Can variance be negative? 
 
 Solution: The answer is no. Variance cannot be negative since it is taking the (weighted) average of a bunch of squared quantities. A real number squared is always nonnegative. The weighted average of nonnegative numbers is also nonnegative.
+
+
+
+For random variables X and Y for which we know (or have computed) the conditional distribution pX∣Y(⋅∣y), and for any function f such that f(x) is a real number for every x in the alphabet of X, then
+
+E[f(X)∣Y=y]=∑xf(x)pX∣Y(x∣y).
+
+$$\mathbb {E}[f(X)\mid Y=y] = \sum _ x f(x) p_{X\mid Y}(x\mid y).$$
