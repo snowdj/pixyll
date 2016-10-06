@@ -1106,3 +1106,32 @@ For random variables X and Y for which we know (or have computed) the conditiona
 E[f(X)∣Y=y]=∑xf(x)pX∣Y(x∣y).
 
 $$\mathbb {E}[f(X)\mid Y=y] = \sum _ x f(x) p_{X\mid Y}(x\mid y).$$
+
+
+
+
+We previously computed the probability that someone has a infection given that a test for the infection turned out positive. But how do we translate this into a decision of whether or not we should treat the person? Ideally, we should always choose to treat people who, in truth, have the infection and choose “don't treat" for people without the infection. However, it is possible that we may treat actually healthy people, a false positive that leads to unnecessary medical costs. As well, we may fail to treat people with the infection, a false negative that could require more expensive treatment later on.
+
+We can encode these costs into the following “cost table" (or cost function) C(⋅,⋅), where C(x,d) is the cost when the patient's true infection state is x (“healthy" or “infected"), and we make decision d (“treat" or “don't treat"). For our problem, here is the cost function:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/5678e854942eae184305b969122e28bd/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-medical-diagnosis-cost.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
