@@ -1118,6 +1118,19 @@ We can encode these costs into the following “cost table" (or cost function) C
 
 
 
+Putting together the pieces, the decision rule that achieves the lowest cost can be written as:
+
+
+$$\begin{eqnarray}
+\widehat{x}(y)
+&=&\begin{cases}
+\text{don't treat} & y=\text{positive}\text{ and }a \le t,\\
+\text{treat} & y=\text{positive}\text{ and }a > t,\\
+\text{don't treat} & y=\text{negative}\text{ and }b \le s,\\
+\text{treat} & y=\text{negative}\text{ and }b > s,
+\end{cases}
+\end{eqnarray}$$
+
 
 
 
