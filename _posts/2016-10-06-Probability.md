@@ -1201,4 +1201,4 @@ $$E[R_i] = P\{R_i\}$$
 
 $$\frac{4}{52} \cdot \frac{3}{51}  \forall i \in \{1...51\}$$
 
- =  because of non replacement and the 52nd card cannot have king after it so .
+ =  because of non replacement and the 52nd card cannot have king after it so $P\{R_{52}=1\} = 0$.
