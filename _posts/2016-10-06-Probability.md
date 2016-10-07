@@ -1139,16 +1139,66 @@ $$\begin{eqnarray}
 
 
 
+How does expected value work when we have many random variables? In this exercise, we look at some specific cases that draw out some important properties involving expected values.
+
+Let's look at when there are two random variables X and Y with alphabets X and Y respectively. Then how expectation is defined for multiple random variables is as follows: For any function f:X×Y→R,
+
+E[f(X,Y)]=∑x∈X,y∈Yf(x,y)pX,Y(x,y).
+
+$$\mathbb {E}[f(X, Y)] = \sum _{x \in \mathcal{X}, y\in \mathcal{Y}} f(x, y) p_{X,Y}(x, y).$$
+ 
+(Note that “∑x∈X,y∈Y" can also be written as “∑x∈X∑y∈Y".)
+
+For example:
+
+E[X+Y]=∑x∈X,y∈Y(x+y)pX,Y(x,y).
+
+$$\mathbb {E}[X + Y] = \sum _{x \in \mathcal{X}, y\in \mathcal{Y}} (x + y) p_{X,Y}(x, y).$$
+
+ 
+Let's look at some properties of the expected value of the sum of multiple random variables.
+
+First, as a warm-up, show that:
+
+E[X+Y]=E[X]+E[Y].
+
+$$\mathbb {E}[X + Y] = \mathbb {E}[X] + \mathbb {E}[Y].$$
+ 
+_This equality is called linearity of expectation and it holds regardless of whether X and Y are independent._
+
+We previously saw that a binomial random variable with parameters n and p can be thought of as how many heads there are in n tosses where the probability of heads is p.
+
+A different way to view a binomial random variable is that it is the sum of n i.i.d. Bernoulli random variables each of parameter p. As a reminder, a Bernoulli random variable is 1 with probability p and 0 otherwise. Suppose that X1,X2,…,Xn are i.i.d. Bernoulli(p) random variables, and S=∑i=1nXi.
+
+
+
+p*(1-p)**2 + (1-p)*(0-p)**2
 
 
 
 
+$$\{1,2,3, K\heartsuit,   K\diamondsuit\}$$
 
 
 
+Wow this so helpful Derek!
 
+In all my studies of statistics I've never heard anything on how linearity can bypass  and bypass independence!
 
+So going by this example:
 
+ number of times for which a King in the deck is followed by another King
 
+ Indicator for the event that the ith card is a King with another King following it
 
+So I make the following assumptions:
 
+$$E [R] = E [R_1 + R_2 + · · · + R_{52}] =  E [R_1] + E[R_2] + · · · + E[R_{52}]$$
+
+Since I'm designating  as an indicator variable then:
+
+$$E[R_i] = P\{R_i\}$$
+
+$$\frac{4}{52} \cdot \frac{3}{51}  \forall i \in \{1...51\}$$
+
+ =  because of non replacement and the 52nd card cannot have king after it so .
