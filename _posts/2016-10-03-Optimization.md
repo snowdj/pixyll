@@ -311,7 +311,7 @@ New constraint: vs≥0 for s∈S.
 
 
 
-```
+```julia
 
 #Define model 
 m = Model()
