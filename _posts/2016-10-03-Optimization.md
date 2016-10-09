@@ -366,4 +366,25 @@ println("Objetive value: ", getobjectivevalue(m))
 
 
 
+he correct answer is:
 
+x1≥300w
+
+x4≥300(1−w)
+
+w∈{0,1}
+
+These three constraints ensure that at least one of the corners 1 and 4 must be illuminated with at least 300 units of illumination.
+
+xi≤150+150(1−zi)∀i∈{1,…,5}
+
+∑i=15zi≥3
+
+zi∈{0,1},∀i∈{1,…,5}
+
+These three constraints ensure that at least three or more of the corners must be illuminated by 150 units of illumination or less. To see that, if zi=1, then the corresponding corner i will need to have less than 150 units of luminosity. However, if zi=0, then the corresponding constraint becomes xi≤300, which will be satisfied anyway since the maximum luminosity we can have at an intersection is 300.∑i=15zi≥3 ensures that at least three intersections will have this “less than 150 units of luminosity” requirement.
+
+0.6x1−0.4x3≤0
+
+This constraints is derived from the fractional constraint x1(x1+x3)≤0.4, where x1 is the luminosity at intersection 1 and x1+x3 is the luminosity of corridor B. We then multiply x1+x3 on both sides of the inequality (since we know that x1+x3 is strictly positive), we get this linear constraint.
+ 
