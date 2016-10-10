@@ -348,6 +348,28 @@ To get the probability that the continuous random variable X is between A and B,
 Since this is a uniformly-distributed variable, we can use proportions to calculate the probability that the random variable takes on a value less than or equal to 7. The total range of possible values is 8-3 = 5. The range of values less than or equal to 7 is 7-3 = 4. Combining the two, the probability that the variable is less than or equal to 7 is 4/5 = 0.8 = 80%.
 
 
+###### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > The Cumulative Distribution Function
+
+
+A and D are valid CDFs. Both are non-decreasing functions, originating at zero and asymptote at 1. B is not a valid CDF since it does not start at zero (implying a positive probability for impossible values of the variable). C is not a valid CDF since there is a non-decreasing portion towards the origin.
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/94a130c1bf0de60c5eca46212b096e80/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S08_01_1.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
