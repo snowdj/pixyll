@@ -276,6 +276,11 @@ A probability function describes the mapping from each outcome of the random var
 a hypergeometric distribution describes the number of successes, k, out of a sample size of n drawn from a total population of size N without replacement.
 
 
+##### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > The Binomial Distribution
+
+
+
+
 
 
 
