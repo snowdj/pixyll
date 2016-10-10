@@ -237,6 +237,19 @@ Let p(I) denote the probability that you are invited and p(I’) denote the prob
 A random variable is a real-valued function whose domain is the sample space.
 
 
+A discrete random variable is a variable that can only take on a finite or countable infinite number of values. Many random variables are integers, but they do not have to be.
+
+
+The number of books in a box and the number of children in a classroom are classic examples of discrete random variables, because they are integer values. In other words, you can have 1, 2, 3, etc… books in a box but you cannot have 1.12324 books in a box. In principle, the weight of a box of books is not discrete, in that there are infinite possible weights and these are not countable. In contrast, if you have a scale that takes measurements in hundredths of a kilo from 0 to 100, the readings from that scale would be discrete since there are a countable number of possible readings.
+
+
+
+A continuous variable refers to a variable that can take on any value within some interval of the real line. The interval can be either bounded (for example, a decimal number from 0 to 25) or unbounded.
+
+
+
+
+
 
 
 
