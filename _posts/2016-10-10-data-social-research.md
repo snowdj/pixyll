@@ -217,13 +217,31 @@ P(B), assuming P(B) > 0.
  
  
  
- 
- 
+  
  
  To calculate the probability that a Republican candidate will win the general election, we do the following calculation: (0.3 * 0.5) + (0.2 * 0.1) + (0.2 * 0.2) + (0.1 * 0.1) + (0.2 * 0.1) = 0.24 or 24%.
 
 P(R) = P(c1)*P(R|c1) + P(c2)*P(R|c2) + P(c3)*P(R|c3)+ P(c4)*P(R|c4) + P(c5)*P(R|c5)
  
+ 
+We know that the probability of testing positive given that you have the condition is 85% and the probability of testing positive if you do not have the condition is 5%. Furthermore, we know that the probability of having the condition is 1%, so the probability of not having the condition must be 100% - 1% = 99%. Overall, p(t+) = p(t+|c)*p(c) + p(t+|c’)*p(c’) = 0.85 * 0.01 + 0.05 * 0.99 = 0.058, or 5.8%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
