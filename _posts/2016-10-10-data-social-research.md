@@ -382,7 +382,7 @@ has probability zero.
 
 
 
-
+Similar to the case of the PDF for a single variable, the joint probability at any particular point, fxy(x,y) is equal to zero, and the joint PDF must integrate to 1 over the x-y plane.
 
 
 
