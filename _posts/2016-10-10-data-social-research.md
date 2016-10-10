@@ -144,8 +144,10 @@ A factorial for a number X, represented as X!, is the product of all positive in
 
 
 
+###### Ordered and Unordered Arrangements
 
 
+ Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Fundamentals of Probability > Ordered and Unordered Arrangements
 
 
 
