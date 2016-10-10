@@ -356,9 +356,10 @@ A and D are valid CDFs. Both are non-decreasing functions, originating at zero a
 
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/94a130c1bf0de60c5eca46212b096e80/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S08_01_1.JPG)
 
+A correct interpretation of this CDF is that the random variable x takes on a value between 0 and B with a probability of 0.8 or 80%.
 
 
-
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/07f439a56028533abc9fe63e37875cb4/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S08_02.JPG)
 
 
 
