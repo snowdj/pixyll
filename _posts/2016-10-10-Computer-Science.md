@@ -13,6 +13,8 @@ layout: post
 
 [cs101](https://classroom.udacity.com/courses/cs101/lessons/48299949/concepts/486985440923)
 
+[Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
+
 2）Operating Systems
 
 
