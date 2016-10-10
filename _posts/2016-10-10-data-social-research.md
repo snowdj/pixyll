@@ -288,6 +288,27 @@ Let’s do an example similar to the one described in class. Suppose that you wi
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/3b356b3b332499a03bfa8e2c0d4f8586/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S04_01.JPG)
 
 
+##### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > Properties of the Probability Distribution
+
+
+
+Probability---random variables
+More formally, the probability function (PF) of X, where X
+is a discrete random variable, is the function f X such that
+for any real number x, f X (x) = P(X=x).
+The probability function has properties induced by our earlier
+definition of a probability. In particular,
+0 <= f X (x i ) <= 1
+Σ i f X (x i ) = 1
+P(A) = P(XcA) = Σ A f X (x i )
+
+
+
+
+
+
+
+
 
 
 
