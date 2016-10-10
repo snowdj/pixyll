@@ -273,7 +273,7 @@ A probability function describes the mapping from each outcome of the random var
 
 
 
-
+a hypergeometric distribution describes the number of successes, k, out of a sample size of n drawn from a total population of size N without replacement.
 
 
 
