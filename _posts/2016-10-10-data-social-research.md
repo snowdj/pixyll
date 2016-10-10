@@ -320,6 +320,27 @@ the probability function fx(x) for a discrete random variable X describes the pr
 
 
 
+Probability---random variables
+Just like the PF, the PDF has properties induced by our
+earlier definition of a probability. In particular,
+
+0 <= f X (x)
+
+∫ f X (x) = 1
+
+P(A) = P(a <= X <= b) = ∫ A f X (x)dx
+
+Note the value of a PDF at a particular x does not have the
+same interpretation as a probability. In fact, P(X=x) = 0
+for any x if X is continuous.
+
+
+
+
+
+
+
+
 
 
 
