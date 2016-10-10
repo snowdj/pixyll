@@ -185,16 +185,29 @@ whether the other occurred.
 
 
 a. Two siblings are both taller than average .
+
 b. You roll a “4” twice, when rolling a fair die two times 
+
 c. It rains today, and your classmate brings an umbrella to class.
+
 d. The chance that the morning bus arrives late, and the likelihood that your classmate brings a sandwich for lunch 
+
 EXPLANATION
 
 B and D are both examples of plausibly independent events. If you have a fair 6-sided die, the chance of rolling a 4 is 1/6. Regardless of which number is rolled on the first attempt, the chance of rolling a 4 remains 1/6 for the second roll. The two events in D are completely unrelated, so we would not expect the realization of one to impact the probability that the other occurs. In contrast, A and C represent pairs of events or outcomes that are likely not independent. If we know that one of a pair of siblings is very tall, we might increase our expectation of the probability that the second of a pair of siblings is tall. Similarly, if you know that there is a high likelihood of rain, then you might believe that there is a higher probability that your classmate brought an umbrella to class.
  
  
  
- 
+ ##### Probability---conditional probability
+Recall that knowing that two events are independent means
+that the occurrence (or nonoccurrence) of one event doesn’t
+tell you anything about the other.
+But what if we have two events where the occurrence of one
+event actually tells us something relevant about the
+probability of another event? How can we alter the
+probability of the second event appropriately?
+The probability of A conditional on B, P(A|B), is P(AB)/
+P(B), assuming P(B) > 0.
  
  
  
