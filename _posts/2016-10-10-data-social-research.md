@@ -176,7 +176,37 @@ The proper intuition about independent events is that knowing one
 event occurred doesn’t give you any information about
 whether the other occurred.
 
+ Two events are said to be independent if the fact that one of the events occurs does not impact the probability that the other will occur.
+ 
+ 
+ 
+ 
+ Which of the following are examples of two events or outcomes that are likely to be independent from each other? (Check all that apply)
 
+
+a. Two siblings are both taller than average .
+b. You roll a “4” twice, when rolling a fair die two times 
+c. It rains today, and your classmate brings an umbrella to class.
+d. The chance that the morning bus arrives late, and the likelihood that your classmate brings a sandwich for lunch 
+EXPLANATION
+
+B and D are both examples of plausibly independent events. If you have a fair 6-sided die, the chance of rolling a 4 is 1/6. Regardless of which number is rolled on the first attempt, the chance of rolling a 4 remains 1/6 for the second roll. The two events in D are completely unrelated, so we would not expect the realization of one to impact the probability that the other occurs. In contrast, A and C represent pairs of events or outcomes that are likely not independent. If we know that one of a pair of siblings is very tall, we might increase our expectation of the probability that the second of a pair of siblings is tall. Similarly, if you know that there is a high likelihood of rain, then you might believe that there is a higher probability that your classmate brought an umbrella to class.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
