@@ -334,7 +334,7 @@ Note the value of a PDF at a particular x does not have the same interpretation 
 
 
 
-
+this is the fundamental difference between discrete and continuous random variables. While for a discrete variable, fx(x) evaluated at x can be equal to a positive probability, for a continuous random variable, the probability of any particular point is zero.
 
 
 
