@@ -158,6 +158,39 @@ A factorial for a number X, represented as X!, is the product of all positive in
 A “permutation” refers to an ordered arrangement of objects. In this case, the ordering of handshakes is irrelevant because a handshake between candidate A and candidate B is the same as a handshake between candidate B and candidate A. So we are only interested in counting the total number of handshakes that occur. We should use a combination rule to count the number of handshakes. Specifically, if there are 9 candidates and pairings of 2 candidates shaking hands, there are 9-choose-2 handshakes total.
 
 
+In the example discussed in class, there are 40! (40-factorial) possible combinations of office arrangements. For the first faculty member to be assigned an office, there are 40 different possible office assignments. Once the first faculty member has been assigned, one office is filled, and there are 39 possible office assignments remaining, and so on. So, this can be represented as 40! since this case is analogous to sampling without replacement.
+
+
+Suppose that you and a friend are deciding to watch 2 movies one evening. You have 10 movie options. 3 of these are action movies, and 7 are comedies. You and your friend plan to randomly select two of the movies. How many possible outcomes are there if the order you watch them in does not matter?
+
+There are 45 possible pairings of movies. Using the combination rule discussed in class, we can define the sample space as 10 choose 2. In this example, the number of possible combinations is represented by N!/((N-n)!n!) = 10!/(8!2!) = 45.
+
+
+
+
+There are (7 x 6)/2 = 21 outcomes where you and your friend end up watching 2 comedies.
+
+
+
+The proper intuition about independent events is that knowing one
+event occurred doesn’t give you any information about
+whether the other occurred.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
