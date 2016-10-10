@@ -232,7 +232,7 @@ From above, we know that the probability of testing positive, p(t+), is 5.8% or 
 
 Let p(I) denote the probability that you are invited and p(I’) denote the probability that you are not invited. Let p(fs) denote the probability that it is Friday or Saturday and p(fs’) denote the probability that it is not Friday or Saturday. You are given that p(I|fs) = 0.8 and p(I|fs’) = 0.5. You are not given p(fs), but can calculate this as 2/7 = 0.2857 or 29% (two of the possible seven days of the week). Using Bayes rule as before, p(fs|I) = (p(I|fs)*p(fs)) / p(I) = (p(I|fs)*p(fs)) / (p(I|fs)*p(fs) + p(I|fs’)*p(fs’) = (0.8 * 0.2857) / (0.8 * 0.2857 + 0.5 * 0.7143) = 0.39 or 39%.
 
-
+##### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > Introduction to Random Variables 
 
 A random variable is a real-valued function whose domain is the sample space.
 
