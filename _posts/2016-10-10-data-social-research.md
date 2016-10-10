@@ -362,6 +362,23 @@ A correct interpretation of this CDF is that the random variable x takes on a va
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/07f439a56028533abc9fe63e37875cb4/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S08_02.JPG)
 
 
+#### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > Joint Distributio
+
+
+Probability---joint distributions
+If X and Y are continuous random variables defined on the
+same sample space S, then the joint probability density
+function of X&Y, f XY (x,y), is the surface such that for
+any region A of the xy-plane,
+
+P((X,Y) c A) =∫∫ A f XY (x,y)dxdy
+
+
+Like before, properties of probability imply certain properties
+of the joint PDF, such as it must integrate to 1 over the
+xy-plane, and any individual point or one-dimensional curve
+has probability zero.
+
 
 
 
