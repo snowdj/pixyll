@@ -148,10 +148,14 @@ A factorial for a number X, represented as X!, is the product of all positive in
 
 
  Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Fundamentals of Probability > Ordered and Unordered Arrangements
+ 
+ 
+ 
+ A permutation refers to an ordered arrangements of objects. For example, the example given in class where the sequence of letters and numbers drawn would make up a complete license plate number is a permutation. One way to think of a permutation is as a list in a particular sequence.
 
 
 
-
+A “permutation” refers to an ordered arrangement of objects. In this case, the ordering of handshakes is irrelevant because a handshake between candidate A and candidate B is the same as a handshake between candidate B and candidate A. So we are only interested in counting the total number of handshakes that occur. We should use a combination rule to count the number of handshakes. Specifically, if there are 9 candidates and pairings of 2 candidates shaking hands, there are 9-choose-2 handshakes total.
 
 
 
