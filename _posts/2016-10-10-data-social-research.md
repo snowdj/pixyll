@@ -246,6 +246,29 @@ The number of books in a box and the number of children in a classroom are class
 
 A continuous variable refers to a variable that can take on any value within some interval of the real line. The interval can be either bounded (for example, a decimal number from 0 to 25) or unbounded.
 
+Temperature, weight, and age are all continuous variables (though they could be measured and reported on a discrete scale). Age in years would be an example of a discrete variable, because it takes on a countable number of values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
