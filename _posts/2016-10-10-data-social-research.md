@@ -230,6 +230,11 @@ We know that the probability of testing positive given that you have the conditi
 From above, we know that the probability of testing positive, p(t+), is 5.8% or 0.058. We know the probability of testing positive given that you have the condition, p(t+|c), is 85% or 0.85, and that the probability of having the condition is 1% or 0.01. Using Bayes rule, p(c|t+) = (p(t+|c)*p(c)) / p(t+) = (0.85 * 0.01 ) / 0.058 = 0.1466 = 0.15 or 15%.
 
 
+Let p(I) denote the probability that you are invited and p(I’) denote the probability that you are not invited. Let p(fs) denote the probability that it is Friday or Saturday and p(fs’) denote the probability that it is not Friday or Saturday. You are given that p(I|fs) = 0.8 and p(I|fs’) = 0.5. You are not given p(fs), but can calculate this as 2/7 = 0.2857 or 29% (two of the possible seven days of the week). Using Bayes rule as before, p(fs|I) = (p(I|fs)*p(fs)) / p(I) = (p(I|fs)*p(fs)) / (p(I|fs)*p(fs) + p(I|fs’)*p(fs’) = (0.8 * 0.2857) / (0.8 * 0.2857 + 0.5 * 0.7143) = 0.39 or 39%.
+
+
+
+
 
 
 
