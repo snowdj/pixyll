@@ -293,14 +293,36 @@ Let’s do an example similar to the one described in class. Suppose that you wi
 
 
 Probability---random variables
+
 More formally, the probability function (PF) of X, where X
 is a discrete random variable, is the function f X such that
 for any real number x, f X (x) = P(X=x).
 The probability function has properties induced by our earlier
 definition of a probability. In particular,
+
 0 <= f X (x i ) <= 1
+
 Σ i f X (x i ) = 1
+
+
 P(A) = P(XcA) = Σ A f X (x i )
+
+
+A random variable X is continuous if there exists a non-
+negative function f X such that for any interval A c R,
+
+P(X c A) =∫ A f X (x)dx
+
+the probability function fx(x) for a discrete random variable X describes the probabilities associated with each value of X. Two useful properties for the probability function are that each of the individual probabilities must be less than or equal to 1, and their sum must be equal to 1. 
+
+
+##### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > Discrete versus Continuous Random Variables
+
+
+
+
+
+
 
 
 
