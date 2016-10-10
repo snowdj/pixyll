@@ -213,11 +213,16 @@ P(B), assuming P(B) > 0.
  Conditional probability refers to the case where knowing the outcome of one event tells you something about the likelihood of a second event. However, if the two events are independent, then knowing that A has occurred does not tell you any new information about the probability that B will occur. In this case, the probability that B occurs conditional on A is equal to the probability that B occurs regardless of the outcome of A.
  
  
+ The probability that candidate 3 wins the general election is the probability that candidate 3 wins the republican nomination multiplied by the probability that he or she wins the general election conditional on having won the nomination. This is 0.2 * 0.2 = 0.04 or 4%.
  
  
  
  
  
+ 
+ To calculate the probability that a Republican candidate will win the general election, we do the following calculation: (0.3 * 0.5) + (0.2 * 0.1) + (0.2 * 0.2) + (0.1 * 0.1) + (0.2 * 0.1) = 0.24 or 24%.
+
+P(R) = P(c1)*P(R|c1) + P(c2)*P(R|c2) + P(c3)*P(R|c3)+ P(c4)*P(R|c4) + P(c5)*P(R|c5)
  
  
 
