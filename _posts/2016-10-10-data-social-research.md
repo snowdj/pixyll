@@ -337,11 +337,11 @@ Note the value of a PDF at a particular x does not have the same interpretation 
 this is the fundamental difference between discrete and continuous random variables. While for a discrete variable, fx(x) evaluated at x can be equal to a positive probability, for a continuous random variable, the probability of any particular point is zero.
 
 
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/95f610380a2582e2a3d866889852ffa3/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S06_01.JPG)
 
 
 
-
-
+To get the probability that the continuous random variable X is between A and B, you take the integral of the probability density function from A to B. Graphically, this is equivalent to computing the area under the curve from A to B. (Remember that the total area under the curve is equal to one).
 
 
 
