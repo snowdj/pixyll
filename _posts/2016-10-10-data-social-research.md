@@ -330,9 +330,7 @@ earlier definition of a probability. In particular,
 
 P(A) = P(a <= X <= b) = ∫ A f X (x)dx
 
-Note the value of a PDF at a particular x does not have the
-same interpretation as a probability. In fact, P(X=x) = 0
-for any x if X is continuous.
+Note the value of a PDF at a particular x does not have the same interpretation as a probability. In fact, P(X=x) = 0 for any x if X is continuous.
 
 
 
