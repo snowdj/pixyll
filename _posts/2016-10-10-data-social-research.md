@@ -279,10 +279,13 @@ a hypergeometric distribution describes the number of successes, k, out of a sam
 ##### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > The Binomial Distribution
 
 
+ The binomial distribution describes the number of successes in n trials where in each of the trials there is a binary outcome (usually classified as “success” or “failure”). Furthermore, the “success” and “failure” outcomes are not required to be equally likely. In the Steph Curry example given in class, the outcome of each three-point attempt is either that he makes the three-point shot (success) or does not make the three-point shot attempt (failure). It is not assumed that making or missing each shot is equally likely.
 
 
+Let’s do an example similar to the one described in class. Suppose that you will take 3 penalty kicks in a row. The likelihood of making each penalty kick is ¾ or 75%. What is the probability that you will score 2 (and only 2) of the 3 penalty kicks?
 
 
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/3b356b3b332499a03bfa8e2c0d4f8586/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S04_01.JPG_
 
 
 
