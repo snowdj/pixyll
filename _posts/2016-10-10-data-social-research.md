@@ -266,7 +266,30 @@ A probability function describes the mapping from each outcome of the random var
  
  
  
+ The hypergeometric distribution is characterized by the following equation:
  
+ 
+ ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/77ec0e8b45e6c8caffa0650165266967/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S03_01.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
