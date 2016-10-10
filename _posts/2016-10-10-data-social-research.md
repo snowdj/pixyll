@@ -210,7 +210,7 @@ The probability of A conditional on B, P(A|B), is P(AB)/
 P(B), assuming P(B) > 0.
  
  
- 
+ Conditional probability refers to the case where knowing the outcome of one event tells you something about the likelihood of a second event. However, if the two events are independent, then knowing that A has occurred does not tell you any new information about the probability that B will occur. In this case, the probability that B occurs conditional on A is equal to the probability that B occurs regardless of the outcome of A.
  
  
  
