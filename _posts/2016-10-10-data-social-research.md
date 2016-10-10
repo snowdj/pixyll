@@ -249,8 +249,24 @@ A continuous variable refers to a variable that can take on any value within som
 Temperature, weight, and age are all continuous variables (though they could be measured and reported on a discrete scale). Age in years would be an example of a discrete variable, because it takes on a countable number of values.
 
 
-
-
+A probability function describes the mapping from each outcome of the random variable to the likelihood of observing that outcome
+ A probability function describes the set of probability associated with each of the possible values of a random variable.
+ 
+ 
+ 
+ ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/3d425ee45044b5126a81ca797d3fedb2/asset-v1:MITx+14.310x+3T2016+type@asset+block/L03_S02_02.JPG)
+ 
+ 
+ 
+ C correctly represents that there are several equally likely combinations that would each add up to the middle values. For example, a total of 7 could be achieved from combinations of 1+6, 2+5, or 4+3. In contrast, there are few combinations that would add up to the high and low values. For example, achieving a 2 requires both die to roll a 1 and achieving a 12 requires both die to roll 6.
+ 
+ 
+ 
+ ###### Module 2: Fundamentals of Probability, Random Variables, Distributions, and Joint Distributions > Random Variables, Distributions, and Joint Distributions > The Hypergeometric Distributio
+ 
+ 
+ 
+ 
 
 
 
