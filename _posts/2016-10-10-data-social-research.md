@@ -345,6 +345,11 @@ To get the probability that the continuous random variable X is between A and B,
 
 
 
+Since this is a uniformly-distributed variable, we can use proportions to calculate the probability that the random variable takes on a value less than or equal to 7. The total range of possible values is 8-3 = 5. The range of values less than or equal to 7 is 7-3 = 4. Combining the two, the probability that the variable is less than or equal to 7 is 4/5 = 0.8 = 80%.
+
+
+
+
 
 
 
