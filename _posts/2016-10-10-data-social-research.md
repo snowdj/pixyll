@@ -234,6 +234,11 @@ Let p(I) denote the probability that you are invited and p(I’) denote the prob
 
 
 
+A random variable is a real-valued function whose domain is
+the sample space.
+
+
+
 
 
 
