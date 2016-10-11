@@ -408,6 +408,8 @@ The purpose of this week is how to get an additional information without re-solv
 
 For this problem, the problem of Max  is equal to that of Max . Furthermore, the latter has the same solution as Max (The value of objective function would be different but the  and  are the same).
 
+$$\frac{3}{2}(2G+\frac{20}{3}R)$$
+
 We have the sensitivity report for Max  and know the range of the coefficient for  not changing the solution (i.e. allowable increase/decrease of  in the sensitivity report).
 
 
