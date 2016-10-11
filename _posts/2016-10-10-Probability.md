@@ -1311,13 +1311,67 @@ How could observing one of the integers {1,2,…,63} tell us infinite bits of in
 It is possible to have the Shannon information content of an event be some fractional number of bits (e.g., 0.7 bits). The interpretation is that from many repeats of the underlying experiment, the average number of bits needed to store the event is given by the Shannon information content, which can be fractional.
 
 
+the sum we're computing is a telescoping sum where all the terms cancel out except for the first one: log2⁡128=7.
+
+In general, if we guess right after k tries, then the total amount of information “learned" is:
+
+
+
+Put another way, 7 bits of information are needed before you know the number, and with wrong guesses, you learn very few bits of information (although as the number of possibilities shrinks, wrong guesses provide more and more bits of information).
+
+$$\begin{eqnarray}
+&&
+\Big[
+\sum_{i=1}^{k-1}
+  \log_2 \frac1{\frac{128 - i}{128 - (i - 1)}}
+\Big]
++ \log_2 (128 - (k - 1)) \\
+&&=
+\Big[
+\sum_{i=1}^{k-1}
+  \log_2 \frac{128 - (i - 1)}{128 - i}
+\Big]
++ \log_2 (128 - (k - 1)) \\
+&&=
+\Big[
+\sum_{i=1}^{k-1}
+  \log_2 (128 - (i - 1)) - \log_2(128 - i)
+\Big]
++ \log_2 (128 - (k - 1)) \\
+&&= \log_2 128 - \log_2 127 + \log_2 127 - \cdots \\
+&&\quad
+- \log_2 (128 - (k - 1)) + \log_2 (128 - (k - 1)) \\
+&&= \log_2 128 \\
+&&= 7\text{ bits}.
+\end{eqnarray}$$
 
 
 
 
+###### Part 1: Probability and Inference > Week 4: Measuring Randomness > Shannon Entropy
 
 
 
+
+SHANNON ENTROPY: MEASURING RANDOMNESS IN A DISTRIBUTION/RANDOM VARIABLE (COURSE NOTES
+
+To go from the number of bits contained in an event to the number of bits contained in a random variable, we simply take the expectation of the Shannon information content across the possible outcomes. The resulting quantity is called the entropy of a random variable:
+
+H(X)=∑xpX(x)log2⁡1pX(x)⏟Shannon information content of event X=x.
+ 
+The interpretation is that on average, the number of bits needed to encode each i.i.d. sample of a random variable X is H(X). In fact, if we sample n times i.i.d. from pX, then two fundamental results in information theory that are beyond the scope of this course state that: (a) there's an algorithm that is able to store these n samples in nH(X) bits, and (b) we can't possibly store the sequence in fewer than nH(X) bits!
+
+Example: If X is a fair coin toss “heads" or “tails" each with probability 1/2, then
+
+H(X)=pX(heads)log2⁡1pX(heads)+pX(tails)log2⁡1pX(tails)=12⋅log2⁡112⏟1+12⋅log2⁡112⏟1=1 bit.
+Example: If X is a biased coin toss where heads occurs with probability 1 then
+
+H(X)=pX(heads)log2⁡1pX(heads)+pX(tails)log2⁡1pX(tails)=1⋅log2⁡11⏟0+0⋅⋅log2⁡10⏟1=0 bits,
+where 0log2⁡10=0log2⁡1−0log2⁡0=0 using the convention that 0log2⁡0≜0. (Note: You can use l'Hopital's rule from calculus to show that limx→0xlog⁡x=0 and limx→0xlog⁡1x=0.)
+
+Notation: Note that entropy H(X)=∑xpX(x)log2⁡1pX(x) is in the form of an expectation! So in fact, we can write an expectation:
+
+H(X)=E[log2⁡1pX(X)].
 
 
 
