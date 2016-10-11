@@ -387,4 +387,47 @@ These three constraints ensure that at least three or more of the corners must b
 0.6x1−0.4x3≤0
 
 This constraints is derived from the fractional constraint x1(x1+x3)≤0.4, where x1 is the luminosity at intersection 1 and x1+x3 is the luminosity of corridor B. We then multiply x1+x3 on both sides of the inequality (since we know that x1+x3 is strictly positive), we get this linear constraint.
- 
+
+
+
+
+
+The solution (x∗,y∗) can remain a unique optimal solution. This situation occurs, for example, if the change in the costs is very small.
+
+The solution (x∗,y∗) remains optimal, but there are multiple optimal solutions. This situation can occur if the change in the costs is "just right." For example, if the cost function changed to ‘‘z=2R+2G", then the solutions (5, 3) and (2, 6) are both optimal, as are all of the solutions on the edge joining these two points.
+
+A solution other than (x∗,y∗) is the unique optimal solution. This situation can happen if, for example, one cost coefficient changes a lot. If the objective were ‘‘z=.1R+2G", the optimum solution would be (2, 6).
+
+
+
+
+#### Shadow Price 
+
+
+The purpose of this week is how to get an additional information without re-solving the probrem.
+
+For this problem, the problem of Max  is equal to that of Max . Furthermore, the latter has the same solution as Max (The value of objective function would be different but the  and  are the same).
+
+We have the sensitivity report for Max  and know the range of the coefficient for  not changing the solution (i.e. allowable increase/decrease of  in the sensitivity report).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
