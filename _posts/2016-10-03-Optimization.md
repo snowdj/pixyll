@@ -486,7 +486,10 @@ If we price out champagne glasses, the reduced cost is 6−7×(11/14)−p×1/35=
 
 
 
+It should increase by 4857.14. To determine the allowable increases when two cost coefficients change, one needs to divide the allowable increases by 2 (using the 100% rule). The number of cameras and memory sticks produced does not change because we remain within the (modified) allowable increase/decrease region suggested by the sensitivity report.
 
+
+Reducing the number of Test Device 3 hours by 50 could affect total revenue, but we do not have enough information to compute the magnitude of the change. The allowable decrease is is 2342.86, or 39 hours, which the suggested 50 hour reduction exceeds.
 
 
 
