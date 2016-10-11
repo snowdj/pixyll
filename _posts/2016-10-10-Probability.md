@@ -1226,6 +1226,46 @@ $$\mathbb {E}[X\mid \mathcal{B}_{i}] = \sum _{x\in \mathcal{X}}xp_{X\mid \mathca
 
 
 
+Solution: There are different ways to prove the law of total expectation. We take a fairly direct approach here, first writing everything in terms of outcomes in the sample space.
+
+The main technical hurdle is that the events B1,…,Bn are specified directly in the sample space, whereas working with values that X takes on requires mapping from the sample space to the alphabet of X.
+
+We will derive the law of total expectation starting from the right-hand side of the equation above, i.e., ∑i=1nE[X∣Bi]P(Bi).
+
+We first write E[X∣Bi] in terms of a summation over outcomes in Ω:
+
+
+
+
+
+$$\displaystyle  \sum _{x\in \mathcal{X}}x\frac{\mathbb {P}(\{ \omega \in \mathcal{B}_{i}\; :\; X(\omega )=x\} )}{\mathbb {P}(\mathcal{B}_{i})}$$
+
+
+[THE LAW OF TOTAL EXPECTATION (SOLUTION)](https://courses.edx.org/courses/course-v1:MITx+6.008.1x+3T2016/courseware/1__Probability_and_Inference/decisions_expectations/)
+
+$$\displaystyle  \sum _{x\in \mathcal{X}}x\cdot \frac{\sum _{\omega \in \mathcal{B}_{i}\text { such that }X(\omega )=x}\mathbb {P}(\{ \omega \} )}{\mathbb {P}(\mathcal{B}_{i})}$$
+
+
+$$\displaystyle  \frac{1}{\mathbb {P}(\mathcal{B}_{i})}\sum _{x\in \mathcal{X}}x\sum _{\omega \in \mathcal{B}_{i}\text { such that }X(\omega )=x}\mathbb {P}(\{ \omega \} )$$
+
+
+$$\displaystyle  \sum _{i=1}^{n}\bigg(\frac{1}{\mathbb {P}(\mathcal{B}_{i})}\sum _{\omega \in \mathcal{B}_{i}}X(\omega )\mathbb {P}(\{ \omega \} )\bigg)\mathbb {P}(\mathcal{B}_{i})$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
