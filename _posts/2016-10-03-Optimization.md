@@ -494,6 +494,29 @@ Reducing the number of Test Device 3 hours by 50 could affect total revenue, but
 
 
 
+We remain within the allowable decrease region for cameras, and reduce the profit by the product of the unit decrease and number of units. The new optimal profit is 125×171.4285714+135×800, which is approximately 129428.57.
+ 
+ 
+ 
+ For a single unit, we have 92−12×20=−148. One should also subtract the coefficient for circuit boards in other constraints times the shadow prices. However, the shadow prices for Test Device 2 capacity and Test Device 3 capacity are both 0. And the shadow price on the upper bound for circuit boards is also 0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
