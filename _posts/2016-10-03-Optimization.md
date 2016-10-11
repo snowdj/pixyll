@@ -423,10 +423,11 @@ We have the sensitivity report for Max  and know the range of the coefficient fo
 
 
 
+The correct answer is 2. We are changing two RHS coefficients. By the 100% rule, we divide all allowable changes of RHS coefficients in the SR by 2. After dividing by 2, we see that the allowable increases of 2 for production capacity and 15 for warehouse capacity are allowed. The change in the optimal objective value is (2×11/14)+(15×1/35)=11/7+3/7=2.
 
 
 
-
+##### Pricing Out
 
 
 
