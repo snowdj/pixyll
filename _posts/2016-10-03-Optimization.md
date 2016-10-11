@@ -430,6 +430,31 @@ The correct answer is 2. We are changing two RHS coefficients. By the 100% rule,
 ##### Pricing Out
 
 
+The correct answer is -1.0.
+
+We change the capacity coefficient from 10 to 22. To determine the reduced cost, we can then subtract the product of the constraint coefficients and shadow prices from the cost coefficient, resulting in 6−(8×1114)−(22×135)=42070−44070−4470=−6470=−0.91
+
+
+
+##### Computing Allowable Change
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
