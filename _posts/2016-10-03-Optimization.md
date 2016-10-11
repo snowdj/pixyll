@@ -451,6 +451,39 @@ value	if	we	change	the	constraint	to	“x 3 ≥	1.”
 
 
 
+Let	z * 	denote	the	max	objective	value.
+Suppose	we	require	x j 	≥	p	for	some	p	>	0.
+Then	the	**feasible	region	gets	smaller.**
+Let	z’	be	the	max	objective	value	for	the	modified	problem.
+Then	z’	≤	z * ,	and	thus	c̄ j 		≤	0.	
+
+
+
+The
+of a "≥" for a maximization problem
+Let	c̄ shadow
+j 	denote	the	reduced	cost	of	x j 	for	a	maximization	problem.			
+problem is non-positive.
+• 	c̄ j 		is	the	shadow	price	of	“x j 	≥	0.”			
+The • shadow
+price of a "≤" for a maximization problem
+	c̄ j 		≤	0.			Can	you	see	why?
+problem is non-negative.
+
+
+
+Consider the glass problem, with the following adjustment. Suppose instead that the coefficient for production capacity for champagne glasses decreased from 8 to 7, and simulataneously the coefficient for storage increased from 10 to p.
+
+For what values of p is it worth producing champagne glasses?
+
+The correct answer is:
+
+‘‘p≤17.5."
+If we price out champagne glasses, the reduced cost is 6−7×(11/14)−p×1/35=.5−p/35. This value is non-negative whenever p≤17.5.
+
+
+
+
 
 
 
