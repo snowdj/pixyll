@@ -499,6 +499,15 @@ We remain within the allowable decrease region for cameras, and reduce the profi
  
  
  For a single unit, we have 92−12×20=−148. One should also subtract the coefficient for circuit boards in other constraints times the shadow prices. However, the shadow prices for Test Device 2 capacity and Test Device 3 capacity are both 0. And the shadow price on the upper bound for circuit boards is also 0.
+ 
+ Using the special case of the 100% rule given in 15.053x, we need to divide the allowable increases and decreases by 2. The revised allowable increase for device 1 availability is 1640. The revised allowable decrease for circuit board demand is 350. Thus, the combined change in RHS is within the revised limits. The change in objective follows is 1000× [shadow price for device 1] −200× [shadow price for circuit board demand]. This is equal to 1000×20=20000.
+
+
+The extreme points are (0,1),(1,0),(0,2),(2,0),(4/3,4/3) and the optimum value of −4 is achieved at (0,1). Tracing out the simplex algorithm depends on where you start. If you happen to start from the extreme point (2,0), the simplex algorithm will either trace (1,0),(0,1) or (4/3,4/3),(0,1) in order.
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9067db644e366f143032aa6994a778b2/asset-v1:MITx+15.053x+3T2016+type@asset+block/R5P1.png)
+
+
 
 
 
