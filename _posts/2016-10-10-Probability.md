@@ -1413,6 +1413,116 @@ Entropy gives a very different measure for uncertainty than variance, which we s
 
 
 
+In computing the entropy of a random variable X, we look at the probabilities in the probability table of X. Did we have to look at the labels in the probability table (i.e., the labels correspond to the alphabet X of X)?
+
+Solution: The answer is no. You can see this in the Python code: we don't need to look at the alphabet X.
+
+Suppose for a random variable X, we take its probability table and shuffle the ordering of the probabilities (but otherwise keep the labels the same). For example, if X is a biased coin flip with probability of heads 3/4, suppose we took its table and instead have the probability of tails be 3/4 and the probability of heads be 1/4.
+
+By shuffling the ordering of the probabilities, does the entropy of the random variable change?
+
+Solution: The answer is no. Since what the labels are does not actually matter (of course, we cannot have the same label appear twice in the table though), we can permute the labels (or the probabilities) and get the same entropy.
+
+We've seen an example where the entropy is 0 bits. Can entropy be negative? (While there is an intuitive answer for this, see if you can show it mathematically.)
+
+Solution: The answer is no. First, note that for any probability p∈[0,1], the Shannon information content corresponding to this probability is log2⁡(1/p), which has a value from 0 to infinity, i.e., Shannon information content is always nonnegative. Shannon entropy is just a weighted average of Shannon information content, where the weights are nonnegative. A nonnegative weighted sum of a collection of nonnegative numbers remains nonnegative.
+
+For a random variable X that takes on one of two values, one with probability p and the other with probability 1−p, plot the entropy H(p) as a function of p in Python. For what value of p is the entropy maximized (i.e., what value of p yields the largest H(X))? Please provide an exact answer.
+
+Note that to get a list of values of p evenly spaced from 0 to 1 with for example 50 steps between them, you can use the NumPy linspace function:
+
+p_list = np.linspace(0, 1, 50)
+Solution: Here's the code to plot:
+```
+import numpy as np
+import matplotlib.pyplot as plt
+p_list = np.linspace(0, 1, 50)
+plt.figure()
+plt.plot(p_list,
+         [entropy(np.array([p, 1-p])) for p in p_list])
+plt.xlabel('p')
+plt.ylabel('H(Ber(p))')
+plt.show()
+```
+
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/ae2ff54f3a34518ac5383f226f57f155/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-entropy-bernoulli-entropy-plot.png)
+
+Note that for the y-axis label, we called it H(Ber(p)) since the distribution we are looking at is Bernoulli with parameter p (remember that a Bernoulli is like a coin flip and takes on value 1 with probability p and 0 otherwise).
+
+The maximum occurs at p=1/2, which corresponds to a uniform distribution on the two possible values, meaning that every possible value is equally likely. This is like a fair coin flip for which we really can't predict whether it's going to be heads or tails (whereas, for example, if the probability of heads were 0.6, then if we always predicted heads, then we would be correct more than 50-50 chance).
+
+As we'll see shortly, for any distribution with alphabet size k, a uniform distribution that assigns equal probability 1/k to all k outcomes achieves the largest possible entropy (out of all distributions with alphabet size k).
+
+
+
+
+
+##### INFORMATION DIVERGENCE: MEASURING HOW DIFFERENT TWO DISTRIBUTIONS ARE (COURSE NOTES)
+
+Information divergence (also called “Kullback-Leibler divergence" or “KL divergence" for short, or also “relative entropy") is a measure of how different two distributions p and q (over the same alphabet) are. To come up with information divergence, first, note that entropy of a random variable with distribution p could be thought of as the expected number of bits needed to encode a sample from p using the information content according to distribution p:
+
+∑xp(x)⏟expectation using plog2⁡1p(x)⏟information content according to p≜EX∼p[log2⁡1p(X)].
+ 
+ $$\underbrace{\sum _{x}p(x)}_{\text {expectation using }p}\underbrace{\log _{2}\frac{1}{p(x)}}_{\text {information content according to }p}\triangleq \mathbb {E}_{X \sim p}\Big[\log _{2}\frac{1}{p(X)}\Big].$$
+ 
+ 
+Here, we have introduced a new notation: EX∼p means that we are taking the expectation with respect to random variable X drawn from the distribution p. If it's clear which random variable we are taking the expectation with respect to, we will often just abbreviate the notation and write Ep instead of EX∼p.
+
+If instead we look at the information content according to a different distribution q, we get
+
+∑xp(x)⏟expectation using plog2⁡1q(x)⏟information content according to q≜EX∼p[log2⁡1q(X)].
+ 
+It turns out that if we are actually sampling from p but encoding samples as if they were from a different distribution q, then we always need to use more bits! This isn't terribly surprising in light of the fundamental result we alluded to that entropy of a random variable with distribution p is the minimum number of bits needed to encode samples from p.
+
+Information divergence is the price you pay in bits for trying to encode a sample from p using information content according to q instead of according to p:
+
+D(p∥q)=EX∼p[log2⁡1q(X)]−EX∼p[log2⁡1p(X)].
+ 
+Information divergence is always at least 0, and when it is equal to 0, then this means that p and q are the same distribution (i.e., p(x)=q(x) for all x). This property is called Gibbs' inequality.
+
+Gibbs' inequality makes information divergence seem a bit like a distance. However, information divergence is not like a distance in that it is not symmetric: in general, D(p∥q)≠D(q∥p).
+
+Often times, the equation for information divergence is written more concisely as
+
+D(p∥q)=∑xp(x)log⁡p(x)q(x),
+ 
+which you can get as follows:
+
+D(p∥q)=EX∼p[log2⁡1q(X)]−EX∼p[log2⁡1p(X)]=∑xp(x)log2⁡1q(x)−∑xp(x)log2⁡1p(x)=∑xp(x)[log2⁡1q(x)−log2⁡1p(x)]=∑xp(x)log2⁡p(x)q(x).
+Example: Suppose p is the distribution for a fair coin flip:
+
+p(x)={12if x=heads,12if x=tails.
+Meanwhile, suppose q is a distribution for a biased coin that always comes up heads (perhaps it's double-headed):
+
+q(x)={1if x=heads,0if x=tails.
+Then
+
+D(p∥q)=p(heads)log2⁡p(heads)q(heads)+p(tails)log2⁡p(tails)q(tails)=12log2⁡121+12log2⁡120⏟∞=∞ bits.
+This is not surprising: If we are sampling from p (for which we could get tails) but trying to encode the sample using q (which cannot possibly encode tails), then if we get tails, we are stuck: we can't store it! This incurs a penalty of infinity bits.
+
+Meanwhile,
+
+D(q∥p)=q(heads)log2⁡q(heads)p(heads)+q(tails)log2⁡q(tails)p(tails)=1log2⁡112+0log2⁡012⏟0=1 bit.
+When we sample from q, we always get heads. In fact, as we saw previously, the entropy of the distribution for an always-heads coin flip is 0 bits since there's no randomness. But here we are sampling from q and storing the sample using distribution p. For a fair coin flip, encoding using distribution p would store each sample using on average 1 bit. Thus, even though a sample from q is deterministically heads, we store it using 1 bit. This is the penalty we pay for storing a sample from q using distribution p.
+
+Notice that in this example, D(p∥q)≠D(q∥p). They aren't even close — one is infinity and the other is finite!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
