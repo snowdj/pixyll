@@ -508,15 +508,50 @@ The extreme points are (0,1),(1,0),(0,2),(2,0),(4/3,4/3) and the optimum value o
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9067db644e366f143032aa6994a778b2/asset-v1:MITx+15.053x+3T2016+type@asset+block/R5P1.png)
 
 
+Suppose that the objective function is changed to z=−x1+cx2. Graphically determine the values of c for which the solution found in part (a) remains optimal
+
+
+The correct answer is:
+
+−1≤c≤0
+
+For −1≤c≤0, the extreme point (0, 1) is optimal. For c=0 the optimum extreme points are (0,1) and (0,2). For c>0, (0,1) is not optimal anymore. Similarly, for c=−1, (0,1) and (1,0) are both optimal. For c<−1, (0,1) isn't optimal anymore.
 
 
 
+####### 
+
+Excerpted from: Dimitris Bertsimas and John N. Tsitsiklis, Introduction to Linear Optimization, Athena Scientific, 1997, Exercise 5.8. We thank the authors for permitting us to use this problem.
+
+[PART A](https://courses.edx.org/courses/course-v1:MITx+15.053x+3T2016/courseware/9c3a7c6efa5644e395524e12f3a9d15c/e80c44e2fabf4d2eb655eecc54ea0606/?child=first)
+
+
+$$\left.\begin{array}{rrcl} \max & z=51E + 102C + 66P_1 + 66P_2 +89B \\
+                \text {s.t.:} & & & \\
+                & 10E+15C+10P_1+10P_2+20B \leq 130 \\.
+& E+2C+2P_1+P_2+B \leq 13  \\
+& 3E+C+6P_1+6P_2+3B \leq 45 \\ 
+&  2E+4C+2P_1+5P_2+3B \leq 23\\
+&  P_1-P_2 = 0 \\
+&  E,C,P_1,P_2, B  \geq 0 \\                
+                \end{array}\right\}$$
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/2f3e56ddfad8f65db4f04e5f928b7a5f/asset-v1:MITx+15.053x+3T2016+type@asset+block/p2b.tiff)
 
 
 
-
-
-
+$$\left.\begin{array}{rrcl}      &  \max & z=200X_{AR} + 300X_{BR} + 100X_{CR} + 292X_{BO} + 88X_{CO}\\
+                    &  \text {s.t.:} & & & \\
+       & \text{Regular Typesetting}     &  2X_{BR} +3X_{CR}   & \leq & 40 \\
+        & \text{Overtime Typesetting}     &  2X_{BO} + 3X_{CO} & \leq &  35 \\
+        & \text{Camera}     &  3X_{AR} + X_{BR} + 3x_{CR} + X_{BO} + 3X_{CO}& \leq & 60 \\
+        & \text{Pressroom}     & 3X_{AR} + 6X_{BR} + 2x_{CR} + 6X_{BO} + 2X_{CO} & \leq & 200 \\
+        & \text{Bindery}     & 5X_{AR} + 4X_{BR} + 4X_{BO} & \leq & 160 \\
+        & \text{Class A, minimum}     & X_{AR} & \geq & 10 \\
+        & \text{Class B, minimum}     & X_{BR}+X_{BO}& \geq & 10 \\
+        & \text{Class C, minimum}     & X_{CR}+X_{CO}&\geq & 5 \\
+                
+                \end{array}\right\}$$
 
 
 
