@@ -1401,7 +1401,7 @@ H(X)=E[log2⁡1pX(X)].
 $$H(X) = \mathbb {E}\Big[\log _2 \frac{1}{p_ X(X)}\Big].$$
 
 
-
+Entropy gives a very different measure for uncertainty than variance, which we saw previously. Whereas variance var(X)=E[(X−E[X])2] measures how far a random variable is expected to deviate from its expected value E[X], entropy measures how many bits are needed on average to store each i.i.d. sample of a random variable X.
 
 
 
