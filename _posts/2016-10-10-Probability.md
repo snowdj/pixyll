@@ -1473,24 +1473,48 @@ Here, we have introduced a new notation: EX∼p means that we are taking the exp
 If instead we look at the information content according to a different distribution q, we get
 
 ∑xp(x)⏟expectation using plog2⁡1q(x)⏟information content according to q≜EX∼p[log2⁡1q(X)].
+
+$$\underbrace{\sum _{x}p(x)}_{\text {expectation using }p}\underbrace{\log _{2}\frac{1}{q(x)}}_{\text {information content according to }q}\triangleq \mathbb {E}_{X \sim p}\Big[\log _{2}\frac{1}{q(X)}\Big].$$
  
 It turns out that if we are actually sampling from p but encoding samples as if they were from a different distribution q, then we always need to use more bits! This isn't terribly surprising in light of the fundamental result we alluded to that entropy of a random variable with distribution p is the minimum number of bits needed to encode samples from p.
 
 Information divergence is the price you pay in bits for trying to encode a sample from p using information content according to q instead of according to p:
 
 D(p∥q)=EX∼p[log2⁡1q(X)]−EX∼p[log2⁡1p(X)].
+
+$$D(p\parallel q)=\mathbb {E}_{X \sim p}\Big[\log _{2}\frac{1}{q(X)}\Big]-\mathbb {E}_{X \sim p}\Big[\log _{2}\frac{1}{p(X)}\Big].$$
  
-Information divergence is always at least 0, and when it is equal to 0, then this means that p and q are the same distribution (i.e., p(x)=q(x) for all x). This property is called Gibbs' inequality.
+Information divergence is always at least 0, and when it is equal to 0, then this means that p and q are the same distribution (i.e., p(x)=q(x) for all x). This property is called **Gibbs' inequality**.
 
 Gibbs' inequality makes information divergence seem a bit like a distance. However, information divergence is not like a distance in that it is not symmetric: in general, D(p∥q)≠D(q∥p).
 
 Often times, the equation for information divergence is written more concisely as
 
 D(p∥q)=∑xp(x)log⁡p(x)q(x),
+
+$$D(p\parallel q) = \sum _ x p(x) \log \frac{p(x)}{q(x)},$$
  
 which you can get as follows:
 
 D(p∥q)=EX∼p[log2⁡1q(X)]−EX∼p[log2⁡1p(X)]=∑xp(x)log2⁡1q(x)−∑xp(x)log2⁡1p(x)=∑xp(x)[log2⁡1q(x)−log2⁡1p(x)]=∑xp(x)log2⁡p(x)q(x).
+
+$$\begin{eqnarray}
+D(p\parallel q)
+&=&
+  \mathbb{E}_{X \sim p}\Big[\log_{2}\frac{1}{q(X)}\Big]
+- \mathbb{E}_{X \sim p}\Big[\log_{2}\frac{1}{p(X)}\Big] \\
+&=&
+  \sum_x p(x) \log_2 \frac{1}{q(x)}
+- \sum_x p(x) \log_2 \frac{1}{p(x)} \\
+&=&
+  \sum_x p(x)
+  \Big[ \log_2 \frac{1}{q(x)} - \log_2 \frac{1}{p(x)} \Big] \\
+&=&
+  \sum_x p(x)
+  \log_2 \frac{p(x)}{q(x)}.
+\end{eqnarray}$$
+
+
 Example: Suppose p is the distribution for a fair coin flip:
 
 p(x)={12if x=heads,12if x=tails.
