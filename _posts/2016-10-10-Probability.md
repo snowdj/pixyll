@@ -1358,22 +1358,47 @@ SHANNON ENTROPY: MEASURING RANDOMNESS IN A DISTRIBUTION/RANDOM VARIABLE (COURSE 
 To go from the number of bits contained in an event to the number of bits contained in a random variable, we simply take the expectation of the Shannon information content across the possible outcomes. The resulting quantity is called the entropy of a random variable:
 
 H(X)=∑xpX(x)log2⁡1pX(x)⏟Shannon information content of event X=x.
+
+
+$$H(X)=\sum _{x}p_{X}(x)\underbrace{\log _{2}\frac{1}{p_{X}(x)}}_{\text {Shannon information content of event }X=x}.$$
  
 The interpretation is that on average, the number of bits needed to encode each i.i.d. sample of a random variable X is H(X). In fact, if we sample n times i.i.d. from pX, then two fundamental results in information theory that are beyond the scope of this course state that: (a) there's an algorithm that is able to store these n samples in nH(X) bits, and (b) we can't possibly store the sequence in fewer than nH(X) bits!
 
 Example: If X is a fair coin toss “heads" or “tails" each with probability 1/2, then
 
 H(X)=pX(heads)log2⁡1pX(heads)+pX(tails)log2⁡1pX(tails)=12⋅log2⁡112⏟1+12⋅log2⁡112⏟1=1 bit.
+
+$$\begin{eqnarray}
+H(X)
+&=& p_X(\text{heads}) \log_2 \frac1{p_X(\text{heads})}
++ p_X(\text{tails}) \log_2 \frac1{p_X(\text{tails})} \\
+&=& \frac12 \cdot \underbrace{\log_2 \frac1{\frac{1}{2}}}_1
++ \frac12 \cdot \underbrace{\log_2 \frac1{\frac{1}{2}}}_1 \\
+&=& 1 \text{ bit}.
+\end{eqnarray}$$
+
+
 Example: If X is a biased coin toss where heads occurs with probability 1 then
 
 H(X)=pX(heads)log2⁡1pX(heads)+pX(tails)log2⁡1pX(tails)=1⋅log2⁡11⏟0+0⋅⋅log2⁡10⏟1=0 bits,
+
+$$\begin{eqnarray}
+H(X)
+&=& p_X(\text{heads}) \log_2 \frac1{p_X(\text{heads})}
++ p_X(\text{tails}) \log_2 \frac1{p_X(\text{tails})} \\
+&=& 1 \cdot \underbrace{\log_2 \frac11}_0
++ 0 \cdot \cdot \underbrace{\log_2 \frac10}_1 \\
+&=& 0 \text{ bits},
+\end{eqnarray}$$
+
+
 where 0log2⁡10=0log2⁡1−0log2⁡0=0 using the convention that 0log2⁡0≜0. (Note: You can use l'Hopital's rule from calculus to show that limx→0xlog⁡x=0 and limx→0xlog⁡1x=0.)
 
-Notation: Note that entropy H(X)=∑xpX(x)log2⁡1pX(x) is in the form of an expectation! So in fact, we can write an expectation:
+Notation: Note that entropy H(X)=∑xpX(x)log2⁡1pX(x) $H(X) = \sum _ x p_ X(x) \log _2 \frac{1}{p_ X(x)}$ is in the form of an expectation! So in fact, we can write an expectation:
 
 H(X)=E[log2⁡1pX(X)].
 
-
+$$H(X) = \mathbb {E}\Big[\log _2 \frac{1}{p_ X(X)}\Big].$$
 
 
 
