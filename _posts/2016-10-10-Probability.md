@@ -1524,6 +1524,19 @@ q(x)={1if x=heads,0if x=tails.
 Then
 
 D(p∥q)=p(heads)log2⁡p(heads)q(heads)+p(tails)log2⁡p(tails)q(tails)=12log2⁡121+12log2⁡120⏟∞=∞ bits.
+
+$$\begin{eqnarray}
+D(p \parallel q)
+&=&
+  p(\text{heads}) \log_2 \frac{p(\text{heads})}{q(\text{heads})}
++ p(\text{tails}) \log_2 \frac{p(\text{tails})}{q(\text{tails})} \\
+&=&
+  \frac12\log_2 \frac{\frac12}1
++ \underbrace{\frac12\log_2 \frac{\frac12}0}_{\infty} \\
+&=&
+  \infty\text{ bits}.
+\end{eqnarray}$$
+
 This is not surprising: If we are sampling from p (for which we could get tails) but trying to encode the sample using q (which cannot possibly encode tails), then if we get tails, we are stuck: we can't store it! This incurs a penalty of infinity bits.
 
 Meanwhile,
