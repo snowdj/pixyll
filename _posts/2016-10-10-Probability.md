@@ -1406,6 +1406,13 @@ Entropy gives a very different measure for uncertainty than variance, which we s
 
 
 
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9b89218c0ba1011e741c9b19d86b4ef9/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-expectation-lotteries.png)
+
+
+
+
+
+
 
 
 
