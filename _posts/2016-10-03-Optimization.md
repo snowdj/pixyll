@@ -440,6 +440,16 @@ We change the capacity coefficient from 10 to 22. To determine the reduced cost,
 
 
 
+##### Reduced	costs	and	pricing	out
+
+
+The reduced	cost	of	a	variable	(say	x 3 )	is	the	shadow	price	of	
+its	nonnegativity constraint,	i.e.,	the	constraint	“x 3 ≥	0.”		
+The	reduced	cost of	x 3 is	the	change	in	the	optimal	objective	
+value	if	we	change	the	constraint	to	“x 3 ≥	1.”
+
+
+
 
 
 
