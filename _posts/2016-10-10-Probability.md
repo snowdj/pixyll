@@ -1542,23 +1542,85 @@ This is not surprising: If we are sampling from p (for which we could get tails)
 Meanwhile,
 
 D(q∥p)=q(heads)log2⁡q(heads)p(heads)+q(tails)log2⁡q(tails)p(tails)=1log2⁡112+0log2⁡012⏟0=1 bit.
+
+$$\begin{eqnarray}
+D(q \parallel p)
+&=&
+  q(\text{heads}) \log_2 \frac{q(\text{heads})}{p(\text{heads})}
++ q(\text{tails}) \log_2 \frac{q(\text{tails})}{p(\text{tails})} \\
+&=&
+  1 \log_2 \frac1{\frac12}
++ \underbrace{0 \log_2 \frac0{\frac12}}_0 \\
+&=&
+  1\text{ bit}.
+\end{eqnarray}$$
+
 When we sample from q, we always get heads. In fact, as we saw previously, the entropy of the distribution for an always-heads coin flip is 0 bits since there's no randomness. But here we are sampling from q and storing the sample using distribution p. For a fair coin flip, encoding using distribution p would store each sample using on average 1 bit. Thus, even though a sample from q is deterministically heads, we store it using 1 bit. This is the penalty we pay for storing a sample from q using distribution p.
 
 Notice that in this example, D(p∥q)≠D(q∥p). They aren't even close — one is infinity and the other is finite!
 
+##### Part 1: Probability and Inference > Week 4: Measuring Randomness > Exercise: Information Divergence
+
+
+We now look at a different way to think of Shannon entropy for a random variable X with alphabet X.
+
+Let random variable U have what's called a uniform distribution over alphabet X, meaning that
+
+pU(x)=1|X|for all x∈X.
+ 
+Notationally, we can write U∼Uniform(X).
+
+In the following problems, suppose the number of labels in X is given by k, i.e., k=|X|.
+
+What is H(U) in terms of k?
+
+
+$$\begin{eqnarray}
+H(U)
+&=& \sum_{x\in\mathcal{X}} p_U(x) \log_2 \frac1{p_U(x)} \\
+&=& \sum_{x\in\mathcal{X}} \frac1k \log_2 \frac1{\frac1k} \\
+&=& \sum_{x\in\mathcal{X}} \frac1k \log_2 k \\
+&=& (\log_2 k)\Big(\frac1k\Big)
+    \underbrace{\sum_{x\in\mathcal{X}} 1}_k \\
+&=& \log_2 k.
+\end{eqnarray}$$
 
 
 
+Next, we examine the divergence between pX and the uniform distribution. Show that D(pX∥pU) can be written of the form
+
+D(pX∥pU)=f(k)−H(X),
+ 
+for a function f that you will determine:
+
+What is f? Please write your answer in all lowercase with no spaces, and use “log" to mean log base 2 (please do not try to write a subscript 2). Note that we're just asking for what f is, so if your answer is, for instance, exp, then just put exp and not exp(k).
 
 
+$$\begin{eqnarray}
+D(p_X \parallel p_U)
+&=& \sum_{x\in\mathcal{X}} p_X(x) \log_2 \frac{p_X(x)}{p_U(x)} \\
+&=& \sum_{x\in\mathcal{X}} p_X(x) \log_2 \frac{p_X(x)}{1/k} \\
+&=& \sum_{x\in\mathcal{X}} p_X(x) \log_2 (k p_X(x)) \\
+&=& \sum_{x\in\mathcal{X}} p_X(x) \log_2 k
+    + \sum_{x\in\mathcal{X}} p_X(x) \log_2 p_X(x) \\
+&=& (\log_2 k) \underbrace{\sum_{x\in\mathcal{X}} p_X(x)}_1
+    + \sum_{x\in\mathcal{X}} p_X(x) \log_2 p_X(x) \\
+&=& \log_2 k
+    - \sum_{x\in\mathcal{X}} p_X(x) \log_2 \frac{1}{p_X(x)} \\
+&=& \underbrace{\log_2 k}_{f(k)} - H(X).
+\end{eqnarray}$$
 
+In particular, f is log base 2, which for this part you answer by just saying log to mean log base 2.
 
+Your answers to the previous two parts should tell you how the entropy of a uniform distribution (over an alphabet of size k) relates to the entropy of any distribution pX (over the same alphabet of size k).
 
+Solution: Because of Gibbs' inequality, the entropy of random variable X cannot be larger than the entropy of random variable U.
 
+In particular, notice that from the answers to the previous parts,
 
-
-
-
+D(pX∥pU)=H(U)−H(X).
+ 
+By Gibbs' inequality, information divergence is always nonnegative, which means that we must have H(U)−H(X)≥0, which means that H(X)≤H(U).
 
 
 
