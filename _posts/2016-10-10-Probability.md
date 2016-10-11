@@ -1251,6 +1251,100 @@ $$\displaystyle  \frac{1}{\mathbb {P}(\mathcal{B}_{i})}\sum _{x\in \mathcal{X}}x
 
 $$\displaystyle  \sum _{i=1}^{n}\bigg(\frac{1}{\mathbb {P}(\mathcal{B}_{i})}\sum _{\omega \in \mathcal{B}_{i}}X(\omega )\mathbb {P}(\{ \omega \} )\bigg)\mathbb {P}(\mathcal{B}_{i})$$
 
+#### Part 1: Probability and Inference > Week 4: Measuring Randomness > Introduction to Information-Theoretic Measures of Randomness
+
+
+
+We just saw some basics for decision making under uncertainty and expected values of random variables. One way we saw for measuring uncertainty was variance. Now we look at a different way of measuring uncertainty or randomness using some ideas from information theory.
+
+In this section, we answer the following questions in terms of bits (as in bits on a computer; everything stored on a computer is actually 0's and 1's each of which is 1 bit):
+
+How do we measure how random an event is?
+
+How do we measure how random a random variable or a distribution is?
+
+How do we measure how different two distributions are?
+
+How much information do two random variables share?
+
+For now, this material may seem like a bizarre exercise relating to expectation of random variables, but as we will see in the third part of the course on learning probabilistic models, information theory provides perhaps the cleanest derivations for some of the learning algorithms we will derive!
+
+More broadly but beyond the scope of 6.008.1x, information theory is often used to show what the best possible performance we should even hope an inference algorithm can achieve such as fundamental limits to how accurate we can make a prediction. And if you can show that your inference algorithm's performance meets the fundamental limit, then that certifies that your inference algorithm is optimal! Inference and information theory are heavily intertwined!
+
+
+##### Part 1: Probability and Inference > Week 4: Measuring Randomness > Shannon Information Content
+
+
+
+
+SHANNON INFORMATION CONTENT: MEASURING RANDOMNESS IN AN EVENT (COURSE NOTES)
+
+First, let's consider storing an integer that isn't random. Let's say we have an integer that is from 0,1,…,63. Then the number of bits needed to store this integer is log2⁡(64)=6 bits: you tell me 6 bits and I can tell you exactly what the integer is.
+
+A different way to think about this result is that we don't a priori know which of the 64 outcomes is going to be stored, and so each outcome is equally likely with probability 164. Then the number of bits needed to store an event A is given by what's called the “Shannon information content" (also called self-information):
+
+log2⁡1P(A).
+ 
+ $$\log _{2}\frac{1}{\mathbb {P}(\mathcal{A})}.$$
+ 
+In particular, for an integer x∈{0,1,…,63}, the Shannon information content of observing x is
+
+log2⁡1P(integer is x)=log2⁡11/64=log2⁡64=6 bits.
+
+
+$$\log _{2}\frac{1}{\mathbb {P}(\text {integer is }x)}=\log _{2}\frac{1}{1/64}=\log _{2}64=6\text { bits}.$$
+ 
+If instead, the integer was deterministically 0 and never equal to any of the other values 1,2,…,63, then the Shannon information content of observing integer 0 is
+
+log2⁡1P(integer is 0)=log2⁡11=0 bits.
+
+$$\log _{2}\frac{1}{\mathbb {P}(\text {integer is }0)}=\log _{2}\frac{1}{1}=0\text { bits}.$$
+ 
+This is not surprising in that a outcome that we deterministically always observe tells us no new information. Meanwhile, for each integer x∈{1,2,…,63},
+
+log2⁡1P(integer is x)=log2⁡10=∞ bits.
+
+$$\log _{2}\frac{1}{\mathbb {P}(\text {integer is }x)}=\log _{2}\frac{1}{0}=\infty \text { bits}.$$
+ 
+How could observing one of the integers {1,2,…,63} tell us infinite bits of information?! Well, this isn't an issue since the event that we observe any of these integers has probability 0 and is thus impossible. An interpration of Shannon information content is how surprised we would be to observe an event. In this sense, observing an impossible event would be infinitely surprising.
+
+It is possible to have the Shannon information content of an event be some fractional number of bits (e.g., 0.7 bits). The interpretation is that from many repeats of the underlying experiment, the average number of bits needed to store the event is given by the Shannon information content, which can be fractional.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
