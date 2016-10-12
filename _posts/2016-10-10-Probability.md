@@ -1625,38 +1625,17 @@ By Gibbs' inequality, information divergence is always nonnegative, which means 
 
 
 
+###### Definition of a “discrete probability space": 
 
+A discrete probability space (Ω,P) is the same thing as a finite probability space except that the sample space Ω is allowed to be either finite or countably infinite. In particular, a discrete probability space consists of two ingredients:
 
+a finite or countably infinite sample space Ω that is the collectively exhaustive, mutually exclusive set of all possible outcomes
 
+an assignment of probability P, where for any outcome ω∈Ω, we have P(outcome ω) be a number at least 0 and at most 1, and
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+∑ω∈ΩP(outcome ω)=1.
+ 
+Definition of a “discrete random variable": A discrete random variable X is the same thing as a finite random variable except that it's associated with a discrete probability space rather than a finite probability space. In particular, given a discrete probability space (Ω,P), a discrete random variable X maps Ω to a set of values X that the random variable can take on. Again, we can think of such a random variable X as generated from a two step procedure: some possible outcome ω is sampled from the discrete probability space (Ω,P), and then X takes on the value given by X(ω).
 
 
 
