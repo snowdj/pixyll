@@ -1639,5 +1639,7 @@ Definition of a “discrete random variable": A discrete random variable X is th
 
 
 
+##### Can entropy be negative? (While there is an intuitive answer for this, see if you can show it mathematically.)
 
+Solution: The answer is no. First, note that for any probability p∈[0,1], the Shannon information content corresponding to this probability is log2⁡(1/p), which has a value from 0 to infinity, i.e., Shannon information content is always nonnegative. Shannon entropy is just a weighted average of Shannon information content, where the weights are nonnegative. A nonnegative weighted sum of a collection of nonnegative numbers remains nonnegative.
 
