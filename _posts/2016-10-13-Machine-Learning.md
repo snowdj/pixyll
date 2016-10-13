@@ -24,3 +24,6 @@ RMSE is commonly calculated in-sample on your training set. What's a potential d
 You have no idea how well your model generalizes to new data (i.e. overfitting).
 
 
+##### Introducing out-of-sample error measures
+
+
