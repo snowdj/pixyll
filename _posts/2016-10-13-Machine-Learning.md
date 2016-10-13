@@ -93,3 +93,6 @@ sqrt(mean(error^2))
 Why is the test set RMSE higher than the training set RMSE?
 
 Because you overfit the training set and the test set contains data the model hasn't seen before.
+
+
+#### Cross-validation
