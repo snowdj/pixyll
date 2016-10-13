@@ -96,3 +96,100 @@ Because you overfit the training set and the test set contains data the model ha
 
 
 #### Cross-validation
+
+
+
+Advantage of cross-validation
+
+What is the advantage of cross-validation over a single train/test split?
+
+It gives you multiple estimates of out-of-sample error, rather than a single estimate.
+
+
+
+
+##### 10-fold cross-validation
+
+As you saw in the video, a better approach to validating models is to use multiple systematic test sets, rather than a single random train/test split. Fortunately, the caret package makes this very easy to do:
+
+model <- train(y ~ ., my_data)
+
+caret supports many types of cross-validation, and you can specify which type of cross-validation and the number of cross-validation folds with the trainControl() function, which you pass to the trControl argument in train():
+
+model <- train(
+  y ~ ., my_data,
+  method = "lm",
+  trControl = trainControl(
+    method = "cv", number = 10,
+    verboseIter = TRUE
+  )
+)
+It's important to note that you pass the method for modeling to the main train() function and the method for cross-validation to the trainControl() function.
+
+
+
+##### 5-fold cross-validation
+100xp
+In this course, you will use a wide variety of datasets to explore the full flexibility of the caret package. Here, you will use the famous Boston housing dataset, where the goal is to predict median home values in various Boston suburbs.
+
+You can use exactly the same code as in the previous exercise, but change the dataset used by the model:
+
+model <- train(
+  medv ~ ., Boston,
+  method = "lm",
+  trControl = trainControl(
+    method = "cv", number = 10,
+    verboseIter = TRUE
+  )
+)
+Next, you can reduce the number of cross-validation folds from 10 to 5 using the number argument to the trainControl() argument:
+
+trControl = trainControl(
+  method = "cv", number = 5,
+  verboseIter = TRUE
+)
+
+
+##### 5 x 5-fold cross-validation
+
+You can do more than just one iteration of cross-validation. Repeated cross-validation gives you a better estimate of the test-set error. You can also repeat the entire cross-validation procedure. This takes longer, but gives you many more out-of-sample datasets to look at and much more precise assessments of how well the model performs.
+
+One of the awesome things about the train() function in caret is how easy it is to run very different models or methods of cross-validation just by tweaking a few simple arguments to the function call. For example, you could repeat your entire cross-validation procedure 5 times for greater confidence in your estimates of the model's out-of-sample accuracy, e.g.:
+
+trControl = trainControl(
+  method = "cv", number = 5,
+  repeats = 5, verboseIter = TRUE
+)
+
+##### Making predictions on new data
+
+Finally, the model you fit with the train() function has the exact same predict() interface as the linear regression models you fit earlier in this chapter.
+
+After fitting a model with train(), you can simply call predict() with new data, e.g:
+
+predict(my_model, new_data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
