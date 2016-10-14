@@ -2111,7 +2111,7 @@ corresponds to a new graphical model!
 
 
 
-
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/88287b51a1bcf64320a48a075ed87cc1/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-five-node-example-condition-x2.png)
 
 
 We can always view conditioning (and thus incorporating observations) as fixing the value(s) of whichever random variable(s) we observe, which always has the effect that you just saw: the pairwise potentials involving the observed random variables become part of new node potentials involving the unobserved (also called hidden or latent) random variables. Since these pairwise potentials corresponded to edges that were present, and now they have become part of node potentials instead, the effect on the graph is that we deleted the nodes that we made observations for.
@@ -2125,7 +2125,9 @@ Let's consider a graphical model where the graph is the graph we've seen before:
 If we condition on X2, we get a new graph. In this new graph:
 
 
+A missing independence statement refers to an independence statement that holds for the actual probability distribution, but that the graphical model doesn't imply at least not from looking at the graph. (For example, if your underlying distribution consists of 2 independent random variables and you encode it using a graphical model with 2 nodes connected by an edge, then note that in general, a graphical model with 2 nodes connected by an edge does not imply that the two random variables are independent. Thus, we say that there is a missing independency implied by the graphical model. However, of course it is possible to set the pairwise potential so that the graphical model with 2 nodes connected does represent 2 independent random variables, but we wouldn't be able to tell this from just looking at the graph.)
 
+An extra conditional independence statement is one where the graphical model necessarily implies a conditional independence statement, but this conditional independence does not actually hold in the underlying probability distribution. (For example, suppose we have a distribution with 2 random variables that are not independent, and we try to encode it with a graphical model with 2 nodes that are not connected by an edge. In this case, the graphical model actually has no hope of being able to represent the underlying distribution! It implies an independence statement that simply doesn't hold in the underlying distribution. More generally an extra conditional independence statement builds on this same idea but we do conditioning first.)
 
 
 
