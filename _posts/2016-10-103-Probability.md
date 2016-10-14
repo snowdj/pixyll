@@ -1984,10 +1984,97 @@ Base case n=1: There is only 1 node so there are no edges, so the claim clearly 
 Inductive step: Suppose the claim holds for every tree of size (i.e., number of nodes) up to k. Thus, every tree of size k nodes has k−1 edges. Now consider a tree T with k+1 nodes. Take a leaf node v from T and note that the tree T with v removed is a tree T′ of size k, which by the inductive hypothesis has k−1 edges. Since v is a leaf node though, it has exactly 1 neighbor, which means that the tree T has 1 more edge than the tree T′, i.e., T has k edges. This finishes the inductive step. ◻
 
 
+###### Part 2: Inference in Graphical Models > Week 5: Graphical Models > Exercise: Graphical Models
+
+Consider an undirected graphical model with the following graph:
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/0084f54d26680cf48a09bb767b6c6ef4/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-five-node-example.png)
+
+Which of the following probability distributions can the above graphical model encode? (Select all that are possible from the list below.)
+
+Solution: The graphical model can encode a distribution when X1,…,Xn are independent: just set all the ψi,j's to output 1 for all inputs, which effectively means that the edges need not be there.
+
+A probability distribution with factorization pX1,X2,X3,X4,X5=pX1pX2|X1pX3|X1pX4|X2pX5|X2 can indeed be encoded; by just looking at the pairwise factors we see that they match up with the edges in the graph.
+
+A probability distribution with factorization pX1,X2,X3,X4,X5=pX1pX2pX3|X1pX4|X2pX5 can also be encoded; the pairwise factors are a subset of what edges are present in the graph.
+
+A probability distribution with factorization pX1,X2,X3,X4,X5=pX3pX1|X4pX4pX2|X1pX5 can not be encoded as there is a pairwise factor that depends on both X1 and X4, and there is no edge (1,4) in the graph.
+
+Suppose there are n random variables X1,…,Xn and each random variable Xi takes on k different values.
+
+If there's no known structure, how many numbers are needed to specify the full joint distribution of X1,…,Xn?
+
+Solution: There are n variables, each of which takes of k possible values, so the number of entries in the joint probability table is
+
+k⋅k⋯k⏟n times=kn=O(kn).
+ 
+Suppose now that we know the joint distribution of the n random variables actually corresponds to an undirected graphical model with m edges (no loops of course). How many numbers are needed to store all the potential tables? (Pick the choice that is the smallest in big O.)
+
+Solution: There are n nodes each with a node potential table that can at most take O(k) space (we could possibly treat node potentials that are all 1's differently but here it suffices to get a worst-case upper bound), and m edges each with a pairwise potential table that takes O(k2) space. So in total we need O(n⋅k+m⋅k2) space.
+
+When there are no loops in a graph with n nodes, what is the largest that the number of edges m can be in terms of n?
+
+Solution: For a graph with n nodes, and no loops, trees have the most number of edges: m=n−1 edges. Any additional edge will cause a loop to form.
+
+Let's take a look a closer look at the normalization constant Z.
+
+Let's return to our first example where we have two random variables X1 and X2 that are independent. We represent it as a graphical model
+
+pX1,X2=1Zϕ1(x1)ϕ2(x2),
+ 
+where now we set ϕ1(x1)=pX1(x1) and ϕ2(x2)=2pX2(x2).
+
+What is Z in this case?
+
+Solution: If we're scaling all the entries of pX2 by 2, then Z, which was 1 before and ensured that the distribution sums to 1, now becomes Z=2 to counteract pX2 being scaled by 2.
+
+Very importantly: this problem tells us that there are actually infinitely many ways we can specify the potential tables because we can always scale all the entries by the same positive constant! What changes is Z.
+
+
+##### Part 2: Inference in Graphical Models > Week 5: Graphical Models > Practice Problem: Computing the Normalization Constant Solution
 
 
 
 
+PRACTICE PROBLEM: COMPUTING THE NORMALIZATION CONSTANT
+
+It turns out that once we know the potential functions, the normalization constant Z becomes fixed since the distribution needs to sum to 1. Let's show this for a simple case. Consider a two node graphical model with an edge between the two nodes corresponding to
+
+pX1,X2(x1,x2)=1Zϕ1(x1)ϕ2(x2)ψ12(x1,x2).
+
+
+ $$p_{X_{1},X_{2}}(x_{1},x_{2})=\frac{1}{Z}\phi _{1}(x_{1})\phi _{2}(x_{2})\psi _{12}(x_{1},x_{2}).$$
+ 
+Suppose that we are given what the potential functions are. Show what Z is equal to as a function of ϕ1, ϕ2, and ψ12.
+
+Hint: Sum both sides over all values of x1 and all values of x2. What is ∑x1∑x2pX1,X2(x1,x2) equal to?
+
+Because knowing the potentials fixes what the value of Z is, often times we'll omit writing Z and instead write
+
+pX_(x_)∝∏i∈Vϕi(xi)∏(i,j)∈Eψij(xi,xj),
+
+
+$$p_{\underline{X}}(\underline{x})\propto \prod _{i\in V}\phi _{i}(x_{i})\prod _{(i,j)\in E}\psi _{ij}(x_{i},x_{j}),$$
+ 
+where “∝" means “proportional to".
+
+
+Solution: We have
+
+ 	1	=	∑x1∑x2pX1,X2(x1,x2)	 	 
+ 	 	=	∑x1∑x21Zϕ1(x1)ϕ2(x2)ψ12(x1,x2)	 	 
+ 	 	=	1Z∑x1∑x2ϕ1(x1)ϕ2(x2)ψ12(x1,x2),	 	 
+so
+
+Z=∑x1∑x2ϕ1(x1)ϕ2(x2)ψ12(x1,x2).
+ 
+In general for a graphical model with graph G=(V,E) and factorization
+
+pX1,…,Xn(x1,…,xn)=1Z∏i∈Vϕi(xi)∏(i,j)∈Eψij(xi,xj),
+ 
+using the same reasoning as above,
+
+Z=∑x1⋯∑xn∏i∈Vϕi(xi)∏(i,j)∈Eψij(xi,xj).
+ 
 
 
 
