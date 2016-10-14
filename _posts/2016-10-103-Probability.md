@@ -1929,7 +1929,9 @@ When X1 and X2 were not known as to whether they are independent or not, the gra
 
 When we have X1↔X2↔X3, the set of nodes is V={1,2,3} and the set of edges is E={(1,2),(2,3)}.
 
-Definition of an undirected pairwise graphical model (we will just call this a graphical model): An undirected pairwise graphical model for random variables X1,…,Xn consists of an undirected graph with vertices V={1,…,n} and edges E, and tables ϕi's and ψi,j's that have nonnegative entries. The joint probability table of X1,…,Xn is given by
+**Definition of an undirected pairwise graphical model** (we will just call this a graphical model): An undirected pairwise graphical model for random variables X1,…,Xn consists of an undirected graph with vertices V={1,…,n} and edges E, and tables ϕi's and ψi,j's that have nonnegative entries. The joint probability table of X1,…,Xn is given by
+
+$$p_{X_1, \dots , X_ n}(x_1, \dots , x_ n) =\frac{1}{Z}\prod _{i\in V}\phi _{i}(x_{i})\prod _{(i,j)\in E}\psi _{ij}(x_{i},x_{j}),$$
 
 pX1,…,Xn(x1,…,xn)=1Z∏i∈Vϕi(xi)∏(i,j)∈Eψij(xi,xj),
  
@@ -1937,7 +1939,7 @@ where Z is the normalization constant that ensures that the probability distribu
 
 Note that in earlier examples, we didn't always specify that a random variable Xi needed to have a table ϕi. This is not a problem: we can just set ϕi(xi)=1 for all values of xi in this case.
 
-Terminology:
+**Terminology:**
 
 Each table ϕi depends only on random variable Xi and is called the node potential function or node potential of node i.
 
