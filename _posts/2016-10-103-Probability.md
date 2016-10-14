@@ -1644,4 +1644,18 @@ Definition of a “discrete random variable": A discrete random variable X is th
 Solution: The answer is no. First, note that for any probability p∈[0,1], the Shannon information content corresponding to this probability is log2⁡(1/p), which has a value from 0 to infinity, i.e., Shannon information content is always nonnegative. Shannon entropy is just a weighted average of Shannon information content, where the weights are nonnegative. A nonnegative weighted sum of a collection of nonnegative numbers remains nonnegative.
 
 
-#### Part 2: Inference in Graphical Models > Week 5: Introduction to Part 2 on Inference in Graphical Models > Introduction to Inference in Graphical Modelshttp://agecon2.tamu.edu/people/faculty/mccarl-bruce/641clas\02_641
+#### Part 2: Inference in Graphical Models > Week 5: Introduction to Part 2 on Inference in Graphical Models > Introduction to Inference in Graphical Models
+
+
+INTRODUCTION TO INFERENCE IN GRAPHICAL MODELS (TRANSCRIPT)
+
+As we saw earlier, inference about hidden random variables from observations requires an exponential amount of computation. In this section, we will see that exploiting structure and probability distributions can lead to much more efficient inference.
+
+Interestingly, the class of probability distributions that have that structure is quite broad and applicable to a wide range of real world problems. We will formally describe and characterize these probability distributions. Surprisingly, the complexity of the inference algorithms for this class of probability distributions becomes linear in the number of variables involved.
+
+In this section, the core concept that we will introduce and use is graphical models. Graphical models combine graph theory with probability to capture structure in probability distributions. We will use graphical models to describe the structure, to reason about conditional independence relationships in these probability distributions, and to do derive efficient inference algorithms.
+
+The algorithms you will see in the section are closely related to two famous algorithms. The first one is the Kalman filter. It was used to guide the Apollo mission, and is used today in many important engineering applications.
+
+The second algorithm is the Viterbi algorithm. It was originally designed to decode messages in noisy communication networks. And today it is used in almost every wireless communication protocol.
+
