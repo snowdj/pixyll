@@ -2076,6 +2076,11 @@ using the same reasoning as above,
 Z=∑x1⋯∑xn∏i∈Vϕi(xi)∏(i,j)∈Eψij(xi,xj).
  
 
+$$Z=\sum _{x_{1}}\cdots \sum _{x_{n}}\prod _{i\in V}\phi _{i}(x_{i})\prod _{(i,j)\in E}\psi _{ij}(x_{i},x_{j}).$$
+
+
+##### Part 2: Inference in Graphical Models > Week 5: Graphical Models > Exercise: Incorporating Observations in Graphical Models
+
 
 
 
