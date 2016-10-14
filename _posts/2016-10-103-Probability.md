@@ -1683,4 +1683,153 @@ Now suppose that pX and pY are actually independent and identically distributed 
 Solution: It suffices to store a single table for both pX and pY with k entries.
 
 
+##### Part 2: Inference in Graphical Models > Week 5: Efficiency in Computer Programs > Big O Notation
+
+BIG O NOTATION (COURSE NOTES)
+
+We now give a primer on how to measure how fast and how much space a computer program takes. If we're solving large-scale inference problems, we want the inference to be fast and to be able to handle large probabilistic models (in terms of the number of random variables), which demands using computer memory wisely.
+
+You just saw a glimpse of measuring how much space a computer program takes in looking at how many table entries need to be stored.
+
+Of course, when it comes to storing probability tables, one could make the argument that there's no need to store all the probabilities. Instead, for a random variable taking on k values, without any known structure for the distribution (e.g., whether it is, for instance, a binomial distribution), then there are k probabilities, but we actually only need to keep track of k−1 of them since the last table entry is just going to be one minus the sum of all the other entries!
+
+In talking about how much space a computer program needs to use, we don't want to worry about whether it's k numbers vs k−1 numbers. In both of these cases, what matters is that the computer program needs to store roughly k numbers. In fact, we won't even care about whether it's k vs 2k. What matters is that the amount of storage needed is roughly linear in k.
+
+This same idea comes into play when we talk about how fast a computer program runs. We will count the number of “basic" operations such as variable assignment, addition, multiplication, and table look-ups. The idea is that each basic operation takes about the same fixed unit of time.
+
+Let's take a look at a specific example:
+
+Suppose we marginalizing out Y with a joint probability table pX,Y, represented in a dictionaries-within-a-dictionary representation p_XY, to obtain the probability table for X stored as a dictionary p_X.
+
+p_X = {}
+for x in X_alphabet:
+    total = 0
+    for y in Y_alphabet:
+        total = total + p_XY[x][y]
+    p_X[x] = total
+How many basic operations does a computer have to do when running this code? Well, let's suppose initializing a dictionary and assigning it to variable p_X takes 1 basic operation (it likely takes more due to initializing the dictionary but that's okay – we will be a bit sloppy with some constant factors here).
+
+Next, the line total = 0 happens |X| times, each time incurring a cost of 1 basic operation, so in total it costs |X| basic operations.
+
+Next, the line total = total + p_XY[x][y] involves a table lookup, an addition, and a variable assignment so 3 basic operations (note that the table lookup might take more basic operations than just 1 to deal with the nested dictionaries), but since these 3 basic operations are nested in two for loops, we multiply by the number of times we're in the inner-most for loop: 3|X||Y| basic operations.
+
+Finally the line p_X[x] = total does a variable assignment and also indexes into a dictionary so let's say it costs 2 basic operations, which then gets multiplied by the number of times we reach that part in the outer for loop: 2|X| basic operations.
+
+Summing everything up, we get 1+3|X|+3|X||Y| basic operations. Let's say k=|X|=|Y|. Then we have 1+3k+3k2 basic operations, which scales like k2, the dominating term. We won't worry about the constants being a little off.
+
+To formalize such rough measures of growth, we now introduce big O notation.
+
+**Big O notation**: We say that a function f that depends on a variable n is O(g(n)) (read as "big O of g of n") if there exists some minimum n0 such that for all n≥n0,
+
+f(n)≤c⋅g(n)
+ 
+for some constant c>0. Notationally, we write either f(n)=O(g(n)) or f(n)∈O(g(n)). Note that the O stands for “order" so you could think of f being O(g(n)) as f growing on the order of g as a function of n.
+
+$$\mathcal{O}(g(n))$$
+
+**Example**: Storing the probability table for a random variable with alphabet size k takes O(k) amount of space. Even if we wanted to be efficient and store k−1 numbers, k−1 is still O(k), and in fact k−1≤k for all k, satisfying the definition of big O notation (with n0 being set to whatever we want, and c set to 1).
+
+**Example**: With joint probability table pX,Y where X and Y each take on k values, then marginalization to compute pX costs O(k2) basic operations. Fore xample, using the way we counted the number of basic operations earlier, 1+3k+3k2≤6k2 for all k≥2, satisfying the definition of big O notation with n0=2 and c=6.
+
+The basic idea is that when n is large enough (specifically larger than some n0), then we'll always have that f(n) grows at most as fast as g(n) scaled by a constant that does not depend on n.
+
+##### BIG O NOTATION WITH MULTIPLE VARIABLES
+
+Big O notation can be used with functions that depend on multiple variables.
+
+Example: In our material coverage for Bayes' theorem for random variables, we saw in an exercise where we have n random variables that we want a posterior distribution over, where each of these random variables has alphabet size k. Then computing the denominator of Bayes' theorem involves summing over kn table entries, a computation that takes running time O(kn).
+
+
+Solution:
+
+3n2+6n=O(n3).
+
+Solution: True. Our intution is that this is true, since n3 grows much faster than n2. For example, we can choose c=1 and plot the two functions:
+
+
+We can see that indeed, n3≥3n2+6n for large n. Let's find the three intersection points of these two functions. Set:
+
+ 	3n2+6n	=	n3	 	 
+ 	0	=	n3−3n2−6n	 	 
+ 	0	=	n(n2−3n−6)	 	 
+There are three intersection points: n=0, and (using the quadratic formula) n=3±332. We are interested in the largest of these, namely n0=3+332≈4.37.
+
+Therefore, 3n2+6n=O(n3) because for all n≥3±332, 3n2+6n≤n3.
+
+3n2+6n=O(n2).
+
+Solution: True. Our intuition is that this is true because both 3n2+6n and n2 are polynomials of the same order. However, we cannot choose c=1 this time because 3n2+6n>n2 always. Let's plot the functions for increasing values of c:
+
+
+We see that cn2 dominates 3n2+6n for large n as long as c is large enough. Let's choose c=12. To find no, let's find the intersection points between 3n2+6n and 12n2:
+
+ 	3n2+6n	=	12n2	 	 
+ 	0	=	9n2−6n	 	 
+ 	0	=	3n(3n−2)	 	 
+There are two intersection points: n=0 and n=23. We see that for c=12, we can choose n0=23. Therefore, 3n2+6n=O(n2) because for all n≥23, 3n2+6n≤12n2.
+
+2n=O(n2).
+
+Solution: False. Our intuition is that this is false: an exponential function like 2n grows much more quickly than a polynomial function like n2.
+
+To show that 2n≠O(n2), i.e., that there is no choice of n0 and c such that for all n≥n0,2nn2≤c, suppose for contradiction that there were such a n0 and constant c. Then this would imply that
+
+limn→∞2nn2≤c,
+ 
+but this is a contradiction since
+
+limn→∞2nn2=l'Hopital'slimn→∞(ln⁡2)2n2n=l'Hopital'slimn→∞(ln⁡2)22n2=∞.
+ 
+
+##### Part 2: Inference in Graphical Models > Week 5: Efficiency in Computer Programs > Important Remarks Regarding Big O Notation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
