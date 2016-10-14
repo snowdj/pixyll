@@ -1659,3 +1659,28 @@ The algorithms you will see in the section are closely related to two famous alg
 
 The second algorithm is the Viterbi algorithm. It was originally designed to decode messages in noisy communication networks. And today it is used in almost every wireless communication protocol.
 
+##### Part 2: Inference in Graphical Models > Week 5: Efficiency in Computer Programs > Exercise: Storing the Joint Probability Table of Two Random Variables
+
+
+Suppose that X and Y may possibly be dependent (i.e., we don't know if they are independent). How many table entries are in the joint probability table pX,Y?
+
+Solution: There are k possibilities for X, and ℓ possibilities for Y so the joint probability table has kℓ entries.
+
+Next, consider when the two random variables X and Y are known to be independent. This means that the joint probability table factorizes so that pX,Y(x,y)=pX(x)pY(y). In other words, rather than storing pX,Y, we could instead store the marginal distributions pX and pY, and then to compute pX,Y(x,y), we first look up pX(x) and pY(y) and multiply these two numbers together.
+
+How many table entries are in the probability table pX?
+
+Solution: There are k possibilities for X, so pX has k entries.
+
+How many table entries are in the probability table pY?
+
+Solution: There are ℓ possibilities for Y, so pY has ℓ entries.
+
+Note that the number of table entries needed to store pX and pY without making any additional assumptions is precisely the sum of the number of table entries in pX and the number of table entries in pY.
+
+Now suppose that pX and pY are actually independent and identically distributed and so each of X and Y now take on k possible values. How many table entries are needed to store pX and pY? Please provide your answer in terms of k and not ℓ.
+
+Solution: It suffices to store a single table for both pX and pY with k entries.
+
+
+
