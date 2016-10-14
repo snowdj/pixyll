@@ -1945,13 +1945,43 @@ Each table ϕi depends only on random variable Xi and is called the node potenti
 
 Each table ψi,j depends only on random variables Xi and Xj and is called the pairwise potential function or pairwise potential or edge potential of nodes i and j.
 
-Important: We require that the potential tables consist of nonnegative entries but each potential table does not have to sum to 1. The constant Z will ensure that the joint probability table actually sums to 1.
+**Important**: We require that the potential tables consist of nonnegative entries but each potential table does not have to sum to 1. The constant Z will ensure that the joint probability table actually sums to 1.
 
 
 
 
+#### Part 2: Inference in Graphical Models > Week 5: Graphical Models > Trees
 
 
+TREES
+
+A tree is a graph for which there are no loops, and we can reach from any node to any other node (moving along edges in the graph). We'll be seeing trees quite a bit so here are some basics of trees.
+
+Example:
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/bc614fbf26b58a90c1fa98e0c67b4f6c/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-2-rv-indep.png)
+
+This graph is not a tree since there is no path from X1 to X2.
+
+Example:
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/1d81fe229032137a7c630cf96c2a3b3c/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-2-rv-possibly-dependent.png)
+
+This graph is a tree since there are no loops and we can reach from any node to any other node.
+
+Example:
+
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/12f05e49dc88b13ee7e38bfdeca99c86/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-3-rv-markov-chain.png)
+
+This graph is a tree since there are no loops and we can reach from any node to any other node.
+
+Theorem: For any graph that has n nodes, if the graph is a tree, then it will always have exactly n−1 edges.
+
+Proof: We use induction.
+
+Base case n=1: There is only 1 node so there are no edges, so the claim clearly holds.
+
+Inductive step: Suppose the claim holds for every tree of size (i.e., number of nodes) up to k. Thus, every tree of size k nodes has k−1 edges. Now consider a tree T with k+1 nodes. Take a leaf node v from T and note that the tree T with v removed is a tree T′ of size k, which by the inductive hypothesis has k−1 edges. Since v is a leaf node though, it has exactly 1 neighbor, which means that the tree T has 1 more edge than the tree T′, i.e., T has k edges. This finishes the inductive step. ◻
 
 
 
