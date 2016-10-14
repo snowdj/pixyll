@@ -1821,16 +1821,26 @@ To introduce graphical models, we start with three simple examples.
 
 Note that previously we have been using random variables X and Y, but here we will use X1, X2, up to Xn, as it will provide a clean way to write out the general case.
 
-Graphical Model of Two Independent Random Variables
+**Graphical Model of Two Independent Random Variables**
 
 If X1 and X2 are independent random variables, then we know that pX1,X2(x1,x2)=pX1(x1)pX2(x2). Graphically, we represent this distribution as two circles. Because they are independent, we do not “connect" these two circles:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/bc614fbf26b58a90c1fa98e0c67b4f6c/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-2-rv-indep.png)
+
+
+
+
+
+
+
+
 
 
 On a computer, we store a separate table for each of the two circles, one for pX1 and one for pX2. Later we will see that tables that we store that depend only on a single random variable need not be a marginal distribution (such as in this example). Thus, we will give the tables new names. We let ϕ1=pX1 and ϕ2=pX2. (Later, ϕi is the table we store that is associated with a single random variable Xi. In this example, ϕ1 and ϕ2 are just set to be the same as the marginal distributions pX1 and pX2.)
 
 To summarize, the graphical model here includes the picture above (which is called a graph) along with the tables ϕ1 and ϕ2.
 
-Two Possibly Dependent Random Variables
+**Two Possibly Dependent Random Variables**
 
 Now suppose that we do not know whether X1 and X2 are independent. Then without further assumptions, we can work directly with the joint probability table pX1,X2, or we can use the product rule (which importantly always holds and does not require X1 and X2 to be independent).
 
@@ -1857,6 +1867,10 @@ There is one table that depends on exactly 2 random variables: ψ1,2=pX1∣X2. (
 The tables being stored in each of the above three cases are different, but the joint probability distribution they describe is the same.
 
 A common feature of all three different ways: there is a table that depends on both X1 and X2. For this reason, when we draw out a graphical representation in this case, we still have two circles, one for X1 and one for X2, but now we connect the two with a line:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/1d81fe229032137a7c630cf96c2a3b3c/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-2-rv-possibly-dependent.png)
+
+
 
 
 Again, the line is there between X1 and X2 precisely because to store the associated joint probability table, regardless of which of the different ways we store the tables, we have to use a table that depends on both X1 and X2.
@@ -1889,11 +1903,11 @@ Next, let's see how to store the distribution when it has factorization given by
 pX1,X2,X3(x1,x2,x3)=pX1(x1)⏟ϕ1(x1)pX2|X1(x2|x1)⏟ψ1,2(x1,x2)pX3|X2(x3|x2)⏟ψ2,3(x2,x3).
  
 The graph associated with this representation has three circles, one for each of the random variables X1, X2, and X3. We have a table ψ1,2 that depends on X1 and X2 so we draw a line between the circles for X1 and X2. Next we have a table ψ2,3 that depends on X2 and X3 so we draw a line between the circles for X2 and X3. This yields the following:
-
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/12f05e49dc88b13ee7e38bfdeca99c86/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-3-rv-markov-chain.png)
 
 This line-shaped graph is called a Markov chain. We will encounter Markov chains more later on. Notationally, when X1, X2, and X3 form a Markov chain, we write X1↔X2↔X3.
 
-The General Case
+**The General Case**
 
 We are almost ready to mathematically define what a graphical model is. As we saw from the above examples, each time we had a graph (a picture with circles and possibly lines) along with tables that we store.
 
