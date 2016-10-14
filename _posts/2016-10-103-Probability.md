@@ -2082,7 +2082,47 @@ $$Z=\sum _{x_{1}}\cdots \sum _{x_{n}}\prod _{i\in V}\phi _{i}(x_{i})\prod _{(i,j
 ##### Part 2: Inference in Graphical Models > Week 5: Graphical Models > Exercise: Incorporating Observations in Graphical Models
 
 
+Let's figure how incorporating observations works.
 
+Recall the 3-node Markov chain we had earlier X1↔X2↔X3. The graph was:
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/12f05e49dc88b13ee7e38bfdeca99c86/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-3-rv-markov-chain.png)
+
+
+
+We have the factorization:
+
+pX1,X2,X3(x1,x2,x3)=1Zϕ1(x1)ϕ2(x2)ϕ3(x3)ψ1,2(x1,x2)ψ2,3(x2,x3).
+ 
+Suppose we condition on X2=v for some fixed value v in the alphabet of X2. We want to figure out the distribution pX1,X3∣X2(⋅,⋅∣v). By the definition of conditional probability,
+
+ 	pX1,X3∣X2(x1,x3∣v)	=	pX1,X2,X3(x1,v,x3)pX2(v)	 	 
+ 	 	=	1Zϕ1(x1)ϕ2(v)ϕ3(x3)ψ1,2(x1,v)ψ2,3(v,x3)pX2(v)	 	 
+ 	 	=	1ZpX2(v)ϕ2(v)ϕ1(x1)ψ1,2(x1,v)ϕ3(x3)ψ2,3(v,x3).	 	 
+Let's define the following:
+
+ 	Z′	≜	ZpX2(v)ϕ2(v),	 	 
+ 	ϕ1′(x1)	≜	ϕ1(x1)ψ1,2(x1,v),	 	 
+ 	ϕ3′(x3)	≜	ϕ3(x3)ψ2,3(v,x3).	 	 
+Notice that
+
+pX1,X3∣X2(x1,x3∣v)=1Z′ϕ1′(x1)ϕ3′(x3)
+ 
+corresponds to a new graphical model!
+
+
+
+
+
+
+We can always view conditioning (and thus incorporating observations) as fixing the value(s) of whichever random variable(s) we observe, which always has the effect that you just saw: the pairwise potentials involving the observed random variables become part of new node potentials involving the unobserved (also called hidden or latent) random variables. Since these pairwise potentials corresponded to edges that were present, and now they have become part of node potentials instead, the effect on the graph is that we deleted the nodes that we made observations for.
+
+Let's consider a graphical model where the graph is the graph we've seen before:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/0084f54d26680cf48a09bb767b6c6ef4/asset-v1:MITx+6.008.1x+3T2016+type@asset+block/images_sec-graphical-models-five-node-example.png)
+
+
+
+If we condition on X2, we get a new graph. In this new graph:
 
 
 
