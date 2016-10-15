@@ -408,3 +408,68 @@ Answer choice a refers to a panel or longitudinal survey, which is a follow-up s
 
 Administrative data, when available, tends to better than self-reported data since it does not depend on the respondents both accurately remember or understanding the question correctly. In the segment, Professor Duflo describes this through the example of prices. As she discusses, you can either ask people directly how much they paid for something, or go to the local market and find out the prices. The latter tends to be more accurate than the former.
 
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Gathering and Collecting Data > Replication Data
+
+
+As mentioned in the question, the unit of observation is the household, therefore it cannot be an individual-level panel. Since different households and different villages are surveyed each time, it cannot be a household-level or village-level panel. However, since the data can be aggregated at the level of the district and the same districts are in the sample each year, it can be considered a district-level panel. As Professor Duflo mentions, typically from a repeated cross-sectional survey, when you aggregate enough, you can get to a panel at a larger level of aggregation.
+
+
+In this segment, Professor Duflo mentions how she believes that these datasets are not used enough. As discussed, researchers often only use a subset of the variables that they collect from the surveys, as they typically focus only on studying the impact of the intervention.
+
+
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Gathering and Collecting Data > Obtaining Administrative Information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
