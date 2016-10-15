@@ -521,6 +521,65 @@ The mean squared error is equal to the squared distance between the observed val
 
 
 
+The binomial distribution is approximately normal with mean np and variance np(1−p) for large n and for p and (1−p) that are not too small.
+
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Comparing Distributions
+
+
+
+
+Percentiles cannot be found directly from the height of the histogram. Instead, the 4th percentile is the point on the x-axis for which the cumulative histogram (the integral of the histogram) equals 0.04.
+
+
+boxplot is a graphical display that shows a measure of location (the median), the spread of the data (the interquartile range), and the presence of outliers. Thus, it does not allow us to precisely compare different percentiles of US and Bihar height distribution per se.
+
+
+
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Cumulative Histogram
+
+
+When you are interested in probabilities, representing them
+with CDF is more conventional, why?
+ A pdf represents probability with areas while a cdf represents
+probability with (vertical) distances.
+ It is much easier for the eye to compare distance than areas:
+the CDF is good to compare two distributions
+ In particular you can very easily visually assess rst order
+stochastic dominance : for any size, the probability that a
+woman in Bihar is smaller than that size is larger than the
+probability that a US woman is smaller.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
