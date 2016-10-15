@@ -419,6 +419,109 @@ In this segment, Professor Duflo mentions how she believes that these datasets a
 
 ##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Gathering and Collecting Data > Obtaining Administrative Information
 
+, the “Freedom of Information Act” is a law that gives citizens the right to access information from the United States federal government. Agencies must provide any information requested unless the information is protected from disclosure by law. Note that the law only applies agencies of the federal government, and therefore does not include private firms or institutions such as Facebook or MIT. To learn more about the Freedom of Information Act, you can visit this website: https://www.foia.gov/
+
+
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Gathering and Collecting Data > Intro to Web Scraping
+
+
+“web scraping” consists of pulling data from one page, “crawling” an entire web page, or setting up a program that runs in the background. Note that “crawling” refers to extracting data from a website programmatically.
+
+
+BeautifulSoup is a Python package that provides tools that are preprogrammed to find information on websites and therefore make web scraping easier, even for those unfamiliar with Python. Most of the things that you might want to do are already available in BeautifulSoup.
+
+
+ the more conventional way to perform web-scraping is to use Python. While there are some entry costs to using Python in terms of learning how to program, there are plenty of tutorials online and tools such as BeautifulSoup that make it rather simple to use in order to perform web scraping.
+
+
+
+
+
+Professor Duflo provides an example of a similar experiment in this lecture segment and discusses how you would need to seek Human Subjects Approval in order to perform such an experiment. Even if you are not collecting any personally identifiable information (PII) (i.e. the information is collected anonymously), if the study involves Human Subjects, you still need to gain Human Subjects Approval. The IRB committee reviews the proposal to both make sure that the study is ethical and that if PII is collected, it is properly stored and protected.
+
+
+
+This segment discusses some of the hassles with using paper surveys. Typically, after the survey is finished, the data from the paper survey is manually typed into a software that mimics the layout of the paper survey. Due to data entry error, the data needs to be entered twice and then any errors between the two entries need to be reconciled. While there are companies that offer to scan surveys, the quality of results varies. As a result, Professor Duflo mentions how J-PAL now primarily uses digital data collection methods, which even in resource poor settings tends to be cheaper and more efficient.
+ 
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Plotting Histograms
+
+
+To obtain the proportion of cases that fall into each bin, you must divide the the number of cases in that bin by the total number of observations.
+
+
+##### If your bandwidth is smaller than optimal, your function will look very jagged. As Professor Duflo mentions, the smaller the bandwidth, the bigger the variance. When you pick a bandwidth that is too large for your data, the function will try to find data that does not exist. This will cause the result kernel density function to be biased, meaning that there is an important characteristics of the data that you are missing as a result of selecting a non-optimal bandwidth.
+
+
+
+
+If your bandwidth is smaller than optimal, your function will look very jagged. As Professor Duflo mentions, the smaller the bandwidth, the bigger the variance. When you pick a bandwidth that is too large for your data, the function will try to find data that does not exist. This will cause the result kernel density function to be biased, meaning that there is an important characteristics of the data that you are missing as a result of selecting a non-optimal bandwidth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
