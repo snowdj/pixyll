@@ -478,9 +478,116 @@ these lines illustrates the bandwidth of the kernel density estimator shown in f
 
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/293aeb264f7e602376c912cf98fdd581/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S01_06.png)
 
-The distance between the two points at which a given blue dashed line intersects the x-axis 正确
+The distance between the two points at which a given blue dashed line intersects the x-axis 
 
 the bandwidth of the kernel density estimator is the width of the interval at which the kernel function is estimated.
+
+
+Since the kernel function integrates to 1, and the bandwidth represents the (fixed) width of the interval over which it is evaluated, the bandwidth determines the limits of the integral, and thus determines the height of the kernel function.
+
+
+The goal of kernel density estimation is to estimate random variables’ probability density functions. We turn to kernel density estimates to obtain a smoother, less variable representation of the underlying data, than a histogram.
+Intuitively, any function that weights observations on the boundary of the intervals more than observations at the center of the interval surrounding a given point, will lead to higher variance. This would defeat the purpose of a kernel, as it would result in a less smooth estimator.
+
+
+
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Bandwidth in Kernel Functions
+
+
+
+a
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/ab0a2cce9e1001b30cbbb27672296549/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S01_01.jpg)
+
+
+b
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/ac84701afa3763ba8cc4baace53304e3/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S01_02.jpg)
+
+
+
+
+c
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/162fb398fd4381da862cc182f2b36e17/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S01_03.jpg)
+
+
+the parameter h, the bandwidth of the estimating function, controls the smoothness and corresponds to the bin width of the histogram If h is too small, the estimate is too rough; if it is too large, then the resulting estimate of the function is too smooth, since it obscures the shape, and spreads the probability mass out too much, and hence, is biased.
+
+
+The mean squared error is equal to the squared distance between the observed values and the predicted values of a random variable. This is a combination of variance and bias, both of which are determined by the choice of bandwidth, and hence is a good way to determine the optimal bandwidth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
