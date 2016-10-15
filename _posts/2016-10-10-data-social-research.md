@@ -472,11 +472,15 @@ Given that K(x) is the standard normal density function, then by definition give
 
 
 
+these lines illustrates the bandwidth of the kernel density estimator shown in figure below?
+
 
 
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/293aeb264f7e602376c912cf98fdd581/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S01_06.png)
 
+The distance between the two points at which a given blue dashed line intersects the x-axis 正确
 
+the bandwidth of the kernel density estimator is the width of the interval at which the kernel function is estimated.
 
 
 
