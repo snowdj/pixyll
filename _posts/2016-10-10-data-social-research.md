@@ -401,9 +401,10 @@ While it is true that the information regarding respondents’ state of residenc
 Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Gathering and Collecting Data > Data Collection in Practice
 
 
+The purpose of a “back check” is to ensure the quality of the data collected. In a back check, a separate team visits the same household a few weeks after the original team already visited the household. The “back check” team asks the household a subset of the questions originally asked in order make sure that the original team was properly conducting the survey.
+Answer choice a refers to a panel or longitudinal survey, which is a follow-up survey of the entire original sample, with the exception of those who cannot be tracked down. Answer choice b refers to piloting a questionnaire, while answer choice d is the definition of a repeated cross-section.
 
 
 
-
-
+Administrative data, when available, tends to better than self-reported data since it does not depend on the respondents both accurately remember or understanding the question correctly. In the segment, Professor Duflo describes this through the example of prices. As she discusses, you can either ask people directly how much they paid for something, or go to the local market and find out the prices. The latter tends to be more accurate than the former.
 
