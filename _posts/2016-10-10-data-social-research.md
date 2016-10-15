@@ -569,11 +569,47 @@ The income distribution of country A first-order stochastically dominates that o
 
 ##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Representative Joint Distributions
 
-
+Using the below graph, for each of the three players, approximately what percentage of their successful shot attempts (“shots made”) were from further than 20 feet away from the basket?
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/75443065753a3f1d4c77fb2988f7376e/asset-v1:MITx+14.310x+3T2016+type@asset+block/CDF_Player_Compare_Shots_Made.png)
 
 
+ James: 15%, Durant: 25%, Curry 45% 
+ 
+ 
+ 
+ 
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/7ab7bed06cdc95172cea443de3a656c9/asset-v1:MITx+14.310x+3T2016+type@asset+block/shotdistance_baseline.png)
 
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/720566f81d1c68db1602a0e0af446dda/asset-v1:MITx+14.310x+3T2016+type@asset+block/shotdistance_midline.png)
+
+
+If the 3-point line becomes a straight line at a fixed distance from the baseline, we would expect for people to shoot less from the sides. We would still expect some shooters to bunch around the 3-point line. So there would be bunching close to the basket in the middle, and at the 3-point line, likely also in the middle (because it’s closest to the basket out of all points on the 3-point line). 
+
+
+
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > An Example: The Income Distribution
+
+Top-coding implies that income levels greater than a certain amount are recoded such that, earnings greater than a specified amount are replaced by some maximum. As Professor Duflo explained in class, this is why there is small peak “bump” at the right tail of the distribution.
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
