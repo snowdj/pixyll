@@ -389,74 +389,16 @@ Similar to the case of the PDF for a single variable, the joint probability at a
 
 
 
+#### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Gathering and Collecting Data > An Overview: Where Can We Find Data?
 
 
 
+Any information that could be used to identify or contact someone needs to be anonymized (removed) from a dataset before it is made publically available. This includes name, address, and phone number.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+While it is true that the information regarding respondents’ state of residence is not available publically since it could be used to identify individuals, it is possible to request this information. First, as Professor Duflo discusses, you would need to apply for a Human Subjects clearance from an IRB at your university or from another research institution and then email the owner of the dataset with your request. This process is generally true for other datasets as well. Therefore, if some information is not available, such as a state or district, but you believe it has been collected, you should check to see if you can request for it.
  
-
-
-
-
-
-
-
-
-
-
+Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Gathering and Collecting Data > Data Collection in Practice
 
 
 
