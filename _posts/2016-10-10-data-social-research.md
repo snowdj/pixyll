@@ -544,10 +544,102 @@ with CDF is more conventional, why?
 probability with (vertical) distances.
  It is much easier for the eye to compare distance than areas:
 the CDF is good to compare two distributions
- In particular you can very easily visually assess rst order
+ In particular you can very easily visually assess first order
 stochastic dominance : for any size, the probability that a
 woman in Bihar is smaller than that size is larger than the
 probability that a US woman is smaller.
+
+
+A histogram contains information about the frequency of observations within each interval. Dividing the frequency by the total number of observations gives us the density. On the other hand, a cumulative histogram conveys information on the “cumulative” frequency / density and hence provides an idea of what the CDF would look like. You can think of it as a running count as you move across bins, whereas a normal histogram resets the count for each bin.
+
+
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/33856a83f440dbd152c62d21dabba750/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S06_01.png)
+
+
+As Professor Duflo explained in class, since The figure shows that the “Automatic Enrollment” curve is to the right of the the “Selection” curve. From that, we can see that for any given consumption level, there are more people who consume less than than amount under the “Selection” scheme. So by definition, the automatic enrollment curve first order stochastically dominates the selection curve.
+ 
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Empirical Strategy
+
+
+
+The income distribution of country A first-order stochastically dominates that of country B, if the CDF of income in country A is everywhere below (or equivalently to the right) of country B.
+
+
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Representative Joint Distributions
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/75443065753a3f1d4c77fb2988f7376e/asset-v1:MITx+14.310x+3T2016+type@asset+block/CDF_Player_Compare_Shots_Made.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
