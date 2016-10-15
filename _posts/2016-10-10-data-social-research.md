@@ -459,14 +459,22 @@ If your bandwidth is smaller than optimal, your function will look very jagged. 
 
 As discussed in this segment, a kernel density plot provides a continuous probability density function of a random variable. In the last segment, we learned that a histogram is also an estimate of a probability distribution for a continuous variable, but, unlike the kernel density function, it is not a continuous function. Instead, a histogram demonstrates the number of observations or the proportion of observations that fit into a certain “bin.” From this, a histogram would be preferable to a kernel density function for cases in which we want to demonstrate the proportion of observations that fall into certain bins, such as when we want to show the proportion of households that fall within specified income brackets.
 
-
+Let K(x) be a non-negative, symmetric kernel weighting function, centered at zero and integrating to 1. Often, K(x) is chosen to be standard normal density, and the kernel density estimator is given by:
 
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9787a359815ccdc31fb3df517ba096a8/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S01_04.png)
 
 
+	A normal distribution with mean equal to the sample mean and standard deviation h.
+Explanation
+Given that K(x) is the standard normal density function, then by definition given in the equation above represents a normal density with standard deviation h.
 
 
 
+
+
+
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/293aeb264f7e602376c912cf98fdd581/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_S01_06.png)
 
 
 
