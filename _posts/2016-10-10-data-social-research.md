@@ -596,7 +596,22 @@ Top-coding implies that income levels greater than a certain amount are recoded 
 
 
  
+ From the Piketty-Saez graph shown below, it can be seen that between 1978 and 2013, the share of total income earned by the bottom 99% of the population _________, and that of the bottom 95% _________.
  
+ 
+ ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/3c34f81766ead56d8ac74b8ed951ef9f/asset-v1:MITx+14.310x+3T2016+type@asset+block/L05_top1percent.png)
+ 
+ 
+ The top 1% income share increased from roughly 8% to 22%, and the income share going to between the top 5 and 1% increased from roughly 13% to 17%. Therefore the overall share of the top 5% increased from roughly 8+13=21% to 22+17=39%. Hence the bottom 99% share decreased from 100-8=92% to 100-22=78%. And the bottom 95% share decreased from 100-21=79% to 100-39=61%.
+ 
+ For example, Piketty-Saez have information like “People paying between 30 and 35% in taxes have an average income of $200,000 and those paying between 35 and 45% have an average income of $500,000.” But the problem is that the cutoffs of the tax brackets do not coincide with the percentiles of the income distribution we are interested in (e.g. top 1%, top 5% etc). Therefore, they need to somehow interpolate the income distribution and instead use an interpolation technique exploiting properties of the Pareto distribution (which will be discussed in the next segment).
+ 
+ 
+ 
+ ##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Pareto Distribution
+ 
+##### Module 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Pareto Distribution
+ 3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Estimation of Pareto Coefficients
  
  
  
