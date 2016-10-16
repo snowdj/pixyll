@@ -654,7 +654,19 @@ From s=200,000, y=1,000,000, we have b=y/s=5. Hence λ=b/(b-1)=5/4=1.25.
  
  
  
+ We know that if 0<x<1 then it should also be the case that 0≤y≤1. We also have that: Pr(Y≤y)=Pr(X2≤y)=Pr(X≤y)=∫0ydx=y. To get the pdf we take the derivative with respect to y, and then we have that fy(y)=12y for 0<y<1.
  
+ 
+ We have that:
+ 
+ $$Pr (Y=y)= Pr \bigg( \frac{X}{X+1}=y \bigg) = Pr \bigg( X = \frac{y}{1-y} \bigg)= \frac{1}{3} \bigg( \frac{2}{3} \bigg)^{\frac{1-y}{y}}$$
+Pr(Y=y)=Pr(XX+1=y)=Pr(X=y1−y)=13(23)1−yy
+Since x=0,1,2,⋯, then y=0,12,23,34,⋯,xx+1,⋯
+ 
+
+
+
+
  
  
  
