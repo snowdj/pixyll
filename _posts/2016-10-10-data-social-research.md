@@ -614,7 +614,11 @@ Top-coding implies that income levels greater than a certain amount are recoded 
  3: Gathering and Collecting Data, Ethics, and Kernel Density Estimates > Summarizing and Describing Data > Estimation of Pareto Coefficients
  
  
- 
+ If the highest tax bracket starts at $200,000 and people in the highest tax bracket earn on average $1,000,000, then the implied Pareto coefficient is λ=____.
+
+1.25
+
+From s=200,000, y=1,000,000, we have b=y/s=5. Hence λ=b/(b-1)=5/4=1.25.
  
  
  
