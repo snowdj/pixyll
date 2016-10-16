@@ -647,6 +647,13 @@ From s=200,000, y=1,000,000, we have b=y/s=5. Hence λ=b/(b-1)=5/4=1.25.
  
  
  
+ From the figure you can see that the black line is always below the blue line. This is precisely the definition of first order stochastic dominance since for all value of k, it is satisfied that 
+ 
+ ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/83ad49a5c938e084a010b530e70ff066/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET03_edist.png)
+ 
+ 
+ 
+ 
  
  
  
