@@ -622,6 +622,28 @@ From s=200,000, y=1,000,000, we have b=y/s=5. Hence λ=b/(b-1)=5/4=1.25.
  
  
  
+ ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/a906ca9630247c85b89eaedd45d02121/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET03_Q13_code.png)
+ 
+ 
+ 
+ The below figure is produced by running this code:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/36efcd8d8cd5dee02d1446cbd649bdeb/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET03_kernel1.png)
+
+
+ 
+ 
+ The following plot shows the different shapes of the kernel functions. As you can see, the only one without a bell-shaped function is the rectangular one. This kernel is also called the uniform kernel
+ 
+ 
+ ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/411641de610467c39a058739e2897d3d/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET03_Q13_solution.png)
+ 
+ 
+ the optimal bandwidth balances a trade-off between bias and variance. The larger the bandwidth, the larger the bias of the density calculated at each point is, and the smoother the function looks. As you can see, the kernel in answer (c) is the furthest from the histogram, which suggests it is the one that was constructed with the largest bandwidth.
+ 
+ 
+ ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/b58aa1d6fc57f10ab929989e34f0f0bb/asset-v1:MITx+14.310x+3T2016+type@asset+block/PSET03_kernel2.png)
+ 
  
  
  
