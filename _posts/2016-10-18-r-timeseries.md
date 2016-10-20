@@ -11,6 +11,36 @@ layout: post
 
 [How to deal with date and time in R](https://rstudio-pubs-static.s3.amazonaws.com/28038_1bcb9aa80ca84f27ace07d612872861a.html)
 
+
+Extracting elements from a date/time
+
+Once your date/time data in in POSIXct format, it is easy to extract parts of it (i.e. the hour of the day to find out wether it is day or night, the month to find out the season, etc.). Again, the ?format function in the base package can do this but lubridate provides easier to use alternatives.
+
+x <- ymd_hms("2014-09-24 15:23:10")
+# base package version (always returns a character string)
+format(x, "%Y") # year
+
+[1] "2014"
+
+format(x, "%m") # month
+
+[1] "09"
+
+format(x, "%Y%m%d")
+
+[1] "20140924"
+
+# lubridate version (return numbers when appropriate)
+year(x)
+
+[1] 2014
+
+month(x)
+
+[1] 9
+
+day(x)
+
 [datacamp](https://campus.datacamp.com/courses/manipulating-time-series-data-in-r-with-xts-zoo/introduction-to-extensible-time-series-using-xts-and-zoo-for-time-series?ex=7). 
 
 
