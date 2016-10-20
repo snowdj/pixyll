@@ -4,6 +4,13 @@ layout: post
 ---
 ## R and timeseries
 
+
+
+
+[Best packages: lubridate](https://www.rdocumentation.org/packages/lubridate/versions/1.6.0/topics/ymd_hms)
+
+[How to deal with date and time in R](https://rstudio-pubs-static.s3.amazonaws.com/28038_1bcb9aa80ca84f27ace07d612872861a.html)
+
 [datacamp](https://campus.datacamp.com/courses/manipulating-time-series-data-in-r-with-xts-zoo/introduction-to-extensible-time-series-using-xts-and-zoo-for-time-series?ex=7). 
 
 
