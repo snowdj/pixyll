@@ -698,3 +698,9 @@ The median describes the point at which 50% of the values lie above and 50% of t
  
  several reasons are discussed for why a seller may choose to sell an item using an auction rather than through a posted price. Many items that are auctioned off tend to be expensive, but that does not have to be the case. For example, often expensive items like medical equipment, electronics, homes, etc. are sold at a posted price. Items that are commonly auctioned off are those where there is a lack of information or asymmetric information about the value of a good. Additionally, goods that are very rare or one-of-a-kind are often sold via auctions. 
  
+ 
+ 
+ Generally speaking, the order statistic refers to the maximum in an i.i.d. group of random variables.
+ 
+ 	The random variable defined as the maximum among a group of independent and identically distributed random variables 
+ 
