@@ -703,4 +703,7 @@ The median describes the point at which 50% of the values lie above and 50% of t
  Generally speaking, the order statistic refers to the maximum in an i.i.d. group of random variables.
  
  	The random variable defined as the maximum among a group of independent and identically distributed random variables 
- 
+    
+    Expected profits from a sale are calculated as the probability that at least one potential buyer has a value above the posted price. This is represented by the equation , where refers to the amount that you would get if you decided to sell at a posted price and refers to the probability that you sell the good. The probability that you sell the good is the probability that the order statistic (or the maximum value) of the set of values is greater than or equal to .
+    
+####　Module 5: Moments of a Random Variable, Applications to Auctions, & Intro to Regression > Moments of a Distribution and Auctions > Modeling the Posted Price 
