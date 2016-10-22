@@ -678,3 +678,23 @@ The example of the probability integral transformation given in class demonstrat
 b. The result that if you transform a random variable by its own CDF, the resulting distribution will be uniform [0,1] 
 
 Transforming a continuous random variable by its CDF yields a random variable that is uniformly distributed.
+
+a PDF does provide a complete description of the distribution of a random variable. In some cases, this can be more information than is necessary to capture or communicate at one point, so it is useful to have “moments” that can summarize a random variable.
+
+The median describes the point at which 50% of the values lie above and 50% of the values lie below. In other words, this is the point above and below which the integral of the PDF is equal to ½.
+
+ The mean, or expectation, can be visualized as the balancing point of the density. 
+ 
+ 
+ A procurement auction is one where various suppliers place bids for producing some kind of goods or services, and the winner is the supplier that presented the lowest bid (subject to other requirements or criteria). This can be thought of as somewhat of a reverse auction.
+ 
+ 
+##　Module 5: Moments of a Random Variable, Applications to Auctions, & Intro to Regression > Moments of a Distribution and Auctions > A Side Trip into Auction Theory - Quiz
+ 
+ many items from art pieces, livestock, tulip bulbs in the Netherlands, and some (but not all) items on eBay are typically sold at an auction. In contrast, many goods such as groceries at a grocery store are typically sold at what is known as a list price.
+ 
+ A Dutch auction refers to one where the bidding price starts high and consistently decreases until at least one bidder is willing to pay, at which point they are declared the winner. 
+ 
+ 
+ several reasons are discussed for why a seller may choose to sell an item using an auction rather than through a posted price. Many items that are auctioned off tend to be expensive, but that does not have to be the case. For example, often expensive items like medical equipment, electronics, homes, etc. are sold at a posted price. Items that are commonly auctioned off are those where there is a lack of information or asymmetric information about the value of a good. Additionally, goods that are very rare or one-of-a-kind are often sold via auctions. 
+ 
