@@ -17,6 +17,7 @@ It will cover what I am learning during my journey to the land of happiness.
     {% endfor %}
 </nav>
 
+
 <div class="catbloc" id="allposts">
     <h2>All posts</h2>
     
@@ -34,27 +35,24 @@ It will cover what I am learning during my journey to the land of happiness.
 
 
 
-
-------------------------------------------------------------------------------------------------------------------
 {% for category in site.categories %}
-    <div class="catbloc" id="{{ category | first | remove:' ' }}">
-        <h2>{{ category | first }}</h2>
-        
-        <ul>
-           {% for posts in category %}
-             {% for post in posts %}
-               {% if post.url %}
-                 <li>
-                   <a href="{{ post.url }}">
-                     <time>{{ post.date | date: "%-d %B %Y" }}</time>
-                     {{ post.title }}
-                   </a>
-                 </li>
-               {% endif %}
-             {% endfor %}
-           {% endfor %}
-        </ul>
-    </div>
+<div class="catbloc" id="{{ category | first | remove:' ' }}">
+    <h2>{{ category | first }}</h2>        
+    <ul>
+       {% for posts in category %}
+         {% for post in posts %}
+           {% if post.url %}
+             <li>
+               <a href="{{ post.url }}">
+                 <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                 {{ post.title }}
+               </a>
+             </li>
+           {% endif %}
+         {% endfor %}
+       {% endfor %}
+    </ul>
+</div>
 {% endfor %}
 
 ------------------------------------------------------------------------------------------------------------------------------
