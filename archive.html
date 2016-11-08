@@ -1,0 +1,78 @@
+---
+layout: page
+title: Archive
+permalink: /Archive/
+tags: archive
+---
+
+It will cover what I am learning during my journey to the land of happiness.
+
+<nav>
+    <a href="#allposts">All posts</a>
+    {% for category in site.categories %}
+        <a href="#{{ category | first | remove:' ' }}"><strong>{{ category | first }}</strong></a> {% if forloop.last %}.{% else %}, {% endif %}
+    {% endfor %}
+</nav>
+
+
+<div class="catbloc" id="allposts">
+    <h2>All posts</h2>
+    
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">
+                    <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                    {{ post.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+</div>
+
+
+
+{% for category in site.categories %}
+<div class="catbloc" id="{{ category | first | remove:' ' }}">
+    <h2>{{ category | first }}</h2>        
+    <ul>
+       {% for posts in category %}
+         {% for post in posts %}
+           {% if post.url %}
+             <li>
+               <a href="{{ post.url }}">
+                 <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                 {{ post.title }}
+               </a>
+             </li>
+           {% endif %}
+         {% endfor %}
+       {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+{% for tag in sortedtags %}
+<h3 id="{{ tag }}">{{ tag }}</h3>
+<ul>
+{% for post in site.tags[tag] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
+
+
+
+
+Archive method from [Jekyll](https://nildeala.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html)
+
+
