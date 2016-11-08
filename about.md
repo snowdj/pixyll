@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About another note
+title: Archive
 permalink: /about/
 tags: about
 ---
