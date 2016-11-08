@@ -32,6 +32,10 @@ It will cover what I am learning during my journey to the land of happiness.
         </ul>
 </div>
 
+
+
+
+------------------------------------------------------------------------------------------------------------------
 {% for category in site.categories %}
     <div class="catbloc" id="{{ category | first | remove:' ' }}">
         <h2>{{ category | first }}</h2>
@@ -53,7 +57,7 @@ It will cover what I am learning during my journey to the land of happiness.
     </div>
 {% endfor %}
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 {% capture tags %}
   {% for tag in site.tags %}
