@@ -17,11 +17,11 @@ It will cover what I am learning during my journey to the land of happiness.
 
 <div class="catbloc" id="allposts">
     <h2>All posts</h2>
-    
+
         <ul>
             {% for post in site.posts %}
                 <li>
-                    <a href="{{ post.url }}">
+                    <a href="{{ post.url | prepend: site.baseurl}}">
                     <time>{{ post.date | date: "%-d %B %Y" }}</time>
                     {{ post.title }}
                     </a>
@@ -34,13 +34,13 @@ It will cover what I am learning during my journey to the land of happiness.
 
 {% for category in site.categories %}
 <div class="catbloc" id="{{ category | first | remove:' ' }}">
-    <h2>{{ category | first }}</h2>        
+    <h2>{{ category | first }}</h2>
     <ul>
        {% for posts in category %}
          {% for post in posts %}
            {% if post.url %}
              <li>
-               <a href="{{ post.url }}">
+               <a href="{{ post.url | prepend: site.baseurl}}">
                  <time>{{ post.date | date: "%-d %B %Y" }}</time>
                  {{ post.title }}
                </a>
@@ -52,7 +52,7 @@ It will cover what I am learning during my journey to the land of happiness.
 </div>
 {% endfor %}
 
-------------------------------------------------------------------------------------------------------------------------------
+<h2>All tags</h2>
 
 {% capture tags %}
   {% for tag in site.tags %}
@@ -65,14 +65,10 @@ It will cover what I am learning during my journey to the land of happiness.
 <h3 id="{{ tag }}">{{ tag }}</h3>
 <ul>
 {% for post in site.tags[tag] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li><a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 {% endfor %}
 
 
-
-
-Archive method from [Jekyll](https://nildeala.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html)
-
-
+Archive method from  <a href="https://nildeala.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html"> nildeala.fr </a>
