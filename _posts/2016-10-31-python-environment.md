@@ -36,3 +36,6 @@ pip install -U -r requirements.txt
 (-U = update if it had already installed)
 
 
+[Managing environments](http://conda.pydata.org/docs/using/envs.html)
+
+
