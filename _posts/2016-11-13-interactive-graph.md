@@ -16,4 +16,4 @@ I would like to give python ipywidgets a shot.
 
 ## A New Post
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+ [Make Jupyter/IPython Notebook even more magical with cell magic extensions! ](https://www.youtube.com/watch?v=zxkdO07L29Q&t=35s). 
