@@ -16,3 +16,8 @@ https://braid.io/tile/labor-disparity
 
 
 https://www.ssa.gov/oact/babynames/limits.html
+
+
+    http://stackoverflow.com/questions/17975471/selenium-with-scrapy-for-dynamic-page
+    https://github.com/voliveirajr/seleniumcrawler
+
