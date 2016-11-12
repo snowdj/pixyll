@@ -31,3 +31,8 @@ activate py27 : windows
 deactivate 
 
 
+pip install -U -r requirements.txt 
+
+(-U = update if it had already installed)
+
+
