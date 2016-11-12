@@ -23,3 +23,8 @@ conda create -n py35 python=3.5
 source activate py35
 conda install notebook ipykernel
 ipython kernel install --user
+
+
+source activate python2
+
+deactivate 
