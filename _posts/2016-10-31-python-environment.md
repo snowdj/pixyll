@@ -25,6 +25,7 @@ conda install notebook ipykernel
 ipython kernel install --user
 
 
-source activate python2
+source activate py27
 
+activate py27 : windows
 deactivate 
