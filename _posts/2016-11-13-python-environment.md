@@ -59,7 +59,7 @@ $ pip install --upgrade "Nikola[extras]"
 ...snip...
 Successfully installed Nikola
 
-in my case.
+in my case. only works on ubuntu
 virtualenv nikola
 cd Scripts
 activate nikola
