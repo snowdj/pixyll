@@ -59,5 +59,8 @@ $ pip install --upgrade "Nikola[extras]"
 ...snip...
 Successfully installed Nikola
 
+in my case.
+virtualenv nikola
+cd Scripts
 
 pip install --ignore-installed   --upgrade "Nikola[extras]"
