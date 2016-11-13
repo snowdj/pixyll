@@ -59,6 +59,10 @@ $ pip install --upgrade "Nikola[extras]"
 ...snip...
 Successfully installed Nikola
 
+ virtualenv3 is obsolete!
+
+Thanks to the hard work of the core virtualenv team, the main virtualenv package has gained native support for Python 3, so ad-hoc forks of the program like this one are no longer necessary. From this time forward, you can simply download the mainline virtualenv and install it using your Python 3 interpreter.
+
 virtualenv -p python3 envname
 
 in my case. only works on ubuntu
