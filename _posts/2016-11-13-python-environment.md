@@ -59,6 +59,8 @@ $ pip install --upgrade "Nikola[extras]"
 ...snip...
 Successfully installed Nikola
 
+virtualenv -p python3 envname
+
 in my case. only works on ubuntu
 virtualenv nikola
 cd Scripts
