@@ -62,5 +62,5 @@ Successfully installed Nikola
 in my case.
 virtualenv nikola
 cd Scripts
-
+activate nikola
 pip install --ignore-installed   --upgrade "Nikola[extras]"
