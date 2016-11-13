@@ -58,3 +58,7 @@ $ source bin/activate
 $ pip install --upgrade "Nikola[extras]"
 ...snip...
 Successfully installed Nikola
+
+
+pip install --ignore-installed   --upgrade "Nikola[extras]" 
+
