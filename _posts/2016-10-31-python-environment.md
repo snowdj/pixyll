@@ -39,3 +39,5 @@ pip install -U -r requirements.txt
 [Managing environments](http://conda.pydata.org/docs/using/envs.html)
 
 
+oldyu@DESKTOP-5A8MM7P G:\project\nikola
+>  python -m virtualenv nikola
