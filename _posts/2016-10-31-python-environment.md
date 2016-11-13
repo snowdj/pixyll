@@ -41,3 +41,6 @@ pip install -U -r requirements.txt
 
 oldyu@DESKTOP-5A8MM7P G:\project\nikola
 >  python -m virtualenv nikola
+
+oldyu@DESKTOP-5A8MM7P G:\project\nikola\nikola\Scripts
+> activate nikola
