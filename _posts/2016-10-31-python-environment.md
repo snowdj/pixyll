@@ -39,10 +39,22 @@ pip install -U -r requirements.txt
 [Managing environments](http://conda.pydata.org/docs/using/envs.html)
 
 
-oldyu@DESKTOP-5A8MM7P G:\project\nikola
->  python -m virtualenv nikola
+for example:
 
-oldyu@DESKTOP-5A8MM7P G:\project\nikola\nikola\Scripts
-> activate nikola
+$ virtualenv3 nikola
+Note:
+  The command might be different in some environments.
+  You might need to use one of the following instead:
+    virtualenv
+    virtualenv-3.x (where x is your Python version)
+    virtualenv -p /usr/bin/python3
 
-https://getnikola.com/getting-started.html
+Using base prefix '/usr'
+New python executable in nikola/bin/python3
+Also creating executable in nikola/bin/python
+Installing setuptools, pip, wheel...done.
+$ cd nikola
+$ source bin/activate
+$ pip install --upgrade "Nikola[extras]"
+...snip...
+Successfully installed Nikola
