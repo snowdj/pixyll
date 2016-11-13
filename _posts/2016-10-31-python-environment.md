@@ -44,3 +44,5 @@ oldyu@DESKTOP-5A8MM7P G:\project\nikola
 
 oldyu@DESKTOP-5A8MM7P G:\project\nikola\nikola\Scripts
 > activate nikola
+
+https://getnikola.com/getting-started.html
