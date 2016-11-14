@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Use python build a kindle deliver system
 category: python
