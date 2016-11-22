@@ -71,6 +71,43 @@ print(repr(census) )
 
 
 
+
+
+##### Viewing Table Details
+
+With our table reflected, we can begin to learn more about the columns and structure of our table. It is important to get an understanding of our database by examining the column names. This can be done by using the _columns_ attribute and accessing the `keys()` method. For example, `census.columns.keys()` would return a list of column names on the census table.
+
+Following this, we can use the metadata container to find out more details about the reflected table such as the columns and their types. For example, we can get the metadata of our _census_ table on the `metadata.tables` dictionary with `metadata.tables['census']`. This output should match the details from print(repr(census)) in the previous exercise.
+
+Instructions
+
+Reflect the census table.
+
+Print a list of column names on the census table.
+
+Print the repr of the census table metadata
+
+
+```python
+# Reflect census table from the engine: census
+census = Table('census', metadata, autoload= True, autoload_with= engine )
+
+# Print columns names
+print(census.columns.keys())
+
+# Print full table metadata
+print( repr(metadata.tables['census']) )
+```
+
+<script.py> output:
+    ['state', 'sex', 'age', 'pop2000', 'pop2008']
+    Table('census', MetaData(bind=None), Column('state', VARCHAR(length=30), table=<census>), Column('sex', VARCHAR(length=1), table=<census>), Column('age', INTEGER(), table=<census>), Column('pop2000', INTEGER(), table=<census>), Column('pop2008', INTEGER(), table=<census>), schema=None)
+
+
+
+
+
+
 ## Python and spl
 
 [Intro to Relational Databases](https://classroom.udacity.com/courses/ud197/lessons/3415228765/concepts/34221585900923)
