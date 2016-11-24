@@ -246,7 +246,7 @@ Let's write another select statement; however, this time using the select() stat
 
 Table and MetaData have already been imported.
 
-Instructions
+**Instructions**
 Import select from the sqlalchemy module.
 Reflect the census table using the Table() object and the metadata.
 Create a query using the select() statement to retrieve the census table.
@@ -273,8 +273,34 @@ print(connection.execute(stmt).fetchall())
 ```
 
 
+### Handling a ResultSet
 
+Recall the differences between a ResultProxy and a ResultSet:
 
+ResultProxy: The object returned by the execute() method. It can be used in a variety of ways to get the data returned by the query.
+ResultSet: The actual data asked for in the query when using a fetch method such as fetchall() on a ResultProxy.
+This separation between the ResultSet and ResultProxy allows us to fetch as much or as little data as we desire.
 
+A query returns a ResultSet when a fetch method such as fetchall() is called on an executed query, and we can use Python to access all the data within it by column name and by list style indexes. For example, you can get the first row of the results by using results[0]. With that first row, you can then get data from the first column by either using first_row[0] or by column name such as first_row['column_name'].
+
+**Instructions**
+Using the ResultProxy results, save the first row as first_row and print it.
+Print the value of the first column in first_row.
+Print the value of the state column in first_row.
+
+```python
+# Get the first row of the results by using an index: first_row
+first_row = results[0]
+
+# Print the first row of the results
+print(first_row)
+
+# Print the first column of the row by using an index
+print(first_row[0])
+
+# Print the state column of the row by using its name
+print(first_row['state'])
+
+```
 
 
