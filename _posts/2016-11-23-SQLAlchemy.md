@@ -24,6 +24,8 @@ Instructions
  - Import create_engine from the sqlalchemy module.
  - Create an engine for the census.sqlite file.
  - Print the output from the table_names() method on the engine.
+ 
+ 
 
 {% highlight python %}
 
@@ -40,6 +42,8 @@ engine = create_engine('sqlite:///census.sqlite')
 print(engine.table_names())
 
 {% endhighlight  %}
+
+
 
 
 ##### Autoloading Tables from a Database
@@ -99,10 +103,16 @@ print(census.columns.keys())
 print( repr(metadata.tables['census']) )
 ```
 
+
+
+
+
+
+```
 <script.py> output:
     ['state', 'sex', 'age', 'pop2000', 'pop2008']
     Table('census', MetaData(bind=None), Column('state', VARCHAR(length=30), table=<census>), Column('sex', VARCHAR(length=1), table=<census>), Column('age', INTEGER(), table=<census>), Column('pop2000', INTEGER(), table=<census>), Column('pop2008', INTEGER(), table=<census>), schema=None)
-
+```
 
 
 
@@ -198,3 +208,37 @@ for row in cur.execute(sqlstr) :
 conn.commit()  
 cur.close()
 ```
+
+
+
+### Selecting data from a Table: raw SQL
+100xp
+Using what we just learned about SQL and applying the execute() method on our connection, we can leverage a raw SQL query to query all the records in our census table. Then we use the fetchall() method on execute() to get our results.
+
+In this exercise, you will use a traditional SQL query. In the next exercise, you will move to SQLAlchemy and begin to understand its advantages.
+
+
+**Instructions**
+Build a SQL statement to query all the columns from census and store it in stmt.
+Use the execute() and fetchall() methods on our connection and store the result in results. Remember that execute() comes before fetchall().
+Print results.
+
+
+```python
+# Build select statement for census table: stmt
+stmt = 'select * from census'
+
+# Execute the statement and print the results
+results = print(connection.execute(stmt).fetchall())
+
+# Print Results
+print(results)
+
+
+```
+
+
+
+
+
+
