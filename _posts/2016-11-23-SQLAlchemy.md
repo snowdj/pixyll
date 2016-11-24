@@ -238,6 +238,42 @@ print(results)
 ```
 
 
+###Selecting data from a Table with SQLAlchemy
+
+You might have noticed in the previous exercise that SQLAlchemy provides a nice abstraction from the complexities that can occur when using traditional SQL. It also provides a nice "Pythonic" way of interacting with databases. This is one of the key benefits of using SQLAlchemy over traditional SQL: Rather than dealing with the differences between specific dialects of traditional SQL such as MySQL or PostgreSQL, we can leverage the Pythonic framework of SQLAlchemy to streamline our workflow and more efficiently query our data. For this reason, it is worth learning SQLAlchemy even if you may be familiar with traditional SQL.
+
+Let's write another select statement; however, this time using the select() statement from the sqlalchemy module to get all the records from our census table. The SQLAlchemy select() statements expects a list of tables or columns as the only required argument.
+
+Table and MetaData have already been imported.
+
+Instructions
+Import select from the sqlalchemy module.
+Reflect the census table using the Table() object and the metadata.
+Create a query using the select() statement to retrieve the census table.
+Print stmt to see the actual SQL query being created.
+Print all the records from the census table using the execute() method on the connection and use fetchall() to get the results.
+
+
+```python
+from sqlalchemy import Table, MetaData
+# Import select
+from sqlalchemy  import select
+metadata = MetaData()
+# Reflect census table via engine: census
+census = Table('census', metadata, autoload = True, autoload_with = engine)
+
+# Build select statement for census table: stmt
+stmt = select([census])
+
+# Print the emitted statement to see the SQL emitted
+print(stmt)
+
+# Execute the statement and print the results
+print(connection.execute(stmt).fetchall())
+```
+
+
+
 
 
 
