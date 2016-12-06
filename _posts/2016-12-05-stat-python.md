@@ -167,7 +167,8 @@ plt.show()
 
 
 #### Computing the ECDF
-100xp
+
+
 In this exercise, you will write a function that takes as input a 1D array of data and then returns the x and y values of the ECDF. You will use this function over and over again throughout this course and its sequel. ECDFs are among the most important plots in statistical analysis. You can write your own function, foo(x,y) according to the following skeleton:
 
 def foo(a,b):
