@@ -5,6 +5,8 @@ layout: post
 ## Optimization
 
 
+
+
 ### Stanford CVX
 [CVX101 Convex Optimizatio](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/info/).
 
@@ -18,6 +20,10 @@ layout: post
 [15-053-optimization-methods-in-management-science](http://ocw.mit.edu/courses/sloan-school-of-management/15-053-optimization-methods-in-management-science-spring-2013/lecture-notes/)
 Learn how to use optimization methodologies and modeling approaches to effectively analyze data.
 
+
+### Optimization in R
+
+[Mathematical programming in R](https://github.com/dirkschumacher/ompr)
 
 ### Open Solver
 
@@ -552,23 +558,3 @@ $$\left.\begin{array}{rrcl}      &  \max & z=200X_{AR} + 300X_{BR} + 100X_{CR} +
         & \text{Class C, minimum}     & X_{CR}+X_{CO}&\geq & 5 \\
                 
                 \end{array}\right\}$$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
