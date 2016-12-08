@@ -63,3 +63,16 @@ Note how you use type= "box" in the function plot_ly() to create a box plot. Mak
 Instructions
 Create a second, more fancy, box plot using diamonds. The y-axis should represent the price. The color should depend on the cut.
 Create a third box plot where you bucket the diamonds not only by cut but also by clarity. The color should depend on the clarity of the diamond.
+
+
+```
+# The Non Fancy Box Plot
+plot_ly(y = ~rnorm(50), type = "box")
+
+# The Fancy Box Plot
+plot_ly(diamonds, y = ~price, color = ~cut, type = "box")
+
+# The Super Fancy Box Plot
+plot_ly(diamonds, x = ~cut, y = ~price, color = ~clarity, type = "box") %>%
+  layout(boxmode = "group")
+  ```
