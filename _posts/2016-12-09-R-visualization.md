@@ -76,3 +76,7 @@ plot_ly(diamonds, y = ~price, color = ~cut, type = "box")
 plot_ly(diamonds, x = ~cut, y = ~price, color = ~clarity, type = "box") %>%
   layout(boxmode = "group")
   ```
+  
+  
+  
+  
