@@ -75,7 +75,7 @@ plot_ly(diamonds, y = ~price, color = ~cut, type = "box")
 # The Super Fancy Box Plot
 plot_ly(diamonds, x = ~cut, y = ~price, color = ~clarity, type = "box") %>%
   layout(boxmode = "group")
-  ```
+```
   
   
   
