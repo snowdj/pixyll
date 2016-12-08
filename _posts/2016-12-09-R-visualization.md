@@ -29,3 +29,6 @@ plot_ly(diamonds, x = ~carat, y = ~price, color = ~carat, size = ~carat)
 ```
 
 You will work again with the diamonds dataset. The goal is to create a bar chart that buckets our diamonds based on quality of the cut. Next, for each cut, you want to see how many diamonds there are for each clarity variable.
+
+
+
