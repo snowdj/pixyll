@@ -82,7 +82,7 @@ plot_ly(diamonds, x = ~cut, y = ~price, color = ~clarity, type = "box") %>%
 
 Mount Eden is a volcano in the Auckland volcanic field. The volcano dataset gives topographic information for Mount Eden on a 10m by 10m grid. Run str(volcano) to examine the dataset.
 
- 
+ ![](http://lh6.ggpht.com/-ONlugp32B3o/VHwNdsi3EcI/AAAAAAAA9dI/b9DWnqncHFA/mount-wellington%25255B5%25255D.jpg?imgmax=800)
 
 One way to look at the topographic data is via a heatmap. The heatmap's color pattern visualizes how the height of the volcano's surface fluctuates within this 10m by 10m grid.
 
@@ -95,4 +95,7 @@ Create two interactive plots using the volcano dataset:
 
 For one the type of trace is a heatmap.
 For the other surface since you also want to see a 3D representation.
+  
+  
+  
   
