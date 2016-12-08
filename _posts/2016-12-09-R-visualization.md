@@ -111,3 +111,22 @@ plot_ly(z = ~volcano, type = "surface")
 ```
   
   
+#### ggplot2, the interactive dimension
+
+ggplot2 is probably one of the most well known graphing libraries for R. With ggplotly() from plotly, you can now convert your ggplot2 plots into interactive, web-based versions. See these examples on how ggplotly does in converting different ggplot2 examples.
+
+Try it yourself!
+
+Converting a ggplot2 chart to an interactive chart is fairly easy. First you create the ggplot2 graph and next you call ggplotly(). Like this:
+
+qplot(carat, price, data = diamonds, 
+                   colour = clarity)
+ggplotly()
+Not yet familiar with the ggplot2 syntax? Consider taking this interactive tutorial.
+
+Instructions
+The mtcars data frame is available in your workspace. Use geom_point() for your plot:
+
+Using ggplot2, map wt onto the x aesthetic, mpg onto the y aesthetic, and cyl onto color.
+Use ggplotly() to make your plot interactive.  
+  
