@@ -104,11 +104,10 @@ library(plotly)
 str(volcano)
 
 # The heatmap
-plot_ly(z = volcano, type = "heatmap")
+plot_ly(z = ~volcano, type = "heatmap")
 
 # The 3d surface map
-plot_ly(z = volcano, type = "surface")
-
+plot_ly(z = ~volcano, type = "surface")
 ```
   
   
