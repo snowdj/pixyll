@@ -129,4 +129,12 @@ The mtcars data frame is available in your workspace. Use geom_point() for your 
 
 Using ggplot2, map wt onto the x aesthetic, mpg onto the y aesthetic, and cyl onto color.
 Use ggplotly() to make your plot interactive.  
+```
+# Create the ggplot2 graph
+ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) +
+  geom_point()
+
+# Make your plot interactive
+ggplotly()
+```
   
