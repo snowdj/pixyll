@@ -96,6 +96,19 @@ Create two interactive plots using the volcano dataset:
 For one the type of trace is a heatmap.
 For the other surface since you also want to see a 3D representation.
   
-  
+```
+# Load the `plotly` library
+library(plotly)
+
+# Your volcano data
+str(volcano)
+
+# The heatmap
+plot_ly(z = volcano, type = "heatmap")
+
+# The 3d surface map
+plot_ly(z = volcano, type = "surface")
+
+```
   
   
