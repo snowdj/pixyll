@@ -52,8 +52,8 @@ plot_ly(diamonds_bucket, x = ~cut, y = ~n, type = "bar", color = ~clarity)
 ```
 
 
-From the bar to the box: the box plot
-100xp
+### From the bar to the box: the box plot
+
 In the final exercise of this chapter, you will make an interactive box plot in R.
 
 Using plotly, you can create box plots that are grouped, colored, and that display the underlying data distribution. The code to create a simple box plot using plotly is provided on your right.
@@ -78,5 +78,21 @@ plot_ly(diamonds, x = ~cut, y = ~price, color = ~clarity, type = "box") %>%
 ```
   
   
-  
+####  Visualizing volcano data
+
+Mount Eden is a volcano in the Auckland volcanic field. The volcano dataset gives topographic information for Mount Eden on a 10m by 10m grid. Run str(volcano) to examine the dataset.
+
+ 
+
+One way to look at the topographic data is via a heatmap. The heatmap's color pattern visualizes how the height of the volcano's surface fluctuates within this 10m by 10m grid.
+
+Alternatively, you could visualize the data by making a 3D surface plot. Namely, plotly visualizations don't actually require a data frame. This makes chart types that accept a z argument especially easy to use if you have a numeric matrix such as our volcano dataset.
+
+Let's try to create that heatmap and 3D surface plot.
+
+Instructions
+Create two interactive plots using the volcano dataset:
+
+For one the type of trace is a heatmap.
+For the other surface since you also want to see a 3D representation.
   
