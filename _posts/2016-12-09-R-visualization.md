@@ -208,6 +208,25 @@ Instructions
 Chart Apple's time-series data in R using apple_stock_price. Use the provided sample code.
 Make sure to add a range slider
 
+```
+# Monthly totals of accidental deaths in the USA
+plot_ly(x = time(USAccDeaths), y = USAccDeaths) %>% 
+  add_lines() %>%
+  rangeslider()
 
+# Apple Stock Price
+str(apple_stock_price)
+
+
+# Apple Stock Price With Rangeslider
+plot_ly(apple_stock_price, x = ~Date) %>%
+  add_lines(y = ~AAPL.Adjusted, name = "Apple") %>% 
+  rangeslider() %>% 
+  layout(
+    title = "Stock Price Apple",
+    xaxis = list(title = "Date"),
+    yaxis = list(title = "Price"))
+```    
+    
 
 
