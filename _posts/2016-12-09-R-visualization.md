@@ -196,3 +196,18 @@ plot_geo(airports, lat = ~Latitude, lon = ~Longitude) %>%
   )
 ```
 
+### Sliding into the final exercise
+
+For the final exercise in this course you will implement a range slider to a stock graph.
+
+On the right you see the code for a plotly graph to which a range slider is added using rangeslider(). The plot looks at a time series USAccDeaths that gives the monthly totals of accidental deaths in the USA. Make sure to run the code in your console.
+
+Loaded in, you will find a dataset on Apple's stock price: apple_stock_price. Let's now visualize this stock price over time using an interactive plotly chart. Make sure to add a range slider.
+
+Instructions
+Chart Apple's time-series data in R using apple_stock_price. Use the provided sample code.
+Make sure to add a range slider
+
+
+
+
