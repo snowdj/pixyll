@@ -155,3 +155,44 @@ Based on the code of the "Most trafficked US airports map", create a world map t
 For a map of the world, the scope is the world.
 Each airport should be represented by a circle and on hover you should see the AirportID, City and Country of that aiport.
 The color of the airport circle should depend on the country.
+
+
+```
+# Most Trafficked US Airports
+g <- list(
+  scope = 'usa',
+  showland = TRUE,
+  landcolor = toRGB("gray95")
+)
+
+plot_geo(airport_traffic, lat = ~lat, lon = ~long) %>%
+  add_markers(
+    text = ~paste(airport, city, state, paste("Arrivals:", cnt), sep = "<br />"),
+    color = ~cnt, symbol = I("square"), size = I(8), hoverinfo = "text"
+  ) %>%
+  colorbar(title = "Incoming flights<br />February 2011") %>%
+  layout(
+    title = 'Most trafficked US airports<br />(Hover for airport)', geo = g
+  )
+
+
+# Commercial Airports WorldWide
+str(airports)
+
+# Mapping all commercial airports in the world
+g <- list(
+  scope = 'world',
+  showland = TRUE,
+  landcolor = toRGB("gray95")
+)
+
+plot_geo(airports, lat = ~Latitude, lon = ~Longitude) %>%
+  add_markers(
+    text = ~paste(AirportID, City, Country, sep = "<br />"),
+    color = ~Country, symbol = I("circle"), size = I(3), hoverinfo = "text", colors = "Set1"
+  ) %>%
+  layout(
+    title = 'Commercial Airports Worldwide', geo = g
+  )
+```
+
