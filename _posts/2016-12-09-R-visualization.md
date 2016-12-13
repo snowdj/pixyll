@@ -277,3 +277,12 @@ plot(Animals2$body,Animals2$brain, log='xy')
 # Add the second title
 title("Log-log plot")
 ```
+
+
+#### Avoid pie charts
+ 
+The same dataset can be displayed or summarized in many different ways, but some are much more suitable than others.
+
+Despite their general popularity, pie charts are often a poor choice. Though R allows pie charts with the pie() function, even the help file for this function argues against their use. Specifically, the help file includes a "Note" that begins with the words: "Pie charts are a very bad way of displaying information."
+
+Bar charts are a recommended alternative and, in this exercise, you'll see why.
