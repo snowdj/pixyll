@@ -233,8 +233,8 @@ plot_ly(apple_stock_price, x = ~Date) %>%
 ## GGplot2
 
 
-####Adding details to a plot using point shapes, color, and reference lines
-100xp
+####　Adding details to a plot using point shapes, color, and reference lines
+　
 Adding additional details to your explanatory plots can help emphasize certain aspects of your data. For example, by specifying the pch and col arguments to the plot() function, you can add different point shapes and colors to show how different variables or subsets of your data relate to each other. In addition, you can add a new set of points to your existing scatterplot with the points() function, and add reference lines with the abline() function.
 
 ```
