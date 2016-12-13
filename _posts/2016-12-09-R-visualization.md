@@ -286,3 +286,34 @@ The same dataset can be displayed or summarized in many different ways, but some
 Despite their general popularity, pie charts are often a poor choice. Though R allows pie charts with the pie() function, even the help file for this function argues against their use. Specifically, the help file includes a "Note" that begins with the words: "Pie charts are a very bad way of displaying information."
 
 Bar charts are a recommended alternative and, in this exercise, you'll see why.
+
+```
+# Load the insuranceData package
+library(insuranceData)
+
+# Use the data() function to get the dataCar data frame
+data(dataCar)
+
+# Set up a side-by-side plot array
+par(mfrow = c(1,2))
+
+# Create a table of veh_body record counts and sort
+tbl <- sort(table(dataCar$veh_body),
+            decreasing = TRUE)
+
+# Create the pie chart and give it a title
+
+pie(tbl)
+# Add a title
+title("Pie chart")
+
+# Create the barplot with perpendicular, half-sized labels
+barplot(tbl, las = 2, cex.names = 0.5)
+
+# Add a title
+title("Bar chart")
+```
+
+
+
+
