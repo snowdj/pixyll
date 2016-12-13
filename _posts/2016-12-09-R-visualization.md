@@ -233,3 +233,16 @@ plot_ly(apple_stock_price, x = ~Date) %>%
 ## GGplot2
 
 
+```
+# Load the MASS package
+library(MASS)
+
+# Plot Max.Price vs. Price as red triangles
+plot(Cars93$Price, Cars93$Max.Price, pch = 17, col = 'red')
+
+# Add Min.Price vs. Price as blue circles
+points(Cars93$Price, Cars93$Min.Price, col = "blue", pch = 16)
+
+# Add an equality reference line with abline()
+abline(a = 0, b = 1, lty = 2)
+```
