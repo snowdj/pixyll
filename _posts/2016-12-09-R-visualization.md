@@ -233,7 +233,7 @@ plot_ly(apple_stock_price, x = ~Date) %>%
 ## GGplot2
 
 
-####　Adding details to a plot using point shapes, color, and reference lines
+#### 　Adding details to a plot using point shapes, color, and reference lines
 　
 Adding additional details to your explanatory plots can help emphasize certain aspects of your data. For example, by specifying the pch and col arguments to the plot() function, you can add different point shapes and colors to show how different variables or subsets of your data relate to each other. In addition, you can add a new set of points to your existing scatterplot with the points() function, and add reference lines with the abline() function.
 
@@ -250,3 +250,6 @@ points(Cars93$Price, Cars93$Min.Price, col = "blue", pch = 16)
 # Add an equality reference line with abline()
 abline(a = 0, b = 1, lty = 2)
 ```
+#### Creating multiple plot arrays
+ 
+You can plot multiple graphs on a single pane using the par() function with its mfrow parameter. For example, par(mfrow = c(1, 2)) creates a plot array with 1 row and 2 columns, allowing you to view two graphs side-by-side. This way, you can compare and contrast different datasets or different views of the same dataset. 
