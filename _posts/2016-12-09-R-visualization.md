@@ -226,7 +226,10 @@ plot_ly(apple_stock_price, x = ~Date) %>%
     title = "Stock Price Apple",
     xaxis = list(title = "Date"),
     yaxis = list(title = "Price"))
-```    
-    
+```
+
+
+
+## GGplot2
 
 
