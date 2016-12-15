@@ -2,6 +2,20 @@
 published: true
 layout: post
 ---
+
+
+
+
+##
+
+f = open('temperatures.csv')
+header = f.readline().strip().split(',')
+data = []
+for l in f:
+    data.append(tempDatum(l))
+
+
+
 ## Python: import data
 
 
