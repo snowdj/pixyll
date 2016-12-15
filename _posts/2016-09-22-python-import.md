@@ -9,7 +9,7 @@ layout: post
 ##
 ```python
 f = open('temperatures.csv')
-header = f.readline().strip().split(',')
+header = f.readline().strip().split(',') # then f does not include first row anymore??
 data = []
 for l in f:
     data.append(tempDatum(l))
