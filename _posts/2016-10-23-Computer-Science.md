@@ -1,6 +1,10 @@
 ---
 published: true
 layout: post
+title: The computer science
+category: course
+tags:
+  - computer science
 ---
 ## Computer Science
 
