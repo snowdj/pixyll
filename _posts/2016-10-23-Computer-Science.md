@@ -15,6 +15,14 @@ layout: post
 
 [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
 
+
+
+[HarvardX: PH526x Using Python for Research](https://courses.edx.org/courses/course-v1:HarvardX+PH526x+3T2016/)
+
+[cs212](https://classroom.udacity.com/courses/cs212)
+
+
+
 2）Operating Systems
 
 
