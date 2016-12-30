@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 titel: The documentaries of Energy
 category: energy
@@ -7,11 +7,9 @@ tags:
   - energy
   - documentary
 ---
-## A New Post
+## Energy
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
-
-  
+ [『Discovery』未来新能源 4集全](http://www.bilibili.com/video/av5750204/). 
 
 
 
