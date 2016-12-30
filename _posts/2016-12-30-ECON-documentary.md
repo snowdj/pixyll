@@ -14,4 +14,6 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 
 ### Interest rate and exchange rate from Japanese history in 1980 - 1990
 
+http://www.bilibili.com/video/av2496264/#page=2
+
 
