@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: The documentaries of economics
 category: documentary
