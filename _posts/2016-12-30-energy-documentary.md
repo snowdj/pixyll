@@ -25,6 +25,10 @@ http://www.bilibili.com/video/av5733227/
 
 http://www.bilibili.com/video/av3006885
 
+http://www.bilibili.com/video/av5775410
+
+http://www.bilibili.com/video/av364849
+
 http://www.bilibili.com/video/av7722331/index_2.html
 
 http://www.bilibili.com/video/av6497238/
