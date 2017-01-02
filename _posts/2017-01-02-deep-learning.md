@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: The deep learning
 category:
@@ -10,7 +10,4 @@ tags:
 ## A New Post
 
 
-[Deep Learning An MIT Press book Ian Goodfellow and Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/). 
-
-
-
+[Deep Learning An MIT Press book Ian Goodfellow and Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/).
