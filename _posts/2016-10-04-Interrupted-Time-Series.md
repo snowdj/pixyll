@@ -292,6 +292,11 @@ https://ideas.repec.org/p/nbr/nberwo/14723.html
 ##### test assumptions
 
 - other variable should be smooth through the threshold
+-
+
+
+
+
 
 
 
