@@ -289,6 +289,12 @@ https://ideas.repec.org/p/nbr/nberwo/14723.html
 
 - statistical integrity
 
+##### test assumptions
+
+- other variable should be smooth through the threshold
+
+
+
 
 
 
