@@ -281,25 +281,13 @@ https://ideas.repec.org/p/nbr/nberwo/14723.html
 
 
 
+
+
 #### Introduction to RD
 
+- institutional intergrity
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- statistical integrety
 
 
 
