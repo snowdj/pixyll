@@ -287,7 +287,7 @@ https://ideas.repec.org/p/nbr/nberwo/14723.html
 
 - institutional integrity
 
-- statistical integrity
+- statistical integrity: density should be smooth
 
 ##### test assumptions
 
