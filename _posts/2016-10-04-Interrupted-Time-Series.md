@@ -313,5 +313,14 @@ In a regression discontinuity, the variable of interest is the threshold, which 
  
  Unlike interrupted time series analysis, where values can be related over time, a basic regression discontinuity study uses individual-level data where the observations will not be correlated with one another.
 
+ARTICLES FROM THE VIDEO
 
+Along with the plots in the review article you read earlier this week, here's the original reference for the Lee (2008) paper that forms the basis for this week's example:
+
+Lee D. Randomized experiments from non-random selection in U.S. House elections. Journal of Econometrics 2008; 142: 675–697.
+
+And the dataset comes from the following replication paper:
+
+Caughey D et al. Elections and the Regression Discontinuity Design: Lessons from Close U.S. House Races, 1942–2008. Political Analysis. 2011; 19: 385.
+Dataset files: http://sekhon.berkeley.edu/rep/RDReplication.zip
 
