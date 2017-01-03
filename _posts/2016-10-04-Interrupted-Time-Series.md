@@ -294,6 +294,9 @@ https://ideas.repec.org/p/nbr/nberwo/14723.html
 - other variable should be smooth through the threshold
 -
 
+##### potential RD biases
+
+
 
 
 
