@@ -306,6 +306,17 @@ A regression discontinuity design leverages a threshold in a forcing variable, w
 
 
 
+a regression discontinuity estimate only applies to observations near the threshold.
+
+
+
+
+
+
+
+
+
+
 
 
 
