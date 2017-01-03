@@ -310,6 +310,8 @@ a regression discontinuity estimate only applies to observations near the thresh
 
 In a regression discontinuity, the variable of interest is the threshold, which is Beta 2 in our model. Unlike interrupted time series, the change in slope between the two sides of the threshold is generally not the focus of interest.
  
-显示答案
+ 
+ Unlike interrupted time series analysis, where values can be related over time, a basic regression discontinuity study uses individual-level data where the observations will not be correlated with one another.
+
 
 
