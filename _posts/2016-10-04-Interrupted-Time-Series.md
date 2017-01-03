@@ -296,6 +296,7 @@ https://ideas.repec.org/p/nbr/nberwo/14723.html
 
 ##### potential RD biases
 
+- Co-intervention / Non -smooth curve
 
 
 
