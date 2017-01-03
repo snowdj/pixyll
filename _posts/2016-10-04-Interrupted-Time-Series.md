@@ -299,10 +299,10 @@ https://ideas.repec.org/p/nbr/nberwo/14723.html
 - Co-intervention / Non -smooth curve
  - instrumentation
  - attrition
- - manipulation of thredhold
+ - manipulation of thresdhold
  
  
-
+A regression discontinuity design leverages a threshold in a forcing variable, where treatment varies just above and just below the threshold.
 
 
 
