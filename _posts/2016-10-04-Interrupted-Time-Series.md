@@ -308,23 +308,8 @@ A regression discontinuity design leverages a threshold in a forcing variable, w
 
 a regression discontinuity estimate only applies to observations near the threshold.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In a regression discontinuity, the variable of interest is the threshold, which is Beta 2 in our model. Unlike interrupted time series, the change in slope between the two sides of the threshold is generally not the focus of interest.
+ 
+显示答案
 
 
