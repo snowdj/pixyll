@@ -17,5 +17,5 @@ category: economics
 
 
 
-
+[Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
 
