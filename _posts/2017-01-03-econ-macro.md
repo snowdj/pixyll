@@ -17,6 +17,12 @@ category: economics
 
 
 
+
+
+
+[Linear Algebra for Data Scientists](http://alexhwoods.com/linear-algebra-for-data-scientists/)
+
+#### Basic illustration
 [College Algebra](http://www.mathsisfun.com/algebra/index-college.html)
 
 [Inverse of a Matrix](http://www.mathsisfun.com/algebra/matrix-inverse.html)
