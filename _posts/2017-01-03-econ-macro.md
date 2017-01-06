@@ -19,6 +19,8 @@ category: economics
 [Linear Algebra for Data Scientists](http://alexhwoods.com/linear-algebra-for-data-scientists/)
 
 #### Basic illustration
+
+
 [College Algebra](http://www.mathsisfun.com/algebra/index-college.html)
 
 [How to Multiply Matrices](http://www.mathsisfun.com/algebra/matrix-multiplying.html)
@@ -32,7 +34,7 @@ category: economics
 [Inverse of a Matrix using Minors, Cofactors and Adjugate](http://www.mathsisfun.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
 
 
-
+[What is an Eigenvector? Eigenvalue?](https://www.youtube.com/watch?v=wXCRcnbCsJA)
 
 
 [Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
