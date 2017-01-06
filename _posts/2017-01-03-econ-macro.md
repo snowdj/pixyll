@@ -11,6 +11,10 @@ category: economics
 
 
 
+[Linear Algebra](http://lectures.quantecon.org/py/linear_algebra.html)
+
+
+
 
 
 [Example solving for the eigenvalues of a 2x2 matrix](https://www.khanacademy.org/math/linear-algebra/alternate-bases/eigen-everything/v/linear-algebra-example-solving-for-the-eigenvalues-of-a-2x2-matrix)
