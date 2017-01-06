@@ -23,6 +23,9 @@ category: economics
 
 [Determinant of a Matrix](http://www.mathsisfun.com/algebra/matrix-determinant.html)
 
+[Inverse of a Matrix using Elementary Row Operations](http://www.mathsisfun.com/algebra/matrix-inverse-row-operations-gauss-jordan.html)
+
+[Inverse of a Matrix using Minors, Cofactors and Adjugate](http://www.mathsisfun.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
 
 [Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
 
