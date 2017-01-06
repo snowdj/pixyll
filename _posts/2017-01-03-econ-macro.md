@@ -33,7 +33,7 @@ category: economics
 
 [Inverse of a Matrix using Minors, Cofactors and Adjugate](http://www.mathsisfun.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
 
-
+Best illustration
 [What is an Eigenvector? Eigenvalue?](https://www.youtube.com/watch?v=wXCRcnbCsJA)
 
 
