@@ -19,6 +19,8 @@ category: economics
 #### Basic illustration
 [College Algebra](http://www.mathsisfun.com/algebra/index-college.html)
 
+[How to Multiply Matrices](http://www.mathsisfun.com/algebra/matrix-multiplying.html)
+
 [Inverse of a Matrix](http://www.mathsisfun.com/algebra/matrix-inverse.html)
 
 [Determinant of a Matrix](http://www.mathsisfun.com/algebra/matrix-determinant.html)
@@ -27,7 +29,13 @@ category: economics
 
 [Inverse of a Matrix using Minors, Cofactors and Adjugate](http://www.mathsisfun.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
 
+
+
+
+
 [Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
+
+
 
 
 ## ECON204 
