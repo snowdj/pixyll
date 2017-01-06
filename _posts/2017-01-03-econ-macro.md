@@ -17,7 +17,9 @@ category: economics
 
 
 
+[College Algebra](http://www.mathsisfun.com/algebra/index-college.html)
 
+[Inverse of a Matrix](http://www.mathsisfun.com/algebra/matrix-inverse.html)
 
 [Determinant of a Matrix](http://www.mathsisfun.com/algebra/matrix-determinant.html)
 
