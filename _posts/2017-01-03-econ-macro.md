@@ -16,7 +16,7 @@ category: economics
 ### Linear Algebra
 
 
-
+[Example solving for the eigenvalues of a 2x2 matrix](https://www.khanacademy.org/math/linear-algebra/alternate-bases/eigen-everything/v/linear-algebra-example-solving-for-the-eigenvalues-of-a-2x2-matrix)
 
 
 
