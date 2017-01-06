@@ -43,7 +43,9 @@ Best illustration
 
 
 
+### Differential Equation
 
+[Learn Differential Equations: Up Close with Gilbert Strang and Cleve Moler](https://ocw.mit.edu/resources/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/)
 
 [Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
 
