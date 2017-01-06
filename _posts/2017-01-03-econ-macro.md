@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: The macroeconomics
 category: economics
@@ -34,4 +34,3 @@ category: economics
 [Inverse of a Matrix using Minors, Cofactors and Adjugate](http://www.mathsisfun.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
 
 [Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
-
