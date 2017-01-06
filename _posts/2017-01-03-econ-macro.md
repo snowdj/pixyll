@@ -17,5 +17,10 @@ category: economics
 
 
 
+
+
+[Determinant of a Matrix](http://www.mathsisfun.com/algebra/matrix-determinant.html)
+
+
 [Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
 
