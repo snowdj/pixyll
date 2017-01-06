@@ -33,9 +33,17 @@ category: economics
 
 [Inverse of a Matrix using Minors, Cofactors and Adjugate](http://www.mathsisfun.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
 
+Best online tutorial
+[Essence of linear algebra ](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+
+
 Best illustration
 [What is an Eigenvector? Eigenvalue?](https://www.youtube.com/watch?v=wXCRcnbCsJA)
 [What is an Eigenvector? Eigenvalue? (with audio) ](https://www.youtube.com/watch?v=vs2sRvSzA3o&feature=youtu.be)
+
+
+
+
 
 [Linear Algebra in Julia](http://alexhwoods.com/linear-algebra-in-julia/)
 
