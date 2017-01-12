@@ -16,3 +16,5 @@ Hadley Wickham
 
 
 [Engineering: Solar Solar Cells, Fuel Cells and Batteries](http://online.stanford.edu/course/solar-cells-fuel-cells-and-batteries)
+
+[CONVEX OPTIMIZATION](http://online.stanford.edu/course/convex-optimization-winter-2014)
