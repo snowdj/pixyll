@@ -7,3 +7,6 @@ layout: post
 [R for Data Science](http://r4ds.had.co.nz/introduction.html).
 Garrett Grolemund
 Hadley Wickham
+
+
+[StatLearning-SP Statistical Learning](https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/info)
