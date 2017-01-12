@@ -10,3 +10,9 @@ Hadley Wickham
 
 
 [StatLearning-SP Statistical Learning](https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/info)
+
+
+[Engineering: CS101-SP Computer Science 101](https://lagunita.stanford.edu/courses/Engineering/CS101/Summer2014/courseware/z54/z1/)
+
+
+[Engineering: Solar Solar Cells, Fuel Cells and Batteries](http://online.stanford.edu/course/solar-cells-fuel-cells-and-batteries)
