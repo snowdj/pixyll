@@ -20,3 +20,6 @@ Hadley Wickham
 [CONVEX OPTIMIZATION](http://online.stanford.edu/course/convex-optimization-winter-2014)
 
 [Computational Statistics in Python](http://people.duke.edu/~ccc14/sta-663-2016/10_SymbolicAlgebra.html)
+
+
+[SymPy statistics module](http://docs.sympy.org/latest/modules/stats.html)
