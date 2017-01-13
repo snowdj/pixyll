@@ -19,6 +19,8 @@ Hadley Wickham
 
 [CONVEX OPTIMIZATION](http://online.stanford.edu/course/convex-optimization-winter-2014)
 
+[Python-for-Probability-Statistics-and-Machine-Learning](https://github.com/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/blob/master/chapters/probability/notebooks/moment_generating.ipynb)
+
 [Computational Statistics in Python](http://people.duke.edu/~ccc14/sta-663-2016/10_SymbolicAlgebra.html)
 
 
