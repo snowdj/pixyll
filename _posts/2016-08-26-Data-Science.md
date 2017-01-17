@@ -16,5 +16,6 @@ layout: post
  ColumbiaX: DS101X Statistical Thinking for Data Science and Analytics
  
  
+ [HumanitiesSciences: StatLearning-SP Statistical Learning](https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/info)
  
  [Stanford University ComputerScience: MMDS Mining Massive Datasets](https://lagunita.stanford.edu/courses/course-v1:ComputerScience+MMDS+Fall2016/courseware/1d6e3a115a53484e90c9e389d2985514/293f6c08738c4af88196f485d703876c/)
