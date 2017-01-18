@@ -8,13 +8,16 @@ layout: post
 
 
 ### Stanford CVX
+
+[Introduction to Optimization CS/ECE/ISyE 524, Spring 2016–17 University of Wisconsin–Madison](http://www.laurentlessard.com/teaching/524-intro-to-optimization/)
+
 [CVX101 Convex Optimizatio](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/info/).
 
 
 [Convex Optimization Short Course](https://web.stanford.edu/~boyd/papers/cvx_short_course.html)
 
 
-
+[Hyper-Textbook: Optimization Models and Applications  —  Fall 2014 ](https://inst.eecs.berkeley.edu/~ee127a/book/login/index.html)
 
 
 
