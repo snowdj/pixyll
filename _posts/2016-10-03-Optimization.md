@@ -11,6 +11,13 @@ layout: post
 [CVX101 Convex Optimizatio](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/info/).
 
 
+[Convex Optimization Short Course](https://web.stanford.edu/~boyd/papers/cvx_short_course.html)
+
+
+
+
+
+
 ### BA
 
 [Optimization Methods for Business Analytics](https://www.edx.org/course/optimization-methods-business-analytics-mitx-15-053x?utm_medium=email&utm_source=sailthru&utm_content=course-announcements-mailing-list&utm_campaign=studentnewsletter-20160830-control&utm_term=Newsletter%20Users%20v2)
