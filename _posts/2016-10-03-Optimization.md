@@ -19,11 +19,7 @@ layout: post
 
 [Hyper-Textbook: Optimization Models and Applications  —  Fall 2014 ](https://inst.eecs.berkeley.edu/~ee127a/book/login/index.html)
 
-[A quick guide to L
-A
-T
-E
-X](http://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf)
+[A quick guide to LATEX](http://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf)
 
 ### BA
 
