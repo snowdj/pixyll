@@ -11,6 +11,8 @@ layout: post
 
 [Introduction to Optimization CS/ECE/ISyE 524, Spring 2016–17 University of Wisconsin–Madison](http://www.laurentlessard.com/teaching/524-intro-to-optimization/)
 
+with students' project
+
 [CVX101 Convex Optimizatio](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/info/).
 
 
