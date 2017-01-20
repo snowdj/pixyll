@@ -14,3 +14,6 @@ tags:
 
 
 [Deep Learning and Neural Networks](https://cs.jhu.edu/~kevinduh/a/deep2014/)
+
+
+[Deep learning](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html)
