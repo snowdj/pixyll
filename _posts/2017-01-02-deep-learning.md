@@ -11,3 +11,6 @@ tags:
 
 
 [Deep Learning An MIT Press book Ian Goodfellow and Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/).
+
+
+[Deep Learning and Neural Networks](https://cs.jhu.edu/~kevinduh/a/deep2014/)
