@@ -23,6 +23,18 @@ with students' project
 
 [A quick guide to LATEX](http://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf)
 
+### CMU
+
+[10-725 Optimization Geoff Gordon  127 videos](https://www.youtube.com/watch?v=9hToSoZXM9s&list=PL7y-1rk2cCsDOv91McLOnV4kExFfTB7dU)
+
+http://www.cs.cmu.edu/~ggordon/10725-F12/schedule.html
+
+[Fall 2015: Convex Optimization (10-725/36-725)](https://www.youtube.com/watch?v=ucPR0lSFpdk&list=PLjbUi5mgii6AGJW3La3BpEXe27n8v3biT)
+http://www.stat.cmu.edu/~ryantibs/convexopt/
+
+
+
+
 ### BA
 
 [Optimization Methods for Business Analytics](https://www.edx.org/course/optimization-methods-business-analytics-mitx-15-053x?utm_medium=email&utm_source=sailthru&utm_content=course-announcements-mailing-list&utm_campaign=studentnewsletter-20160830-control&utm_term=Newsletter%20Users%20v2)
