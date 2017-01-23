@@ -21,7 +21,7 @@ Very good R and Stata demostrations on econometrics concepts.
 
 ## [Intro to Computational Finance with R](https://www.datacamp.com/community/open-courses/computational-finance-and-financial-econometrics-with-r#gs.dUJzdyI)
 
-Best R finance course
+Best R finance course.
 
 Open Course Description
 
