@@ -106,19 +106,100 @@ Homogeneous first-order linear ODEs can always be solved by separation of variab
 Choose any antiderivative P(t) of p(t). Then
 
  	ln⁡|y|	=	−P(t)+C	 
- 	|y|	=	e−P(t)+C	 
- 	y	=	±e−P(t)+C	 
- 	y	=	ce−P(t),	 
+ 	|y|	=	e^−P(t)+C	 
+ 	y	=	±e^−P(t)+C	 
+ 	y	=	ce^−P(t),	 
 where c is any number (we brought back the solution y=0 corresponding to c=0).
 
-Note: If you choose a different antiderivative, it will have the form P(t)+d for some constant d, and then the new e−P(t) is just a constant e−d times the old one, so the set of all scalar multiples of the function e−P(t) is the same as before.
+Note: If you choose a different antiderivative, it will have the form P(t)+d for some constant d, and then the new e−P(t) is just a constant e^−d times the old one, so the set of all scalar multiples of the function e^−P(t) is the same as before.
 
 Conclusion:
 
 General solution to first-order homogeneous linear ODE. Let p(t) be a continuous function on an open interval I. This ensures that p(t) has an antiderivative P(t). The general solution to y˙+p(t)y=0 is
 
-y=ce−P(t),
+y=ce^−P(t),
 where c is any real number. The parameter c can be determined from an initial condition.
+
+
+Suppose that xh is a solution to the differential equation x˙+p(t)x=0 and that xh(a)<0 at some time t=a. What does this tell us about the solution function xh?
+
+The solution has the form xh=ce−P(t) for some constant c and some antiderivative P(t) of p(t). The value of e−P(t) is positive, but xh(a)<0, so c must be negative, and then xh=ce−P(t)<0 for all t.
+
+
+ that the temperature of the soup is modeled by the equation
+
+y˙+ky=kx.
+Here we suppose that x=0, so we are solving the homogeneous equation
+
+y˙+ky=0.
+General solution to the homogeneous ODE is
+
+y=ce−kt.
+Plugging in the initial condition we find
+
+y=ce−kt ⟹ 100=y(0)=ce0 ⟹ c=100.
+Therefore
+
+y=100e−kt.
+
+#### 6. Solving inhomogeneous equations: variation of parameters
+ 点击添加Bookmark this page
+Variation of parameters is a method for solving inhomogeneous linear ODEs. Recall a first-order inhomogeneous linear ODE in standard linear form:
+
+y˙+p(t)y=q(t).
+Let's see how variation of parameters works in the following example.
+
+Example 6.1   Solve ty˙+2y=t5 on the interval (0,∞).
+
+Solution:
+
+Step 1. The associated homogeneous equation is ty˙+2y=0, or equivalently, y˙+2ty=0. Solve by separation of variables:
+
+ 	dydt	=	−2ty	 
+ 	dyy	=	−2tdt	 
+ 	ln⁡|y|	=	−2ln⁡t+C(since t>0)	 
+ 	y	=	ce−2ln⁡t	 
+ 	y	=	ct−2.	 
+(Here, we have recovered the y=0 solution by allowing c=0.)
+Choose one nonzero solution, say yh=t−2.
+
+Step 2. Substitute y=ut−2 into the inhomogeneous equation: the left side is
+
+ 	ty˙+2y	=	t(u˙t−2+u(−2t−3))+2ut−2	 
+ 	 	=	t−1u˙.	 
+Note: Observe the cancellation of two terms after the substitution. If you do not observe such a cancellation, you know you have made an computational error. The reason behind this cancellation will be explained shortly.
+
+Using the result of our substitution, the inhomogeneous equation becomes
+
+ 	t−1u˙	=	t5	 
+Step 3. Solve for u.
+
+ 	u˙	=	t6	 
+ 	u	=	t77+c.	 
+Step 4. The general solution to the inhomogeneous equation is
+
+y=ut−2=(t77+c)t−2=t57+ct−2.
+(If you want, check by direct substitution that this really is a solution.)
+
+Variation of parameters general procedure
+
+Find a nonzero solution, say yh, of the associated homogeneous ODE
+
+yh˙+p(t)yh=0.
+Substitute y=uyh into the inhomogeneous equation,   y˙+p(t)y=q(t) to find an equation for the unknown function u=u(t).
+
+ 	ddt(uyh)+puyh	=	q	 
+ 	⟺u˙yh+uy˙h+puyh	=	q	 
+ 	⟺u˙yh+u(y˙h+pyh)⏟=0	=	q	 
+ 	⟺u˙yh	=	q	 
+Note that the term in parentheses is zero because yh is a solution to the homogeneous differential equation.
+
+Solve u˙=qyh for u(t) by integration.
+
+Once the general u(t) is found, don't forget to multiply it by the homogeneous solution yh(t) to find y=u(t)yh(t), the general solution to the inhomogeneous equation.
+
+The idea is that the functions of the form cyh are solutions to the homogeneous equation; maybe we can get solutions to the inhomogeneous equation by allowing the parameter c to vary, i.e., if we replace it by a non-constant function u(t).
+
 
 
 
