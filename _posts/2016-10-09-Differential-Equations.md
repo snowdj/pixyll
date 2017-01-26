@@ -79,7 +79,7 @@ This is Newton's law of cooling : the rate of cooling of an object is proportion
  	y˙	<	0	 
  	x−y	<	0	 
  	k	>	0	 
-The units of k must be minutes−1 for the units of y˙, which is Celsius per minute, to agree with the right hand side, which has units of k times units of Celsius.
+The units of k must be minutes^−1 for the units of y˙, which is Celsius per minute, to agree with the right hand side, which has units of k times units of Celsius.
 
 Smaller k means better insulation, because smaller k leads to smaller rate of change of temperature. The case k=0 is perfect insulation; the temperature inside the thermos doesn't change at all.
 
@@ -143,13 +143,13 @@ Therefore
 y=100e−kt.
 
 #### 6. Solving inhomogeneous equations: variation of parameters
- 点击添加Bookmark this page
+
 Variation of parameters is a method for solving inhomogeneous linear ODEs. Recall a first-order inhomogeneous linear ODE in standard linear form:
 
 y˙+p(t)y=q(t).
 Let's see how variation of parameters works in the following example.
 
-Example 6.1   Solve ty˙+2y=t5 on the interval (0,∞).
+##### Example 6.1   Solve ty˙+2y=t5 on the interval (0,∞).
 
 Solution:
 
@@ -181,7 +181,7 @@ Step 4. The general solution to the inhomogeneous equation is
 y=ut−2=(t77+c)t−2=t57+ct−2.
 (If you want, check by direct substitution that this really is a solution.)
 
-Variation of parameters general procedure
+##### Variation of parameters general procedure
 
 Find a nonzero solution, say yh, of the associated homogeneous ODE
 
@@ -202,4 +202,29 @@ The idea is that the functions of the form cyh are solutions to the homogeneous 
 
 
 
+##### Soup example revisited
 
+Suppose in the minestrone soup example,
+
+y˙+ky=kx
+the external temperature is constant T. Solve the initial value problem with y(0)=80.
+
+Let's see how to use variation of parameters here to find a general solution.
+
+Recall that the general homogeneous solution is given by y=ce−kt. Because we only need one, we choose yh=e−kt. We start by substituting u(t)yh=ue−kt into our differential equation:
+
+ 	u˙e−kt+u(−ke−kt)+kue−kt	=	kT	 
+ 	u˙e−kt	=	kT	 
+ 	∫du	=	∫kTektdt	 
+ 	u	=	Tekt+C	 
+Thus the general solution is y=ue−kt=T+Ce−kt.
+
+Solving the initial value problem we find that y=T+(80−T)e−kt.
+
+Note that:
+
+A particular solution to the inhomogeneous ODE is yp=T. This is the solution in which the soup temperature is already in equilibrium with the exterior temperature.
+
+The general solution to the homogeneous ODE is yh=ce−kt.
+
+The general solution to the inhomogeneous ODE is y=T+ce−kt. As t→∞, the soup temperature approaches T no matter what the initial temperature. This makes sense.
