@@ -9,6 +9,10 @@ tags:
 ---
 
 
+## R shiny app
+
+http://www.albany.edu/psychology/statistics/#applets
+
 ## Teaching Demos
 
 https://rdrr.io/rforge/TeachingDemos/man/ci.examp.html
