@@ -13,6 +13,11 @@ tags:
 
 http://www.albany.edu/psychology/statistics/#applets
 
+http://www2.stat.duke.edu/~mc301/shinyed/
+
+http://www.statistics.calpoly.edu/shiny#probview
+
+
 ## Teaching Demos
 
 https://rdrr.io/rforge/TeachingDemos/man/ci.examp.html
