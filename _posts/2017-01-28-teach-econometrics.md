@@ -11,6 +11,8 @@ tags:
 
 ## R shiny app
 
+https://www.rstudio.com/products/shiny/shiny-user-showcase/
+
 http://www.albany.edu/psychology/statistics/#applets
 
 http://www2.stat.duke.edu/~mc301/shinyed/
