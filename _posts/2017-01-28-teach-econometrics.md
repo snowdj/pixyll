@@ -60,6 +60,8 @@ https://www.rdocumentation.org/packages/TeachingDemos/versions/2.10/topics/Teach
  http://www.intuitor.com/statistics/T1T2Errors.html
 
 
+## Prey
+https://statisticalplumber.shinyapps.io/lotka/lotka.Rmd
 
 ## OLS
 https://econometricsbysimulation.shinyapps.io/OLS-App/
