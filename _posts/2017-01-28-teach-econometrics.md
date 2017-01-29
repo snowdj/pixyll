@@ -27,6 +27,8 @@ http://www.statistics.calpoly.edu/shiny#probview
 Multicollinearity in multiple regression
 https://gallery.shinyapps.io/collinearity/
 
+## Modeling choices in multiple regression
+
 https://gallery.shinyapps.io/multi_regression/
 
 
