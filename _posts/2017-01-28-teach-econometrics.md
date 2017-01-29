@@ -24,7 +24,8 @@ http://www.statistics.calpoly.edu/shiny#probview
 
 
 ## Co-linearality
-
+Multicollinearity in multiple regression
+https://gallery.shinyapps.io/collinearity/
 
 
 ## Power
