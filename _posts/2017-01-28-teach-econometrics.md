@@ -17,6 +17,13 @@ http://www2.stat.duke.edu/~mc301/shinyed/
 
 http://www.statistics.calpoly.edu/shiny#probview
 
+
+
+## Co-linearality
+
+
+
+## Power
 http://www.statstudio.net/free-tools/power-analysis/
 
 
