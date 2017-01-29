@@ -26,6 +26,9 @@ http://www.statistics.calpoly.edu/shiny#probview
 ## Simple regression
 https://gallery.shinyapps.io/simple_regression/
 
+## OLS
+https://econometricsbysimulation.shinyapps.io/OLS-App/
+
 ## Co-linearality
 Multicollinearity in multiple regression
 https://gallery.shinyapps.io/collinearity/
