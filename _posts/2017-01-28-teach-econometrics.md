@@ -26,8 +26,7 @@ http://www.statistics.calpoly.edu/shiny#probview
 ## Simple regression
 https://gallery.shinyapps.io/simple_regression/
 
-## OLS
-https://econometricsbysimulation.shinyapps.io/OLS-App/
+
 
 ## Co-linearality
 Multicollinearity in multiple regression
@@ -58,3 +57,8 @@ https://www.rdocumentation.org/packages/TeachingDemos/versions/2.10/topics/Teach
 [How to best display graphically type II (beta) error, power and sample size?](http://stats.stackexchange.com/questions/14140/how-to-best-display-graphically-type-ii-beta-error-power-and-sample-size)
  
  http://www.intuitor.com/statistics/T1T2Errors.html
+
+
+
+## OLS
+https://econometricsbysimulation.shinyapps.io/OLS-App/
