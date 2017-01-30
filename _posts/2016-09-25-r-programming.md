@@ -4,7 +4,9 @@ layout: post
 ---
 ## R Programming
 
+https://www.youtube.com/watch?v=K-ss_ag2k9E
 
+https://www.youtube.com/watch?v=9q7gssUP8UA
 
 http://r4ds.had.co.nz/
 
