@@ -13,6 +13,8 @@ http://r4ds.had.co.nz/
 
 http://rdpeng.github.io/RProgDA/
 
+https://campus.datacamp.com/courses/importing-data-in-r-part-2/importing-data-from-databases-part-1?ex=8
+
 R有一系列的資料分析pipeline packages 稱作 tidyverse
 (dplyr、tidyr、ggplot2、readr、tibble、purrr ...)
 Hadley的演講 - "Data Science with R" 解釋了tidy data、Functional programming的理念，以及何以對data analysis有助益：
