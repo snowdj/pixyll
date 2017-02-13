@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 layout: post
-title: Use mysql load pnnl data
+title: Import pnnl data into mysql
 category: sql
 tags:
   - sql
@@ -33,4 +33,4 @@ http://stackoverflow.com/questions/18841654/mysql-import-database
 
 
 
- [MySQL Tutorial](https://www.youtube.com/watch?v=yPu6qV5byu4&t=163s). 
+ [MySQL Tutorial](https://www.youtube.com/watch?v=yPu6qV5byu4&t=163s).
