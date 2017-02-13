@@ -1,6 +1,11 @@
 ---
 published: true
 layout: post
+title: How to setup python environment
+category: python
+tags:
+  - python
+  - environment
 ---
 ## python-environment
 
