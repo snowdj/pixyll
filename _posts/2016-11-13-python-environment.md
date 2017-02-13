@@ -20,10 +20,19 @@ ipython kernel install --user
 configure the python3.5 environment:
 
 conda create -n py35 python=3.5
-source activate py35
+conda create -n py34 python=3.4
+source activate py34
 conda install notebook ipykernel
 ipython kernel install --user
 
+http://stackoverflow.com/questions/5599872/python-windows-importerror-no-module-named-site
+	
+If on windows 10, this is now: 
+setx PYTHONHOME "C:\Users\oldyu\Anaconda2" 
+setx PYTHONPATH "C:\Users\oldyu\Anaconda2\Lib" 
+setx PATH "%PYTHONHOME%;%PATH%" 
+
+C:\Users\oldyu\Anaconda2
 
 source activate py27
 
