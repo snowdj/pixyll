@@ -46,6 +46,11 @@ C:\MinGW\bin
 setx MINGWHOME "C:\MinGW\bin" 
 setx PATH "%MINGWHOME%;%PATH%" 
 
+for gurobi
+
+setx GRB_LICENSE_FILE "e:\gurobi\gurobi.lic" 
+setx PATH "%GRB_LICENSE_FILE%;%PATH%" 
+
 
 python setup.py build --compiler=C:\MinGW\bin\mingw32
 
