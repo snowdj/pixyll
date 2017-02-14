@@ -41,6 +41,15 @@ for octave
 setx OCTAVEHOME "D:\Octave\Octave-4.2.0\bin" 
 setx PATH "%OCTAVEHOME%;%PATH%" 
 
+http://www.mingw.org/wiki/Getting_Started
+C:\MinGW\bin
+setx MINGWHOME "C:\MinGW\bin" 
+setx PATH "%MINGWHOME%;%PATH%" 
+
+
+python setup.py build --compiler=C:\MinGW\bin\mingw32
+
+
 C:\Users\oldyu\Anaconda2
 
 source activate py27
