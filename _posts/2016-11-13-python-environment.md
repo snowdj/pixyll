@@ -37,6 +37,10 @@ setx PYTHONHOME "C:\Users\oldyu\Anaconda2"
 setx PYTHONPATH "C:\Users\oldyu\Anaconda2\Lib" 
 setx PATH "%PYTHONHOME%;%PATH%" 
 
+for octave 
+setx OCTAVEHOME "D:\Octave\Octave-4.2.0\bin" 
+setx PATH "%OCTAVEHOME%;%PATH%" 
+
 C:\Users\oldyu\Anaconda2
 
 source activate py27
