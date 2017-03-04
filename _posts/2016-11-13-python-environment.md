@@ -49,7 +49,9 @@ setx PATH "%MINGWHOME%;%PATH%"
 
 ## for dynare++
 
-setx PATH=%PATH%; C:\dynare\4.4.3\dynare++
+setx DYNARE++HOME  "C:\dynare\4.4.3\dynare++"
+setx PATH "DYNARE++HOME;%PATH%" 
+
 
 ## for gurobi
 
