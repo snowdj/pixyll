@@ -117,4 +117,5 @@ and H1
 #### pooled prior distributions under H1 p(p) / pam
 
 ‣ Bayes factor for comparing H1 to H2 is 2.93
+
 ‣ slight evidence in favor of H1 but not “worth a bare mention”
