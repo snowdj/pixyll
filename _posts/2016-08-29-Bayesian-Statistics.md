@@ -81,4 +81,10 @@ reject H1 if P(H1 is true | data) < P(H2 is true | data)
 ‣ in Bayesian testing we minimize the posterior expected loss
 
 
+#### Bayes factor
 
+‣ quantifies the evidence of data arising from H1 vs. H2 
+
+‣ discrete case: ratio of the likelihoods of the observed data under the two hypotheses
+
+‣ continuous case: ratio of the marginal likelihoods
