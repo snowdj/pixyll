@@ -114,4 +114,6 @@ Jeffreys (1961) Evidence against H2
 
 and H1 
 
+#### pooled prior distributions under H1 p(p) / pam
+
 
