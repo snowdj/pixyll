@@ -28,7 +28,7 @@ way to define probabilities is under Bayesian perspective. Bayesian perspective 
 [Bayes](https://github.com/jkarreth/Bayes)
 
 
-####minimizing loss functions
+####　minimizing loss functions
 
 summary
 
@@ -40,3 +40,35 @@ summary
 
 ‣ point estimate you report depends on your choice of loss function
 
+
+
+#### posterior probabilities & decision
+
+‣ suppose you have two competing hypotheses: H1 and H2
+
+‣ then
+
+‣ P(H1 is true | data) = posterior probability of H1 
+
+‣ P(H2 is true | data) = posterior probability of H2
+
+‣ potential decision criterion: choose the hypothesis with the higher posterior probability
+
+reject H1 if P(H1 is true | data) < P(H2 is true | data) 
+
+‣ alternative: consider a loss function
+
+
+
+#### loss functions & decisions
+
+‣ L(d) : loss that occurs when decision d is made 
+
+‣ Bayesian testing procedure then minimizes the posterior expected loss
+
+‣ possible decisions (actions): 
+
+‣ d1 : choose H1 - decide that the patient doesn’t have HIV
+
+
+‣ d2 : choose H2 - decide that the patient has HIV
