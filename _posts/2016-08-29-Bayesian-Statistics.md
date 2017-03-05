@@ -105,6 +105,13 @@ Jeffreys (1961) Evidence against H2
 
 
 
- a 
+#### summary 
+‣ inference with paired or matched normal samples
+
+‣default prior distributions under the two hypotheses
+
+‣posterior distributions for proportions under H2
+
+and H1 
 
 
