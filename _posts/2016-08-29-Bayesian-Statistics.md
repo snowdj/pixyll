@@ -26,3 +26,11 @@ way to define probabilities is under Bayesian perspective. Bayesian perspective 
 [Bayesian-biostatistics-2015](https://github.com/petrkeil/Bayesian-biostatistics-2015)
 [STA663-2015](https://github.com/Sta523-Fa14/STA663-2015)
 [Bayes](https://github.com/jkarreth/Bayes)
+
+
+####minimizing loss functions
+
+summary
+‣ L0 minimized at mode ‣ L1 minimized at median ‣ L2 minimized at mean
+‣ point estimate you report depends on your choice of loss function
+
