@@ -31,6 +31,12 @@ way to define probabilities is under Bayesian perspective. Bayesian perspective 
 ####minimizing loss functions
 
 summary
-‣ L0 minimized at mode ‣ L1 minimized at median ‣ L2 minimized at mean
+
+‣ L0 minimized at mode 
+
+‣ L1 minimized at median 
+
+‣ L2 minimized at mean
+
 ‣ point estimate you report depends on your choice of loss function
 
