@@ -88,3 +88,23 @@ reject H1 if P(H1 is true | data) < P(H2 is true | data)
 ‣ discrete case: ratio of the likelihoods of the observed data under the two hypotheses
 
 ‣ continuous case: ratio of the marginal likelihoods
+
+####　interpreting the Bayes factor BF[H1 : H2]
+
+Jeffreys (1961) Evidence against H2
+
+1 to 3 　Not worth　a bare mention 　
+
+3 to 20　Positive
+
+
+
+30 to 150 Strong
+
+> 150　 Very strong
+
+
+
+ a 
+
+
