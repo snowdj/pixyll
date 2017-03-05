@@ -72,3 +72,13 @@ reject H1 if P(H1 is true | data) < P(H2 is true | data)
 
 
 ‣ d2 : choose H2 - decide that the patient has HIV
+
+
+#### summary
+
+‣ Bayesian methodologies allow for the integration of losses into the decision making framework easily
+
+‣ in Bayesian testing we minimize the posterior expected loss
+
+
+
