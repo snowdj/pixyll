@@ -19,7 +19,13 @@ way to define probabilities is under Bayesian perspective. Bayesian perspective 
 
 
 
-###
+### Books and Notebook
+
+
+[Computational Statistics in Python0.1](https://people.duke.edu/~ccc14/sta-663/LinearAlgebraMatrixDecompWithSolutions.html)
+
+[Statistical Rethinking course and book](https://github.com/rmcelreath/rethinking)
+### Courses
 
 [Bios8366](https://github.com/fonnesbeck/Bios8366/tree/master/notebooks)
 
