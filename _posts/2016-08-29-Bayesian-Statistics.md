@@ -22,6 +22,8 @@ way to define probabilities is under Bayesian perspective. Bayesian perspective 
 ### Books and Notebook
 
 
+[Frequentism and Bayesianism: A Practical Introduction](http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/)
+
 [Computational Statistics in Python0.1](https://people.duke.edu/~ccc14/sta-663/LinearAlgebraMatrixDecompWithSolutions.html)
 
 [Statistical Rethinking course and book](https://github.com/rmcelreath/rethinking)
