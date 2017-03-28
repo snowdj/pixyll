@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: The best cloud computing platform
 category: cloud computing
@@ -18,6 +18,10 @@ The best one for my limited knowledge is the
 
 [notebooks.azure.com](https://notebooks.azure.com/Microsoft/libraries/samples)
 
+### Tutorial
+
+[hol-azure-machine-learning](https://github.com/Azure-Readiness/hol-azure-machine-learning/blob/master/001-lab-setup.md)
+
 I had a difficult time to install pymc3 and theano in my desktop, but it is so easy to install them on zaure.
 
 [juliabox](juliabox.org)
@@ -25,4 +29,3 @@ I had a difficult time to install pymc3 and theano in my desktop, but it is so e
 Run julia online.
 
 [sagemath](sagemath.org)
-
