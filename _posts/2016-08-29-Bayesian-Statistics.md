@@ -22,6 +22,10 @@ way to define probabilities is under Bayesian perspective. Bayesian perspective 
 ### Books and Notebook
 
 
+[Probabilistic Programming and Bayesian Methods for Hackers](http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter1_Introduction/Ch1_Introduction_PyMC2.ipynb)
+
+[Bayesian-Modelling-in-Python](https://github.com/markdregan/Bayesian-Modelling-in-Python)
+
 [PyMC3_DataScienceLA](https://github.com/fonnesbeck/PyMC3_DataScienceLA/blob/master/notebooks/1.%20Introduction%20to%20PyMC3.ipynb)
 
 [Frequentism and Bayesianism: A Practical Introduction](http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/)
