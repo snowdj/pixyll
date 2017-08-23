@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 tags: 'renewbles, energy'
 ---
 ## A New List of Research related to renewables energy senario generation
@@ -9,6 +9,3 @@ tags: 'renewbles, energy'
 
 
 [10] J. E. B. Iversen and P. Pinson, “RESGen: Renewable Energy Scenario Generation Platform,” in Proceedings of IEEE PES General Meeting, 2016.
-
-
-
