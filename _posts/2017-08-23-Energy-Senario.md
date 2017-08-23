@@ -1,6 +1,11 @@
 ---
 published: true
-tags: 'renewbles, energy'
+tags:
+  - renewbles
+  - energy
+  - senario generation
+layout: post
+category: energy
 ---
 ## A New List of Research related to renewables energy senario generation
 
