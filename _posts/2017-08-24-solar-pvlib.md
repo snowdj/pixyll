@@ -5,8 +5,14 @@ tags:
   - solar
   - pvlib
 ---
-## A New Post
+## How to calculate the solar output
 
+using pvlib in python
+
+
+
+
+```python
 import os
 import pandas as pd
 import numpy as np
@@ -54,3 +60,4 @@ mc = ModelChain(system,loc,name='test',
 weatherData = importPSMData()
 mc.run_model(times=weatherData.index,weather=weatherData)
 print(mc.ac)
+```
