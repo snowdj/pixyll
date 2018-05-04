@@ -11,13 +11,19 @@ Data and metadata for Environment Canada Weather Stations.
 The schema is just about designed so that any monthly meteorological variable (max temps, mean temps, precipitation) can be recorded. For the current scraper, monthly means of daily mean min and max temperatures are stored (the source CSV files record many more variables). Pay attention to flags, some data is estimated.
 
 
+## Walkthrough
 
+https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=393e3944-bedb-4177-9aeb-a8cd01397899
+
+Scrape amazon web store data first 20 minutes
+
+## WOUDC
 
 [WOUDC](https://github.com/woudc/woudc)
 
 WOUDC is one of six World Data Centres which are part of the Global Atmosphere Watch programme of the World Meteorological Organization. WOUDC is operated by the Meteorological Service of Canada, a branch of Environment and Climate Change Canada http://woudc.org
 
-
+## Rvest
 
 [rvest](https://github.com/hadley/rvest)
 
