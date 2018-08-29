@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 category: econometrics
 tags:
@@ -23,4 +23,3 @@ http://nbviewer.jupyter.org/github/kellieotto/StatMoments/blob/master/PSM.ipynb
 2. in R
 
 https://sejdemyr.github.io/r-tutorials/statistics/tutorial8.html
-
