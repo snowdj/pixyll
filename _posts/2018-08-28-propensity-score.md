@@ -13,6 +13,9 @@ tags:
 
 https://github.com/laurencium/Causalinference/blob/master/docs/tex/vignette.pdf
 
+blog
+http://laurence-wong.com/software/
+
 
 1.1 manualy 
 
