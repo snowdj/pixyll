@@ -8,6 +8,8 @@ tags:
 ---
 ## A New Post
 
+glmselect is used to generate design matrix with one hot of categorical variables.
+
 /*
  *
  * 任务代码由 SAS Studio 3.7 生成
