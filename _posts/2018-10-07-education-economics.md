@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 category: educaiton
 tags:
@@ -8,4 +8,4 @@ tags:
 ---
 ## Tools for automating the testing and evaluation of education early warning system models
 
-[Tools for automating the testing and evaluation of education early     warning system models](https://github.com/snowdj/EWStools ). 
+[Tools for automating the testing and evaluation of education early     warning system models](https://github.com/snowdj/EWStools ).
