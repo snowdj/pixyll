@@ -45,5 +45,7 @@ https://data.world/dsrs/data-science-rosetta-stone
 
 http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/SAS/SAS-Basics2/index.html#headingtaglink_1
 
+https://www.sfu.ca/sasdoc/sashtml/ets/chap20/sect7.htm
+
 ## Online sas for academics
 https://odamid.oda.sas.com/SASStudio/main?locale=en_US&zone=GMT-07%253A00&https%3A%2F%2Fodamid.oda.sas.com%2FSASStudio%2F=
