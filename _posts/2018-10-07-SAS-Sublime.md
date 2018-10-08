@@ -18,9 +18,14 @@ tags:
 
 https://communities.sas.com/t5/SAS-IML-Software-and-Matrix/SAS-IML-Error-An-installed-version-of-R-could-not-be-found/td-p/264645
 
+in
+C:\Program Files\SASHome\SASFoundation\9.4\nls\en\sasv9.cfg
+add
+
+```sas
 -RLANG
 -SET R_HOME "E:\R-3.5.1"
-
+```
 
 proc options option=RLANG; run;
 
