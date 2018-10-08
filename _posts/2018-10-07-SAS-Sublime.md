@@ -35,3 +35,5 @@ https://vle.sas.com/course/view.php?id=832
 
 http://www.datasciencerosettastone.com/sas.html
 https://github.com/datasciencerosettastone/datatsciencerosettastone.github.io
+
+https://data.world/dsrs/data-science-rosetta-stone
