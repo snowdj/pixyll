@@ -37,3 +37,6 @@ http://www.datasciencerosettastone.com/sas.html
 https://github.com/datasciencerosettastone/datatsciencerosettastone.github.io
 
 https://data.world/dsrs/data-science-rosetta-stone
+
+## Online sas for academics
+https://odamid.oda.sas.com/SASStudio/main?locale=en_US&zone=GMT-07%253A00&https%3A%2F%2Fodamid.oda.sas.com%2FSASStudio%2F=
