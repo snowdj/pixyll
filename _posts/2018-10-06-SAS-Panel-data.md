@@ -6,7 +6,15 @@ tags:
   - SAS
   - Panel data
 ---
-## A New Post
+## SAS/ETS(R) 9.22 User's Guide
+
+
+
+http://support.sas.com/documentation/cdl/en/etsug/63348/HTML/default/viewer.htm#etsug_panel_sect006.htm
+
+
+https://www.sfu.ca/sasdoc/sashtml/ets/chap20/sect7.htm
+
 
 glmselect is used to generate design matrix with one hot of categorical variables.
 
