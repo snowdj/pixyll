@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 category: text_editor
 tags:
@@ -16,8 +16,4 @@ VScode is good, but Sublime is still the best text editor in the market.
 - python: anaconda
 - SAS: SASsubmit
 - Color scheme: 1378
-- schme: 
-
-
-
-
+- schme:
