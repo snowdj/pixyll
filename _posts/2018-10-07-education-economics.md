@@ -12,6 +12,7 @@ tags:
 
 
 
+
 ## Fixed effect on education to earning
 http://www.dkreisman.com/research/Kreisman_Jacob_Dynarski_2017.pdf
 
@@ -25,3 +26,17 @@ https://github.com/snowdj/cgr-work
 ## Data
 
 https://archive.ics.uci.edu/ml/datasets/Student+Performance#
+
+## Predict dropout for university student
+https://github.com/pid-ub/pid-UB/blob/master/sergi/dropout_prediction.ipynb
+
+
+## Employee turnover prediction
+
+https://www.kaggle.com/aliu233/employee-turnover-prediction/notebook
+
+https://rpubs.com/bpr1989/HRAnalysis
+
+## customer attrition/churn
+
+
