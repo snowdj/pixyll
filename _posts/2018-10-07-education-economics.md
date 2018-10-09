@@ -33,6 +33,8 @@ https://github.com/pid-ub/pid-UB/blob/master/sergi/dropout_prediction.ipynb
 
 ## Employee turnover prediction
 
+https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/
+
 https://www.kaggle.com/aliu233/employee-turnover-prediction/notebook
 
 https://www.kaggle.com/snowdj/kernelee5377cecb/edit
