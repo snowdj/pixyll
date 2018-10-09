@@ -35,6 +35,8 @@ https://github.com/pid-ub/pid-UB/blob/master/sergi/dropout_prediction.ipynb
 
 https://www.kaggle.com/aliu233/employee-turnover-prediction/notebook
 
+https://www.kaggle.com/snowdj/kernelee5377cecb/edit
+
 https://rpubs.com/bpr1989/HRAnalysis
 
 ## customer attrition/churn
