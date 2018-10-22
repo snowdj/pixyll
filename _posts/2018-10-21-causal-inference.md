@@ -48,3 +48,6 @@ Repository: https://github.com/maxkasy/optimaltaxationusingML
 
 
 http://socviz.co/lookatdata.html
+
+
+https://link.springer.com/book/10.1007/978-1-4614-7138-7
