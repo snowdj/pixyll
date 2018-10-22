@@ -12,11 +12,21 @@ tags:
 Causal Inference Book
 
 https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+With SAS R code
+
+https://github.com/snowdj/causal_inference_python_code
+
+https://github.com/snowdj/mostly-harmless-replication
+
+
 
 ## Experiment
 
 Why Experimenters Might Not Always Want to Randomize, and What They Could Do Instead
 https://scholar.harvard.edu/kasy/publications/why-experimenters-should-not-randomize-and-what-they-should-do-instead
+
+
+https://maxkasy.github.io/home/treatmentassignment/
 
 App for optimal treatment assignment in experiments:
 Interactive App: /treatmentassignment
