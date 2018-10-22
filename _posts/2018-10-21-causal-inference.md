@@ -31,14 +31,16 @@ https://maxkasy.github.io/home/treatmentassignment/
 App for optimal treatment assignment in experiments:
 Interactive App: /treatmentassignment
 Repository: https://github.com/maxkasy/optimal-treatment-assignment-app
+
 Theoretical background: experimentaldesign.pdf
 App for estimating publication bias using meta-studies:
 Interactive App: /metastudy
 Repository: https://github.com/maxkasy/MetaStudiesApp
+
 Theoretical background: PublicationBias.pdf
 R-code for optimal taxation and insurance using machine learning:
 Repository: https://github.com/maxkasy/optimaltaxationusingML
-
+https://github.com/snowdj/R-code-for-Adaptive-experimental-design-for-policy-choice-
 
 [Useful computational ressources](https://maxkasy.github.io/home/computationlinks/). 
 
