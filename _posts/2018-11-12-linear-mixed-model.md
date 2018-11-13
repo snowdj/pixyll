@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 category: econometrics
 tags:
@@ -32,4 +32,3 @@ https://www.jaredknowles.com/journal/2013/11/25/getting-started-with-mixed-effec
 
 
 http://edwardlib.org/tutorials/linear-mixed-effects-models
-
