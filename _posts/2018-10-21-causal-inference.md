@@ -9,7 +9,11 @@ tags:
 ---
 ## Causal inference
 
-Causal Inference Book
+### Lectures on Causality: Jonas Peters
+https://www.youtube.com/watch?v=bHOGP5o3Vu0
+
+
+### Causal Inference Book
 
 https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
 With SAS R code
@@ -20,7 +24,7 @@ https://github.com/snowdj/mostly-harmless-replication
 
 
 
-## Experiment
+### Experiment
 
 Why Experimenters Might Not Always Want to Randomize, and What They Could Do Instead
 https://scholar.harvard.edu/kasy/publications/why-experimenters-should-not-randomize-and-what-they-should-do-instead
